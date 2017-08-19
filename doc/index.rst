@@ -39,7 +39,7 @@ You can do this by making sure your repo contains:
 All you need to do is include the files specified above in a GitHub repository.
 Once that's done, navigate to ``beta.mybinder.org`` and insert the URL for
 your git repository. Press ``Launch`` to automatically create your Binder.
-The Binder service will be automatically sent you to a live Jupyter session
+The Binder service will be automatically send you to a live Jupyter session
 connected to this repository.
 
 .. note::
