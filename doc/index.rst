@@ -14,6 +14,10 @@ If you'd like to create and administer your own Binder deployment, see the
 documentation guides you through creating a cluster, deploying BinderHub, and
 administering a BinderHub deployment.
 
+.. toctree::
+
+   dockerfile.rst
+
 What can I do with Binder?
 --------------------------
 
