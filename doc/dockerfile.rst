@@ -17,6 +17,13 @@ This guide will help you in preparing your Dockerfile so that it has the
 components needed to run JupyterHub, allowing it to work on Binder
 deployments.
 
+.. note::
+
+   Binder's requirements for Dockerfiles are in beta and changing, so
+   Dockerfiles on Binder will break from time to time until Binder
+   solidifies its requirements. Dockerfiles are not an appropriate choice
+   if you require reproducibility with Binder at the moment.
+
 When should you use a Dockerfile?
 =================================
 
@@ -34,14 +41,16 @@ Dockerfile. For example, this code sources the Jupyter-Scipy notebook:
     # Note that there must be a tag
     FROM jupyter/scipy-notebook:cf6258237ff9
 
-See `Preparing your Dockerfile <LINKTOPREPARING>`_ for instructions on how to
+See `Preparing your Dockerfile`_ for instructions on how to
 do this properly.
 
 When you are building complex software
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Some software is simply too complex to be specified with Binder configuration
-files. For example, if you need to *DO SOME COOL SHIT ADD EXAMPLES*.
+files. However, we bet you can do it without a Dockerfile. We recommend trying
+with ``postBuild`` commands. Are you **sure** this won't work without a
+Dockerfile?
 
 When you're using a language that is not directly supported
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -50,12 +59,13 @@ Binder supports many languages, but not all of them. If your need to use
 a different language, it may be possible to accomplish this with a Dockerfile.
 
 For a list of languages that Binder supports with configuration files, see
-`LINK TO REPO2DOCKER OR SOMETHING <r2d>`_.
+``the repo2docker documentation <http://repo2docker.readthedocs.io/en/latest/>`_.
 
 .. note::
 
    We welcome contributions to ``repo2docker`` to add support for new
-   languages. If interested, please `open an issue <R2D LINK>`_.
+   languages. If interested, please
+   `open an issue <https://github.com/jupyter/repo2docker/issues>`_.
 
 
 Preparing your Dockerfile
@@ -85,7 +95,9 @@ For a Dockerfile to work on binder, it must meet the following requirements:
 2. It must explicitly specify a tag in the image you source.
 
    When sourcing a pre-existing Docker image with ``FROM``,
-   **a tag is required**. The tag *cannot* be ``latest``.
+   **a tag is required**. The tag *cannot* be ``latest``. Note that tag
+   naming conventions differ between images, so we recommend using
+   the SHA tag of the image.
 
    Here's an example of a Dockerfile ``FROM`` statement that would work:
    Do this:
@@ -120,7 +132,7 @@ For a Dockerfile to work on binder, it must meet the following requirements:
        # Make sure the contents of our repo are in ${HOME}
        COPY . ${HOME}
        USER root
-       RUN chown -R ${NB_USER}:${NB_USER} ${HOME}
+       RUN chown -R ${NB_USER}:${NB_GID} ${HOME}
        USER ${NB_USER}
 
    This is required because Docker will be default
