@@ -1,3 +1,5 @@
+.. _dockerfile:
+
 Using a Dockerfile
 ==================
 
