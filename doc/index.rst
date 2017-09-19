@@ -96,19 +96,9 @@ package in your environment in a format that can be used in ``requirements.txt``
 ``conda env export -n <env-name>`` is the equivalent for anaconda's environment.yml
 file.
 
-If using a Dockerfile, source a reproducible, tagged image
-``````````````````````````````````````````````````````````
+Using Dockerfiles
+`````````````````
 
-If you are sourcing another Docker image, there are a few gotchas that may
-make your built image change over time in unexpected ways.
-
-First, make sure that you source your Dockerfile from a **tag** of another
-image. This ensures that you will continue building off of the same image
-even if the image is updated to a new version.
-
-Second, make sure that all packages installed with your Dockerfile
-are pinned to specific versions (you should do this with the the image you are
-sourcing as well).
-
+Ensuring reproducibility with Dockerfiles comes with its own set of challenges.
 For more information and best-practices when using Dockerfiles for Binder,
 see :ref:`dockerfiles`.

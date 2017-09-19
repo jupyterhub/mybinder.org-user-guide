@@ -139,3 +139,18 @@ For a Dockerfile to work on Binder, it must meet the following requirements:
 
    This is required because Docker will be default
    set the owner to ``ROOT``, which would prevent users from editing files.
+
+Ensuring reproducibility with Dockerfiles
+-----------------------------------------
+
+Ensuring that your Binder environment is reproducible requires extra
+considerations when using a Dockerfile. This section provides some guidelines
+for making sure your Binder environment does not change in unexpected ways.
+
+As mentioned above, make sure that you source your Dockerfile from a **tag**
+of another image. This ensures that you will continue building off of
+the same image even if the image is updated to a new version.
+
+Next, make sure that all packages installed with your Dockerfile
+are pinned to specific versions. You should do this with the the image you are
+sourcing as well, just in case.
