@@ -1,5 +1,5 @@
 Using a Dockerfile
-------------------
+==================
 
 Binder supports configuration files for package
 installation, environment specification, post-build shell scripts, and more.
@@ -19,13 +19,13 @@ deployments.
 
 .. note::
 
-   Binder's requirements for Dockerfiles are in beta and changing, so
-   Dockerfiles on Binder will break from time to time until Binder
-   solidifies its requirements. Dockerfiles are not an appropriate choice
-   if you require reproducibility with Binder at the moment.
+  Binder's requirements for Dockerfiles are in beta and subject to change.
+  Dockerfiles may break on Binder from time to time during the beta period.
+  Avoid using Dockerfiles if you require reproducibility with Binder at the moment.
+
 
 When should you use a Dockerfile?
-=================================
+---------------------------------
 
 Below are a few use-cases where you *might* want to use a Dockerfile with
 Binder.
@@ -47,10 +47,11 @@ do this properly.
 When you are building complex software
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Some software is simply too complex to be specified with Binder configuration
-files. However, we bet you can do it without a Dockerfile. We recommend trying
-with ``postBuild`` commands. Are you **sure** this won't work without a
-Dockerfile?
+Most Binder configurations can be achieved without a Dockerfile.
+Before resorting to a Dockerfile, we recommend trying to use ``postBuild``
+commands for configuration.  See
+`the repo2docker documentation <http://repo2docker.readthedocs.io/en/latest/>`_
+for examples.
 
 When you're using a language that is not directly supported
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -59,7 +60,7 @@ Binder supports many languages, but not all of them. If your need to use
 a different language, it may be possible to accomplish this with a Dockerfile.
 
 For a list of languages that Binder supports with configuration files, see
-``the repo2docker documentation <http://repo2docker.readthedocs.io/en/latest/>`_.
+`the repo2docker documentation <http://repo2docker.readthedocs.io/en/latest/>`_.
 
 .. note::
 
@@ -69,9 +70,9 @@ For a list of languages that Binder supports with configuration files, see
 
 
 Preparing your Dockerfile
-=========================
+-------------------------
 
-For a Dockerfile to work on binder, it must meet the following requirements:
+For a Dockerfile to work on Binder, it must meet the following requirements:
 
 1. It must install JupyterHub.
 
@@ -99,8 +100,7 @@ For a Dockerfile to work on binder, it must meet the following requirements:
    naming conventions differ between images, so we recommend using
    the SHA tag of the image.
 
-   Here's an example of a Dockerfile ``FROM`` statement that would work:
-   Do this:
+   Here's an example of a Dockerfile ``FROM`` statement that would work.
 
    .. code-block:: Dockerfile
 
@@ -108,7 +108,7 @@ For a Dockerfile to work on binder, it must meet the following requirements:
 
    .. note::
 
-       These would **not** work:
+       The following examples would **not** work:
 
        .. code-block:: Dockerfile
 
