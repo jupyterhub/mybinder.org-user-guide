@@ -30,6 +30,17 @@ cloud.
 
 See the `Binder Examples <https://github.com/binder-examples>`_ GitHub
 organization page for inspiration.
+What resources are given to Binder users?
+-----------------------------------------
+A Binder user is somebody that clicks on a Binder link in order to run a
+repository that someone has prepared. The public ``mybinder.org`` deployment
+gives users a minimum of 1G and a maximum of 4G of RAM. Custom BinderHub
+deployments can alter these values.
+
+For more information, see the `BinderHub <https://binderhub.readthedocs.io/en/latest/>`_
+documentation for instructions on how to deploy your own BinderHub, and the
+`Zero to JupyterHub <https://zero-to-jupyterhub.readthedocs.io/en/latest/user-experience.html#set-user-memory-and-cpu-guarantees-limits>`_
+documentation for how to customize the user environment.
 
 How do I prepare a repository for Binder?
 -----------------------------------------
