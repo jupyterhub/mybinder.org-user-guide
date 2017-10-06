@@ -28,6 +28,9 @@ specify along with the Jupyter Notebooks inside. You will be able to share a URL
 with users that can immediately begin interacting with this environment via the
 cloud.
 
+See the `Binder Examples <https://github.com/binder-examples>`_ GitHub
+organization page for inspiration.
+
 How do I prepare a repository for Binder?
 -----------------------------------------
 
