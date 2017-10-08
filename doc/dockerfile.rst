@@ -23,7 +23,6 @@ deployments.
 
   Binder's requirements for Dockerfiles are in beta and subject to change.
   Dockerfiles may break on Binder from time to time during the beta period.
-  Avoid using Dockerfiles if you require reproducibility with Binder at the moment.
 
 
 When should you use a Dockerfile?
@@ -76,24 +75,13 @@ Preparing your Dockerfile
 
 For a Dockerfile to work on Binder, it must meet the following requirements:
 
-1. It must install JupyterHub.
+1. It must install a recent version of Jupyter Notebook.
+   This should be installed via ``pip`` with the `notebook` package.
+   So in your dockerfile, you should have a command such as:
 
-   JupyterHub is what will serve your Docker image to users.
-   This is installed via ``pip`` and the ``jupyterhub`` package.
+   .. code-block:: Dockerfile
 
-   .. note::
-
-      JupyterHub only works with Python 3. You need to have python 3 available
-      in your environment in order to install it.
-
-   The version of JupyterHub installed must match the version used by
-   your Binder deployment. To ensure this, install it with the following code:
-
-       .. code-block:: Dockerfile
-
-          # NOTE: THIS DOES NOT ACTUALLY WORK RIGHT NOW, YOU HAVE TO DO ==0.7.2
-          # LET'S FIX THAT
-          RUN pip3 install --no-cache-dir jupyterhub=${JUPYTERHUB_VERSION}
+       RUN pip install --no-cache-dir notebook==5.*
 
 2. It must explicitly specify a tag in the image you source.
 
@@ -122,10 +110,10 @@ For a Dockerfile to work on Binder, it must meet the following requirements:
 
           FROM jupyter/scipy-notebook:latest
 
-3. It must copy its contents to the ``HOME`` directory and change permissions.
+3. It must copy its contents to the ``$HOME`` directory and change permissions.
 
    To make sure that your repository contents are available to users,
-   you must copy all contents to ``$(HOME)`` and then make this folder
+   you must copy all contents to ``$HOME`` and then make this folder
    owned by users. You can accomplish this by putting the following lines
    into your Dockerfile:
 
@@ -138,7 +126,7 @@ For a Dockerfile to work on Binder, it must meet the following requirements:
        USER ${NB_USER}
 
    This is required because Docker will be default
-   set the owner to ``ROOT``, which would prevent users from editing files.
+   set the owner to ``root``, which would prevent users from editing files.
 
 Ensuring reproducibility with Dockerfiles
 -----------------------------------------
@@ -153,4 +141,4 @@ the same image even if the image is updated to a new version.
 
 Next, make sure that all packages installed with your Dockerfile
 are pinned to specific versions. You should do this with the the image you are
-sourcing as well, just in case.
+sourcing as well.
