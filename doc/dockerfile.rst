@@ -110,22 +110,45 @@ For a Dockerfile to work on Binder, it must meet the following requirements:
 
           FROM jupyter/scipy-notebook:latest
 
-3. It must copy its contents to the ``$HOME`` directory and change permissions.
+3. It must set up a user whose uid is `1000` and gid is `1000`.
+   It is bad practice to run processes in containers as root, and on binder
+   we do not allow root container processes. If you are using an ubuntu or
+   debian based container image, you can create a user easily with the following
+   directives somewhere in your Dockerfile:
+
+   .. code-block:: Dockerfile
+
+      ENV NB_USER jovyan
+      ENV NB_UID 1000
+      ENV NB_GID 1000
+      ENV HOME /home/${NB_USER}
+
+      RUN adduser --disabled-password \
+          --gecos "Default user" \
+          --uid ${NB_UID} \
+          --gid ${NB_GID} \
+          ${NB_USER}
+
+   This is the user that will be running the jupyter notebook process
+   when your repo is launched with binder. So any files you would like to
+   be writeable by the launched binder notebook should be owned by this user.
+
+4. It must copy its contents to the ``$HOME`` directory and change permissions.
 
    To make sure that your repository contents are available to users,
    you must copy all contents to ``$HOME`` and then make this folder
-   owned by users. You can accomplish this by putting the following lines
-   into your Dockerfile:
+   owned by the user you created in step 3. If you used the snippet provided
+   in step 3, you can accomplish this copying with the following snippet:
 
    .. code-block:: Dockerfile
 
        # Make sure the contents of our repo are in ${HOME}
        COPY . ${HOME}
        USER root
-       RUN chown -R ${NB_USER}:${NB_GID} ${HOME}
+       RUN chown -R ${NB_UID}:${NB_GID} ${HOME}
        USER ${NB_USER}
 
-   This is required because Docker will be default
+   This chown is required because Docker will be default
    set the owner to ``root``, which would prevent users from editing files.
 
 Ensuring reproducibility with Dockerfiles
