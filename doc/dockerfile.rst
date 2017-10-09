@@ -120,13 +120,11 @@ For a Dockerfile to work on Binder, it must meet the following requirements:
 
       ENV NB_USER jovyan
       ENV NB_UID 1000
-      ENV NB_GID 1000
       ENV HOME /home/${NB_USER}
 
       RUN adduser --disabled-password \
           --gecos "Default user" \
           --uid ${NB_UID} \
-          --gid ${NB_GID} \
           ${NB_USER}
 
    This is the user that will be running the jupyter notebook process
