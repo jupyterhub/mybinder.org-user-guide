@@ -30,12 +30,7 @@ cloud.
 
 See the `Binder Examples <https://github.com/binder-examples>`_ GitHub
 organization page for inspiration.
-What resources are given to Binder users?
------------------------------------------
-A Binder user is somebody that clicks on a Binder link in order to run a
-repository that someone has prepared. The public ``mybinder.org`` deployment
-gives users a minimum of 1G and a maximum of 4G of RAM. Custom BinderHub
-deployments can alter these values.
+
 How much memory am I given when using Binder?
 ---------------------------------------------
 
