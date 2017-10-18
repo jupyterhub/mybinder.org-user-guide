@@ -40,7 +40,7 @@ You can do this by making sure your repo contains:
   users of your Binder.
 * One (or many) text files that specify the requirements of your code. For
   example, a ``requirements.txt`` or ``environment.yml`` file. See the
-  `repo2docker <repo2docker.readthedocs.org>`_ documentation for a list of all
+  `repo2docker <https://repo2docker.readthedocs.org>`_ documentation for a list of all
   the files and environments that are supported.
 
 All you need to do is include the files specified above in a GitHub repository.
@@ -73,7 +73,7 @@ Binder combines several open-source technologies, especially:
 
 * `repo2docker <https://repo2docker.readthedocs.org>`_, for quickly generating
   Docker images from a GitHub repository.
-* `JupyterHub <https://z2jh.jupyterhub.org>`_, for connecting a built Docker
+* `JupyterHub <https://z2jh.jupyter.org>`_, for connecting a built Docker
   image to cloud computation and a user-facing web portal.
 * `BinderHub <https://binderhub.readthedocs.org>`_, for gluing the above two
   tools together to create the Binder experience.
