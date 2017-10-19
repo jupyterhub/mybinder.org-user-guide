@@ -110,7 +110,7 @@ For a Dockerfile to work on Binder, it must meet the following requirements:
 
           FROM jupyter/scipy-notebook:latest
 
-3. It must set up a user whose uid is `1000` and gid is `1000`.
+3. It must set up a user whose uid is `1000`.
    It is bad practice to run processes in containers as root, and on binder
    we do not allow root container processes. If you are using an ubuntu or
    debian based container image, you can create a user easily with the following
@@ -143,7 +143,7 @@ For a Dockerfile to work on Binder, it must meet the following requirements:
        # Make sure the contents of our repo are in ${HOME}
        COPY . ${HOME}
        USER root
-       RUN chown -R ${NB_UID}:${NB_GID} ${HOME}
+       RUN chown -R ${NB_UID} ${HOME}
        USER ${NB_USER}
 
    This chown is required because Docker will be default
