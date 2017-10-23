@@ -10,7 +10,7 @@ and used by many remote users. This page provides information for those who
 wish to use a pre-existing Binder deployment (e.g., ``mybinder.org``).
 
 If you'd like to create and administer your own Binder deployment, see the
-`BinderHub documentation <binderhub.readthedocs.org>`_. The BinderHub
+`BinderHub documentation <http://binderhub.readthedocs.io>`_. The BinderHub
 documentation guides you through creating a cluster, deploying BinderHub, and
 administering a BinderHub deployment.
 
@@ -39,6 +39,8 @@ deployment will run the linked repository. While running, you are guaranteed
 to have at least 1G of RAM. There is an upper-limit of 4GB (if you use more than
 4GB your kernel will be restarted).
 
+.. _preparing_repositories:
+
 How do I prepare a repository for Binder?
 -----------------------------------------
 
@@ -48,7 +50,7 @@ You can do this by making sure your repo contains:
   users of your Binder.
 * One (or many) text files that specify the requirements of your code. For
   example, a ``requirements.txt`` or ``environment.yml`` file. See the
-  `repo2docker <repo2docker.readthedocs.org>`_ documentation for a list of all
+  `repo2docker <https://repo2docker.readthedocs.org>`_ documentation for a list of all
   the files and environments that are supported.
 
 All you need to do is include the files specified above in a GitHub repository.
@@ -81,7 +83,7 @@ Binder combines several open-source technologies, especially:
 
 * `repo2docker <https://repo2docker.readthedocs.org>`_, for quickly generating
   Docker images from a GitHub repository.
-* `JupyterHub <https://z2jh.jupyterhub.org>`_, for connecting a built Docker
+* `JupyterHub <https://z2jh.jupyter.org>`_, for connecting a built Docker
   image to cloud computation and a user-facing web portal.
 * `BinderHub <https://binderhub.readthedocs.org>`_, for gluing the above two
   tools together to create the Binder experience.

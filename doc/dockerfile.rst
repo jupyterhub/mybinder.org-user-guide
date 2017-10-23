@@ -7,8 +7,8 @@ Binder supports configuration files for package
 installation, environment specification, post-build shell scripts, and more.
 It should be possible to create the environment that you want *without*
 using a Dockerfile. For more information about the different environment
-configuration files that Binder can create, see the
-`guide to creating Binder-ready repositories <LINK>`_.
+configuration files that Binder can create, see
+:ref:`preparing_repositories`.
 
 However, in case you cannot meet all your needs with these configuration
 files, it is also possible to use a Dockerfile to define your environment.
@@ -110,7 +110,7 @@ For a Dockerfile to work on Binder, it must meet the following requirements:
 
           FROM jupyter/scipy-notebook:latest
 
-3. It must set up a user whose uid is `1000` and gid is `1000`.
+3. It must set up a user whose uid is `1000`.
    It is bad practice to run processes in containers as root, and on binder
    we do not allow root container processes. If you are using an ubuntu or
    debian based container image, you can create a user easily with the following
@@ -143,7 +143,7 @@ For a Dockerfile to work on Binder, it must meet the following requirements:
        # Make sure the contents of our repo are in ${HOME}
        COPY . ${HOME}
        USER root
-       RUN chown -R ${NB_UID}:${NB_GID} ${HOME}
+       RUN chown -R ${NB_UID} ${HOME}
        USER ${NB_USER}
 
    This chown is required because Docker will be default
