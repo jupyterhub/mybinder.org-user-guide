@@ -31,6 +31,14 @@ cloud.
 See the `Binder Examples <https://github.com/binder-examples>`_ GitHub
 organization page for inspiration.
 
+How much memory am I given when using Binder?
+---------------------------------------------
+
+If you or another Binder user clicks on a Binder link, the ``mybinder.org``
+deployment will run the linked repository. While running, you are guaranteed
+to have at least 1G of RAM. There is an upper-limit of 4GB (if you use more than
+4GB your kernel will be restarted).
+
 .. _preparing_repositories:
 
 How do I prepare a repository for Binder?
@@ -91,6 +99,7 @@ re-build your repository image:
 
 Pin your dependencies
 `````````````````````
+
 When you install a dependency, include its version number (depending on the
 language you use, the exact syntax may vary). E.g., don't just specify ``numpy``,
 specify ``numpy==1.12.0``.
@@ -107,3 +116,16 @@ Using Dockerfiles
 Ensuring reproducibility with Dockerfiles comes with its own set of challenges.
 For more information and best-practices when using Dockerfiles for Binder,
 see :ref:`dockerfiles`.
+
+What can I do if ``mybinder.org`` does not meet my needs?
+---------------------------------------------------------
+
+``mybinder.org`` uses software called ``BinderHub`` to carry out its services.
+This is an Open Source, community-driven project that can be deployed on
+most cloud providers. If you desire more computational resources for users or
+want guaranteed uptime, consider setting up your own BinderHub deployment.
+
+For more information, see the `BinderHub <https://binderhub.readthedocs.io/en/latest/>`_
+documentation for instructions on how to deploy your own BinderHub, and the
+`Zero to JupyterHub <https://zero-to-jupyterhub.readthedocs.io/en/latest/user-experience.html#set-user-memory-and-cpu-guarantees-limits>`_
+documentation for how to customize the user environment.
