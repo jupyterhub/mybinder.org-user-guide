@@ -7,8 +7,8 @@ Binder supports configuration files for package
 installation, environment specification, post-build shell scripts, and more.
 It should be possible to create the environment that you want *without*
 using a Dockerfile. For more information about the different environment
-configuration files that Binder can create, see the
-`guide to creating Binder-ready repositories <LINK>`_.
+configuration files that Binder can create, see
+:ref:`preparing_repositories`.
 
 However, in case you cannot meet all your needs with these configuration
 files, it is also possible to use a Dockerfile to define your environment.

@@ -31,6 +31,8 @@ cloud.
 See the `Binder Examples <https://github.com/binder-examples>`_ GitHub
 organization page for inspiration.
 
+.. _preparing_repositories:
+
 How do I prepare a repository for Binder?
 -----------------------------------------
 
