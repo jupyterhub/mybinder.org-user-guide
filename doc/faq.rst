@@ -1,0 +1,76 @@
+Frequently Asked Questions
+==========================
+
+What is the Binder community?
+-----------------------------
+
+A collection of people that aim to make it easy to turn
+computational material (e.g. Jupyter notebooks, R scripts, and environment
+files) into computational environments (a Docker image) and serve this
+environment through the cloud. The underlying technology that manages this
+process is called `BinderHub`_.
+
+What is BinderHub?
+------------------
+
+`BinderHub`_ is the server technology that
+turns computational material into
+interactive computational environments in the cloud. It utilizes
+`Kubernetes and JupyterHub <https://z2jh.jupyter.org>`_ in order to
+simplify the deployment process and make it easy to scale.
+
+What is ``mybinder.org``?
+-------------------------
+
+``mybinder.org`` is a single deployment of a BinderHub instance, managed by
+the Binder community. It serves as both a public service and a demonstration
+of the BinderHub technology, though it is by no means the only BinderHub
+in existence. If you're interested in deploying your own BinderHub for your
+own uses, please see the `BinderHub documentation <BinderHub_>`_
+and don't hesitate to reach out to the `Binder community <https://gitter.im/jupyterhub/binder>`_.
+
+Is ``mybinder.org`` free?
+-------------------------
+
+Yes! Though note that it has relatively :ref:`limited computational resources
+<user_memory>`.
+
+How can ``mybinder.org`` be free?
+---------------------------------
+
+The Binder project has a grant from the Moore Foundation to sustain the
+cloud resources running ``mybinder.org``. In the future we hope to see more
+public BinderHub services running that can form a collection of community
+resources for interactive cloud computing.
+
+.. _user_memory:
+
+How much memory am I given when using Binder?
+---------------------------------------------
+
+If you or another Binder user clicks on a Binder link, the ``mybinder.org``
+deployment will run the linked repository. While running, you are guaranteed
+to have at least 1G of RAM. There is an upper-limit of 4GB (if you use more than
+4GB your kernel will be restarted).
+
+What is a Binder?
+-----------------
+
+A Binder is a GitHub repository that has been outfitted with the appropriate
+`build files <http://repo2docker.readthedocs.io/en/latest/samples.html>`_ so
+that its content can be connected with a BinderHub instance.
+
+What can I do if ``mybinder.org`` does not meet my needs?
+---------------------------------------------------------
+
+``mybinder.org`` uses software called `BinderHub`_ to carry out its services.
+This is an Open Source, community-driven project that can be deployed on
+most cloud providers. If you desire more computational resources for users or
+want guaranteed uptime, consider setting up your own BinderHub deployment.
+
+For more information, see the `BinderHub documentation <BinderHub_>`_
+for instructions on how to deploy your own BinderHub, and the
+`Zero to JupyterHub <https://zero-to-jupyterhub.readthedocs.io/en/latest/user-experience.html#set-user-memory-and-cpu-guarantees-limits>`_
+documentation for how to customize the user environment.
+
+.. _BinderHub: https://binderhub.readthedocs.io/en/latest
