@@ -15,8 +15,10 @@ documentation guides you through creating a cluster, deploying BinderHub, and
 administering a BinderHub deployment.
 
 .. toctree::
+   :maxdepth: 2
 
-   dockerfile.rst
+   dockerfile
+   sample_repos
 
 What can I do with Binder?
 --------------------------
