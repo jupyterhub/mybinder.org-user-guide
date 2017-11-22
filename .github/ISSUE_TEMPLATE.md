@@ -1,11 +1,13 @@
 <!--
 Welcome!
 
-Help us stay on top of issues by submitting to the right repository. For
+Help us stay on top of issues by submitting them to the right repository. For
 issues related to:
-* ... the particulars of the https://mybinder.org site or deployment: https://github.com/jupyterhub/mybinder.org-deploy/issues/new
-* ... binderhub, the software behind mybinder.org, in general: https://github.com/jupyterhub/binderhub/issues/new
-* ... the repo2docker tool that builds containers from repositories: https://github.com/jupyter/repo2docker/issues/new
+* ... building images: https://github.com/jupyterhub/binder/new
+* ... the https://mybinder.org site not working or misbehaving: https://github.com/jupyterhub/mybinder.org-deploy/issues/new
+* ... the software powering all this (binderhub) in general: https://github.com/jupyterhub/binderhub/issues/new
 
-Thank you for contributing.
+If you aren't sure where to go use https://github.com/jupyterhub/binder/new.
+
+Thank you for being awesome!
 -->
