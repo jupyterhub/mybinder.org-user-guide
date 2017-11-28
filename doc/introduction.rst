@@ -1,5 +1,5 @@
-Welcome to using binder!
-========================
+Welcome to the binder documentation
+===================================
 
 What can I do with Binder?
 --------------------------
