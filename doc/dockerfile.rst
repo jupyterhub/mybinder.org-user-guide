@@ -21,6 +21,12 @@ deployments.
 
 .. note::
 
+   We recommend against using a ``Dockerfile`` as a way to make your repository
+   usable with binder. Use them as a last resort after all methods in
+   :ref:`preparing_repositories` have failed.
+
+.. note::
+
   Binder's requirements for Dockerfiles are in beta and subject to change.
   Dockerfiles may break on Binder from time to time during the beta period.
 
