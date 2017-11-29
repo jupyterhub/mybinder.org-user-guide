@@ -1,4 +1,4 @@
-Welcome to the binder documentation
+Welcome to the Binder documentation
 ===================================
 
 What can I do with Binder?
