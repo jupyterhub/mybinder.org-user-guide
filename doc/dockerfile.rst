@@ -19,6 +19,12 @@ This guide will help you in preparing your Dockerfile so that it has the
 components needed to run JupyterHub, allowing it to work on Binder
 deployments.
 
+.. important::
+
+   We recommend against using a ``Dockerfile`` as a way to make your repository
+   usable with binder. Use them as a last resort after all methods in
+   :ref:`preparing_repositories` have failed.
+
 .. note::
 
   Binder's requirements for Dockerfiles are in beta and subject to change.
