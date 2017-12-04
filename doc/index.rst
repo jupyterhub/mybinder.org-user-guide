@@ -29,3 +29,4 @@ Site contents
    reproducibility
    sample_repos
    faq
+   more-info
