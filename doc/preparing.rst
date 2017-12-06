@@ -44,9 +44,9 @@ Using conda packages
 --------------------
 
 For 'complex to install' packages, like ``numpy`` or ``scikit-learn``, we
-recommend using the `conda package manager <https://conda.io/docs/index.html>`.
+recommend using the `conda package manager <https://conda.io/docs/index.html>`_.
 To specify your dependencies create an ``environment.yml`` listing the packages
-and versions required. For syntax help read `create an environment file manually <https://conda.io/docs/user-guide/tasks/manage-environments.html#creating-an-environment-file-manually>`
+and versions required. For syntax help read `create an environment file manually <https://conda.io/docs/user-guide/tasks/manage-environments.html#creating-an-environment-file-manually>`_
 from the conda documentation.
 
 Take a look at the `binder-examples/conda <https://github.com/binder-examples/conda>`_
