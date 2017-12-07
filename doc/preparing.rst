@@ -8,8 +8,15 @@ You can do this by making sure your repo contains:
 * A collection of Jupyter Notebooks. These notebooks will be made available to
   users of your Binder.
 * One (or many) text files that specify the requirements of your code. For
-  example, a ``requirements.txt`` or ``environment.yml`` file. See the
-  below examples for a list of supported files and environments.
+  example, a ``requirements.txt`` or ``environment.yml`` file.
+
+.. tip::
+
+   For a complete guide to configuring your repository for Binder with text
+   files, see the `repo2docker configuration guide
+   <http://repo2docker.readthedocs.io/en/latest/usage.html#preparing-your-repository>`_.
+   For a list of sample repositories for use with Binder, see the
+   `Sample Binder Repositories <sample_repos.html>`_ page.
 
 Verify, and add if needed, the files specified above to the repository.
 Once that's done, navigate to ``mybinder.org`` and insert the URL for
@@ -17,16 +24,25 @@ your git repository. Press ``Launch`` to automatically create your Binder.
 The Binder service will be automatically send you to a live Jupyter session
 connected to this repository.
 
-.. note::
+If a previous version of the repository has already been built, Binder will
+only build a new one if the git hashes don't match. If Binder When Binder
+*doesn't* need to build a repository, the process of connecting to the live
+computational environment is much faster.
 
-   If a previous version of the repository has already been built, Binder will
-   only build a new one if the git hashes don't match. If Binder When Binder
-   *doesn't* need to build a repository, the process of connecting to the live
-   computational environment is much faster.
+Use cases
+---------
 
+Below are some example use-cases and their respective repository
+configuration.
+
+For a full guide on how to configure your repository for
+Binder, see the `repo2docker configuration guide
+<http://repo2docker.readthedocs.io/en/latest/usage.html#preparing-your-repository>`_.
+For a list of sample repositories for use with Binder, see the
+`Sample Binder Repositories <sample_repos.html>`_ page.
 
 Simple Python dependencies
---------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Many repositories already contain a ``requirements.txt`` specifying the
 dependencies of that repository. For 'simple to install' dependencies, a
@@ -39,11 +55,10 @@ packages you really need to successfully build the repository.
 Take a look at the `binder-examples/requirements <https://github.com/binder-examples/requirements>`_
 repository to see an example.
 
-
 Using conda packages
---------------------
+~~~~~~~~~~~~~~~~~~~~
 
-For 'complex to install' packages, like ``numpy`` or ``scikit-learn``, we
+For 'complex to install' packages, like ``geopandas``, we
 recommend using the `conda package manager <https://conda.io/docs/index.html>`_.
 To specify your dependencies create an ``environment.yml`` listing the packages
 and versions required. For syntax help read `create an environment file manually <https://conda.io/docs/user-guide/tasks/manage-environments.html#creating-an-environment-file-manually>`_
@@ -59,9 +74,8 @@ repository to see an example.
    a ``requirements.txt`` and an ``environment.yml`` in the same repository.
    See `binder-examples/python-conda_pip <https://github.com/binder-examples/python-conda_pip>`_.
 
-
 Using Python2
--------------
+~~~~~~~~~~~~~
 
 To use python 2.7 for your repository create a ``runtime.txt`` with
 ``python-2.7`` as only content. This will install a python2 environment in
@@ -83,9 +97,8 @@ repository to see an example.
    include a file called ``requirements3.txt``. The packages inside it will be
    installed into the python3 environment.
 
-
 Executing post-build commands
------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You might need to run arbitrary commands at the end of the build process. Place
 these in the ``postBuild`` file and make it executable. One use case is having

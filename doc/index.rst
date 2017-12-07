@@ -17,16 +17,38 @@ administering a BinderHub deployment.
 See the `Binder Examples <https://github.com/binder-examples>`_ GitHub
 organization for sample Binder repositories demonstrating its functionality.
 
-Site contents
--------------
+Using Binder
+------------
+
+The following sections cover the basics of how to use a Binder service.
 
 .. toctree::
    :maxdepth: 2
 
    introduction
    preparing
+
+Sample repositories
+-------------------
+
+The following is a list of sample repositories showing off various things
+you can do with Binder.
+
+.. toctree::
+   :maxdepth: 2
+
+   sample_repos
+
+Advanced
+--------
+
+These sections cover more advanced topics in the Binder ecosystem, as well
+as resources for more information.
+
+.. toctree::
+   :maxdepth: 2
+
    dockerfile
    reproducibility
-   sample_repos
    faq
    more-info

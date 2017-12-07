@@ -38,8 +38,8 @@ Yes! Though note that it has relatively :ref:`limited computational resources
 How can ``mybinder.org`` be free?
 ---------------------------------
 
-The Binder project has a grant from the Moore Foundation to sustain the
-cloud resources running ``mybinder.org``. In the future we hope to see more
+The Binder project has a `grant from the Moore Foundation <https://figshare.com/s/e9d0ad7bdc4e405cccfa>`_
+to sustain the cloud resources running ``mybinder.org``. In the future we hope to see more
 public BinderHub services running that can form a collection of community
 resources for interactive cloud computing.
 
