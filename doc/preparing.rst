@@ -1,14 +1,24 @@
+.. _using-binder:
+
+Using Binder
+============
+
+This page describes how to use Binder to create interactive, sharable
+repositories. It includes how to prepare your repository to be binder-ready,
+as well as how to build and launch that repository with Binder.
+
 .. _preparing_repositories:
 
 Preparing a repository for Binder
-=================================
+---------------------------------
 
-You can do this by making sure your repo contains:
+All of the code in a repository is available to users,
+your Binder repository should contain at least:
 
-* A collection of Jupyter Notebooks. These notebooks will be made available to
-  users of your Binder.
-* One (or many) text files that specify the requirements of your code. For
-  example, a ``requirements.txt`` or ``environment.yml`` file.
+* The code you want users to run. This might be a collection of Jupyter
+  notebooks or scripts.
+* One (or many) text files that specify the requirements of your code.
+  For a complete list, see :ref:`config-files`.
 
 .. tip::
 
@@ -18,10 +28,15 @@ You can do this by making sure your repo contains:
    For a list of sample repositories for use with Binder, see the
    `Sample Binder Repositories <sample_repos.html>`_ page.
 
-Verify, and add if needed, the files specified above to the repository.
-Once that's done, navigate to ``mybinder.org`` and insert the URL for
-your git repository. Press ``Launch`` to automatically create your Binder.
-The Binder service will be automatically send you to a live Jupyter session
+.. include:: config_files.txt
+
+Launching your Binder
+---------------------
+
+Once you have prepared your repository per the instructions above,
+it is time to build and launch your binder-ready repo. Navigate to ``mybinder.org``
+and insert the URL for your git repository. Press ``Launch`` to automatically create your Binder.
+The Binder service will automatically send you to a live Jupyter session
 connected to this repository.
 
 If a previous version of the repository has already been built, Binder will
