@@ -26,7 +26,7 @@ The following sections cover the basics of how to use a Binder service.
    :maxdepth: 2
 
    introduction
-   preparing
+   using
 
 Sample repositories
 -------------------
