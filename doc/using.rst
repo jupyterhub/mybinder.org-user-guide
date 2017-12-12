@@ -22,9 +22,6 @@ your Binder repository should contain at least:
 
 .. tip::
 
-   For a complete guide to configuring your repository for Binder with text
-   files, see the `repo2docker configuration guide
-   <http://repo2docker.readthedocs.io/en/latest/usage.html#preparing-your-repository>`_.
    For a list of sample repositories for use with Binder, see the
    `Sample Binder Repositories <sample_repos.html>`_ page.
 
