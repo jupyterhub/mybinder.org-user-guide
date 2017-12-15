@@ -25,15 +25,18 @@ lines = ['# Sample Binder Repositories\n',
          'Below we list several sample Binder repositories that\n'
          'demonstrate how to compose build files in order to create\n'
          'Binders with varying environments.\n\n']
-for ii, repo in enumerate(repos):
+for i_repo, repo in enumerate(repos):
+    print('{}/{}'.format(i_repo+1, len(repos)))
+
     # Base metadata
     link = repo.url.replace('api.github.com/repos', 'github.com')
     name = repo.name
 
     # Grab repo contents
     files = repo.get_dir_contents('.')
-    file_names = [ii.name for ii in files if ii.name not in EXCLUDE_FILES]
-    file_names = ['{}'.format(ii) for ii in file_names]
+    file_names = [this_file.name
+                  for this_file in files if this_file.name not in EXCLUDE_FILES]
+    file_names = ['{}'.format(this_name) for this_name in file_names]
 
     # Parse readme
     readme = repo.get_file_contents('README.md')
@@ -42,21 +45,21 @@ for ii, repo in enumerate(repos):
     readme_text = readme_text.split('\n')
 
     # Correct for header lines
-    for ii, line in enumerate(readme_text):
+    for i_line, line in enumerate(readme_text):
         if line.startswith('#'):
-            readme_text[ii] = '#' + line
+            readme_text[i_line] = '#' + line
         if line.startswith('[![Binder]'):
-            readme_text[ii] = line + ' | [repo link]({})'.format(link)
+            readme_text[i_line] = line + ' | [repo link]({})'.format(link)
 
-    if ii != 0:
+    if i_line != 0:
         lines.append('---------')
 
     # Append to doc file
     lines += readme_text
     lines.append('### Files')
     lines.append('```')
-    for ifile in file_names:
-        lines.append(ifile)
+    for this_file in file_names:
+        lines.append(this_file)
     lines.append('```')
     lines.append('```eval_rst\n|\n\n```')
 
@@ -64,3 +67,5 @@ lines = [ln + '\n' for ln in lines]
 
 with open('sample_repos.md', 'w') as ff:
     ff.writelines(lines)
+
+print('Finished building docs for {} repos.'.format(len(repos)))

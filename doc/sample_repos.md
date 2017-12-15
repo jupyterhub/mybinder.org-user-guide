@@ -201,8 +201,11 @@ RStudio UI instead of a Jupyter Notebook. It also installs
 several packages from the tidyverse, and includes a demo
 script to show off functionality.
 
-To start your RStudio session, click on "new", and at the bottom will
-be `RStudio Session`. Click that and you're ready to go!
+To start your RStudio session, click on "new" in the top right,
+and at the bottom will be `RStudio Session`.
+Click that and your RStudio session will begin momentarily!
+
+See `instructions.ipynb` for more details.
 
 *Special thanks to Ryan Lovett (@ryanlovett) for figuring out
 RStudio support with JupyterHub*
@@ -210,8 +213,9 @@ RStudio support with JupyterHub*
 ### Files
 ```
 Dockerfile
-How to Launch RStudio.ipynb
 index.R
+instructions.ipynb
+rstudio_ui.png
 ```
 ```eval_rst
 |
@@ -231,11 +235,14 @@ If you specify `python-2.7` in `runtime.txt`, then:
 * A python2 environment is created and registered
 * The contents of `requirements.txt` are installed into the python2 environment
 
-Note:
-* Make sure that you save your notebooks with a python 2 kernel activated,
-  as this defines which kernel Binder will use when a notebook is opened.
-* If you *also* wish to install python 3 dependencies, you may do so by including a
-  file called `requirements3.txt`. The packages inside will be installed into the python 3 environment.
+**important:**
+Make sure that you save your notebooks with a python 2 kernel activated,
+as this defines which kernel Binder will use when a notebook is opened.
+
+**note:**
+If you *also* wish to install python 3 dependencies, you may do so
+by including a file called `requirements3.txt`. The packages
+inside will be installed into the python 3 environment.
 
 ### Files
 ```
@@ -281,7 +288,7 @@ requirements.txt
 
 ```
 ---------
-## Using anaconda with pip in the same build
+## Using conda with pip in the same build
 
 [![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/v2/gh/binder-examples/python-conda_pip/master?filepath=index.ipynb) | [repo link](https://github.com/binder-examples/python-conda_pip)
 
@@ -290,10 +297,6 @@ to install your packages. However, you may still want to use `pip`. In
 this case, you should **not** use a `requirements.txt` file, but instead use
 a `- pip` section in `environment.yml`. This repository is an example of how
 to construct your `environment.yml` file to accomplish this.
-
-Access this Binder at the following URL:
-
-http://mybinder.org/v2/gh/binder-examples/python-conda_pip/master?filepath=index.ipynb
 
 ### Files
 ```
@@ -311,8 +314,11 @@ index.ipynb
 
 In a recent release of RISE, there is support for automatically launching
 the RISE plugin when a notebook is opened. This repository demonstrates how
-to accomplish this for Binder. The trick is to add an `autolaunch=true` configuration
-parameter to a notebook's metadata. Then, when the notebook is launched, your
+to accomplish this for Binder.
+
+To do this, add an `autolaunch=true` configuration
+parameter to a notebook's `livereveal` section in the
+metadata. When the notebook is launched, your
 presentation will automatically begin. E.g.:
 
 ```
@@ -322,6 +328,9 @@ presentation will automatically begin. E.g.:
         }
 ...
 ```
+
+See the [RISE Documentation](https://damianavila.github.io/RISE/)
+for more information.
 
 ### Files
 ```
@@ -370,6 +379,47 @@ for use on binder, we don't need to install notebook or anything manually.
 ### Files
 ```
 Dockerfile
+```
+```eval_rst
+|
+
+```
+---------
+## Mixing Python 2 and 3 kernels with `runtime.txt`
+
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/binder-examples/python2_with_3/master) | [repo link](https://github.com/binder-examples/python2_with_3)
+
+Sometimes you want *both* Python 2 and Python 3 (e.g., if you have a mixture of notebooks that use each
+version of the language). This repository demonstrates how to handle these cases with `repo2docker`. You can
+specify a Python 2.7 environment with the `runtime.txt` file. In this case, `repo2docker` will install Python 2
+*alongside* Python 3 (though all commands will default to Python 2). In this case, you can install Python 3 dependencies
+with `requirements3.txt`, while a file called `requirements.txt` alone will install to the Python 2 environment.
+### Files
+```
+index2.ipynb
+index3.ipynb
+requirements.txt
+requirements3.txt
+runtime.txt
+```
+```eval_rst
+|
+
+```
+---------
+## Installing packages from apt with `apt.txt`
+
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/binder-examples/apt_install/master?filepath=index.ipynb) | [repo link](https://github.com/binder-examples/apt_install)
+
+Sometimes you want packages that exist outside of the language-specific packaging
+ecosystems of Python/R/Julia. `repo2docker` makes it possible to apt-install packages
+from the ubuntu apt repository. This repository demonstrates how to do this by specifying
+names in an `apt.txt` file.
+### Files
+```
+apt.txt
+index.ipynb
+postBuild
 ```
 ```eval_rst
 |

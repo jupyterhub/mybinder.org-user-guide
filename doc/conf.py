@@ -173,7 +173,7 @@ texinfo_documents = [
 # -- Scrips --------------------------===================-----------------
 
 # Grab the latest version of the configuration file examples.
-url_config = "https://raw.githubusercontent.com/choldgraf/repo2docker/update_preparing/docs/source/config_files.txt"
+url_config = "https://raw.githubusercontent.com/jupyter/repo2docker/update_preparing/docs/source/config_files.txt"
 resp = requests.get(url_config)
 with open('./config_files.txt', 'w') as ff:
     ff.write(resp.text)
