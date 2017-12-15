@@ -21,6 +21,15 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
+import requests
+from recommonmark.transform import AutoStructify
+github_doc_root = 'https://github.com/rtfd/recommonmark/tree/master/doc/'
+def setup(app):
+    app.add_config_value('recommonmark_config', {
+            'url_resolver': lambda url: github_doc_root + url,
+            'auto_toc_tree_section': 'Contents',
+            }, True)
+    app.add_transform(AutoStructify)
 
 # -- General configuration ------------------------------------------------
 
@@ -160,3 +169,11 @@ texinfo_documents = [
      author, 'Binder', 'One line description of project.',
      'Miscellaneous'),
 ]
+
+# -- Scrips --------------------------===================-----------------
+
+# Grab the latest version of the configuration file examples.
+url_config = "https://raw.githubusercontent.com/jupyter/repo2docker/update_preparing/docs/source/config_files.txt"
+resp = requests.get(url_config)
+with open('./config_files.txt', 'w') as ff:
+    ff.write(resp.text)
