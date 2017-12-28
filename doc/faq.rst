@@ -63,21 +63,12 @@ that its content can be connected with a BinderHub instance.
 Can I put my configuration files outside the root of my repository?
 -------------------------------------------------------------------
 
-Yes! If you don't want your configuration files inside of your repository
-root (e.g., because you have multiple ``requirements.txt`` files), you can
-also place Binder configuration files in a folder called ``binder`` that is
-in the root of your repository. E.g.::
-
-  myproject/
-  ├── binder
-  │   └── requirements.txt
-  ├── environment.yml
-  ├── myfile.py
-  └── requirements.txt
-
-In this case, only the ``requirments.txt`` file inside ``binder/`` will be
-used to build your environment. All other configuration files outside of the
-``binder/`` folder will be ignored.
+Yes! Configuration files may be placed in the root of your repository or
+in a ``binder/`` folder in the root of your repository (i.e. ``myproject/binder/``).
+If a ``binder/`` folder is used, Binder will only read configuration files
+from that location (i.e. ``myproject/binder/requirements.txt``) and will
+ignore those in the repository's root (``myproject/environment.yml`` and
+``myproject/requirements.txt``).
 
 What can I do if ``mybinder.org`` does not meet my needs?
 ---------------------------------------------------------

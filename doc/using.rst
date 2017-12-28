@@ -17,12 +17,13 @@ your Binder repository should contain at least:
 
 * The code you want users to run. This might be a collection of Jupyter
   notebooks or scripts.
-* One (or many) text files that specify the requirements of your code.
-  For a complete list, see :ref:`config-files`.
-
-Configuration text files should be either in the **root** of your
-repository, or in a folder in the root of the repository that is called
-``binder``. E.g., ``myrepo/binder/requirements.txt``.
+* Configuration files (one or more text files) that specify the requirements
+  for building your project's code. For a complete list of supported files,
+  see :ref:`config-files`. Configuration files may be placed in the root of
+  your repository or in a ``binder/`` folder in the repository's root
+  (i.e. ``myproject/binder/``). If a ``binder/`` folder is used, Binder will
+  only read configuration files from that location and will ignore those in
+  the repository's root.
 
 .. tip::
 
