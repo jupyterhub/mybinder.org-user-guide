@@ -20,6 +20,10 @@ your Binder repository should contain at least:
 * One (or many) text files that specify the requirements of your code.
   For a complete list, see :ref:`config-files`.
 
+Configuration text files should be either in the **root** of your
+repository, or in a folder in the root of the repository that is called
+``binder``. E.g., ``myrepo/binder/requirements.txt``.
+
 .. tip::
 
    For a list of sample repositories for use with Binder, see the
