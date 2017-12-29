@@ -60,6 +60,16 @@ A Binder is a GitHub repository that has been outfitted with the appropriate
 `build files <http://repo2docker.readthedocs.io/en/latest/samples.html>`_ so
 that its content can be connected with a BinderHub instance.
 
+Can I put my configuration files outside the root of my repository?
+-------------------------------------------------------------------
+
+Yes! Configuration files may be placed in the root of your repository or
+in a ``binder/`` folder in the root of your repository (i.e. ``myproject/binder/``).
+If a ``binder/`` folder is used, Binder will only read configuration files
+from that location (i.e. ``myproject/binder/requirements.txt``) and will
+ignore those in the repository's root (``myproject/environment.yml`` and
+``myproject/requirements.txt``).
+
 What can I do if ``mybinder.org`` does not meet my needs?
 ---------------------------------------------------------
 
