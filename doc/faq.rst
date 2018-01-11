@@ -60,6 +60,16 @@ A Binder is a GitHub repository that has been outfitted with the appropriate
 `build files <http://repo2docker.readthedocs.io/en/latest/samples.html>`_ so
 that its content can be connected with a BinderHub instance.
 
+Can I push data from my Binder session back to my repository?
+-------------------------------------------------------------
+
+While it is *technically* possible to push information from a Binder
+session onto a platform like GitHub, we *strongly discourage* it. We
+cannot guarantee the security of data moving through ``mybinder.org``,
+and your password or any sensitive data may be compromised. You
+shouldn't do anything on ``mybinder.org`` that you wouldn't mind sharing
+with the world!
+
 Can I put my configuration files outside the root of my repository?
 -------------------------------------------------------------------
 
