@@ -27,6 +27,7 @@ The following sections cover the basics of how to use a Binder service.
 
    introduction
    using
+   user-guidelines
 
 Sample repositories
 -------------------
