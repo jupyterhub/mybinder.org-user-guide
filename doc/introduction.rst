@@ -1,6 +1,12 @@
 Welcome to the Binder documentation
 ===================================
 
+For a quick introduction to Binder, and a demonstration of how you can
+make a Binder-ready repository, click the Binder link below:
+
+.. image:: https://mybinder.org/badge.svg
+   :target: https://mybinder.org/v2/gh/binder-examples/zero-to-binder/master?filepath=intro-to-binder.ipynb
+
 What can I do with Binder?
 --------------------------
 
