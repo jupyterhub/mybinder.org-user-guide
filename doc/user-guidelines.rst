@@ -28,8 +28,18 @@ If you are temporarily banned, contact us on the
 `Open an Issue <https://github.com/jupyterhub/mybinder.org-deploy/issues>`_ to discuss
 how to un-ban the repository.
 
+Maximum Concurrent Users for a Repository
+-----------------------------------------
+
+We don't want a single repository to dominate all of the traffic to Binder, so
+we've set a maximum limit of concurrent user sessions that point to the same
+Binder link. **The max number of simultaneous users for a given repo is 100**.
+If you think you have a *really* good reason for why this number should be
+higher, please `Open an Issue <https://github.com/jupyterhub/mybinder.org-deploy/issues>`_
+to discuss with the community!
+
 Reporting Abuse
 ---------------
 
 If you'd like to report any abuse of the ``mybinder.org`` service, please
-`click here to send an abuse report <mailto:binder-team@googlegroups.com?subject=[ABUSE]<your-message-here>`_. 
+`click here to send an abuse report <mailto:binder-team@googlegroups.com?subject=[ABUSE]<your-message-here>`_.
