@@ -90,6 +90,46 @@ from that location (i.e. ``myproject/binder/requirements.txt``) and will
 ignore those in the repository's root (``myproject/environment.yml`` and
 ``myproject/requirements.txt``).
 
+What factors influence how long it takes a Binder session to start?
+-------------------------------------------------------------------
+
+Understanding why some operations take longer than others requires a very
+brief overview of the pieces of machinery at play with BinderHub. There two
+things worth mentioning:
+
+* A *user pod* is the virtual machine that runs a users' code.
+* A *node* is the machine, running in the cloud, where a bunch of pods live.
+  There are many nodes for a Binder server, depending on the number of people
+  using the service.
+* A *registry* is a service in the cloud where Docker images are stored. BinderHub
+  has the ability to push / pull from this registry, which it uses to
+  manage Binder environment images.
+
+With that being said, there are three primary things that need to happen any
+time someone clicks a Binder link.
+
+1. A Docker image for the link must exist in Binder's image registry. If an image
+   for the current ``ref`` of the repository *doesn't* exist, one will be built
+   and registered automatically using ``repo2docker``. If your
+   configuration files specify a large or complex environment, this will take
+   some time while your image builds.
+2. The Docker image must exist on the node that the user will use. If it does not,
+   then BinderHub will pull the image. If the image is large, this will
+   take some time depending on the server load and image size.
+3. A pod for the user must be created to serve this Docker image. This usually
+   happens in seconds, though may take longer if the server is under a heavy
+   load.
+
+These three things happen in a nested fashion. "3" always happens, "2" only
+happens the *first* time a node is used to serve a particular Docker image, "1"
+only happens the first time someone clicks a Binder link for a repository with
+an updated ``ref``. They take roughly decreasing amounts of time to complete,
+so 1 >> 2 >> 3 in terms of how long each operation takes.
+
+If Binder sessions take a while to start, but you know that your image has
+already been built, there's a good chance you are in step 2, and the server is
+still pulling the image onto the node that you'll be using. Please be patient!
+
 What can I do if ``mybinder.org`` does not meet my needs?
 ---------------------------------------------------------
 
