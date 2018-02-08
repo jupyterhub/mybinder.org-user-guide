@@ -33,7 +33,7 @@ Generating a sharable Binder link
 ---------------------------------
 
 You may share a link that generates a Binder. To generate a link for your
-Binder repository, visit `mybinder.org`_ and type in the ifnormation for your repository.
+Binder repository, visit `mybinder.org`_ and type in the information for your repository.
 You will see your Binder link automatically generated as you fill in the form.
 
 The link structure is::
