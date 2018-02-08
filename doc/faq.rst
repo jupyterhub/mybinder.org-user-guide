@@ -29,14 +29,24 @@ in existence. If you're interested in deploying your own BinderHub for your
 own uses, please see the `BinderHub documentation <BinderHub_>`_
 and don't hesitate to reach out to the `Binder community <https://gitter.im/jupyterhub/binder>`_.
 
-Is ``mybinder.org`` free?
--------------------------
+Is ``mybinder.org`` free to use?
+--------------------------------
 
 Yes! Though note that it has relatively :ref:`limited computational resources
 <user_memory>`.
 
-How can ``mybinder.org`` be free?
----------------------------------
+How much does running ``mybinder.org`` cost?
+--------------------------------------------
+
+Great question! If you're interested in the technical costs of running
+``mybinder.org``, we publish a semi-up-to-date dataset of our costs at the
+`binder-data <https://github.com/jupyterhub/binder-data/tree/master/billing/data/proc>`_
+repository. In addition, you can explore these costs with the binder link below!
+
+.. image:: https://mybinder.org/badge.svg :target: https://mybinder.org/v2/gh/jupyterhub/binder-billing/master?filepath=analyze_data.ipynb
+
+How can ``mybinder.org`` be free to use?
+----------------------------------------
 
 The Binder project has a `grant from the Moore Foundation <https://figshare.com/s/e9d0ad7bdc4e405cccfa>`_
 to sustain the cloud resources running ``mybinder.org``. In the future we hope to see more
