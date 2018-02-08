@@ -91,16 +91,20 @@ things worth mentioning:
 * A *node* is the machine, running in the cloud, where a bunch of pods live.
   There are many nodes for a Binder server, depending on the number of people
   using the service.
+* A *registry* is a service in the cloud where Docker images are stored. BinderHub
+  has the ability to push / pull from this registry, which it uses to
+  manage Binder environment images.
 
 With that being said, there are three primary things that need to happen any
 time someone clicks a Binder link.
 
-1. A Docker image for the link needs to exist in Binder's image registry. This
-   is done automatically any time the ``ref`` for your link is updated. If your
+1. A Docker image for the link must exist in Binder's image registry. If an image
+   for the current ``ref`` of the repository *doesn't* exist, one will be built
+   and registered automatically using ``repo2docker``. If your
    configuration files specify a large or complex environment, this will take
    some time while your image builds.
 2. The Docker image must exist on the node that the user will use. If it does not,
-   then BinderHub will pull the image. If the image is quite large, this will
+   then BinderHub will pull the image. If the image is large, this will
    take some time depending on the server load and image size.
 3. A pod for the user must be created to serve this Docker image. This usually
    happens in seconds, though may take longer if the server is under a heavy
