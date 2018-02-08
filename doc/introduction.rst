@@ -15,19 +15,30 @@ Git repository. Binder uses the BinderHub technology to generate a Docker
 image from this repository. The image will have all the components that you
 specify along with the Jupyter Notebooks inside. You will be able to share a URL
 with users that can immediately begin interacting with this environment via the
-cloud.
+cloud. Binder's goal is to enable as many analytic workflows as possible.
+
+For example, Binder currently supports:
+
+* Python, Julia, and R kernels (natively, with other kernels possible via a
+  Dockerfile) (links for `python <https://github.com/binder-examples/conda>`_,
+  `R <https://github.com/binder-examples/r>`_, and `Julia <https://github.com/binder-examples/julia-python>`_)
+* Jupyter Notebooks (`link <https://github.com/binder-examples/python-conda_pip>`_)
+* Jupyter Lab (`link <https://github.com/jupyterlab/jupyterlab-demo>`_)
+* RStudio sessions (`link <https://github.com/binder-examples/r>`_)
+* Interactive presentations with RISE (`link <https://github.com/binder-examples/jupyter-rise>`_)
+
+Among many others workflows!
 
 Generating a sharable Binder link
 ---------------------------------
 
 You may share a link that generates a Binder. To generate a link for your
-Binder repository, type in the URL of the repository in the Binder UI and
-click the small carrot next to the ``Launch`` button. This will open a popup
-where you can display and select the text for your link.
+Binder repository, visit `mybinder.org`_ and type in the ifnormation for your repository.
+You will see your Binder link automatically generated as you fill in the form.
 
 The link structure is::
 
-   https://beta.mybinder.org/v2/gh/<org-name>/<repo-name>/<branch|commit|tag>?filepath=<path/to/notebook.ipynb>
+   https://mybinder.org/v2/<provider-name>/<org-name>/<repo-name>/<branch|commit|tag>?filepath=<path/to/notebook.ipynb>
 
 Share this link with anyone (i.e. colleagues, students) who would like to use
 your Binder.
