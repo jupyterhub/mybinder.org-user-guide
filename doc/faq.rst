@@ -43,7 +43,8 @@ Great question! If you're interested in the technical costs of running
 `binder-data <https://github.com/jupyterhub/binder-data/tree/master/billing/data/proc>`_
 repository. In addition, you can explore these costs with the binder link below!
 
-.. image:: https://mybinder.org/badge.svg :target: https://mybinder.org/v2/gh/jupyterhub/binder-billing/master?filepath=analyze_data.ipynb
+.. image:: https://mybinder.org/badge.svg
+   :target: https://mybinder.org/v2/gh/jupyterhub/binder-billing/master?filepath=analyze_data.ipynb
 
 How can ``mybinder.org`` be free to use?
 ----------------------------------------
