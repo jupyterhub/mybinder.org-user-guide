@@ -52,4 +52,5 @@ as resources for more information.
    dockerfile
    reproducibility
    faq
+   reliability
    more-info
