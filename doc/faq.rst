@@ -64,6 +64,17 @@ deployment will run the linked repository. While running, you are guaranteed
 to have at least 1G of RAM. There is an upper-limit of 4GB (if you use more than
 4GB your kernel will be restarted).
 
+How long will my Binder session last?
+-------------------------------------
+
+Binder is meant for interactive and ephemeral interactive coding, meaning that
+it is ideally suited for relatively short sessions. Binder will automatically
+shut down user sessions that have more than 10 minutes of inactivity (if you
+leave your window open, this will be counted as "activity").
+
+Binder aims to provide at least 12 hours of session time per user session.
+Beyond that, we cannot guarantee that the session will remain running.
+
 What is a Binder?
 -----------------
 
