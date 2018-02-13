@@ -6,13 +6,15 @@ Binder Documentation
    :target: https://gitter.im/jupyterhub/binder?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
 
 **Binder** allows you to create custom computing environments that can be shared
-and used by many remote users. This page provides information for those who
-wish to use a pre-existing Binder deployment (e.g., ``mybinder.org``).
+and used by many remote users. It is powered by `BinderHub <https://github.com/jupyterhub/binderhub>`_,
+which is an open-source tool that deploys the Binder service in the cloud.
+One-such deployment lives here, at `mybinder.org <https://mybinder.org>`_, and is free to use.
 
-If you'd like to create and administer your own Binder deployment, see the
-`BinderHub documentation <http://binderhub.readthedocs.io>`_. The BinderHub
-documentation guides you through creating a cluster, deploying BinderHub, and
-administering a BinderHub deployment.
+This documentation provides information for those who
+wish to use a pre-existing Binder deployment such as `mybinder.org <https://mybinder.org>`_.
+If you'd like documentation on how to create and administer your own BinderHub deployment,
+see the `BinderHub documentation <http://binderhub.readthedocs.io>`_, which
+guides you through deploying your own BinderHub.
 
 See the `Binder Examples <https://github.com/binder-examples>`_ GitHub
 organization for sample Binder repositories demonstrating its functionality.

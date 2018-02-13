@@ -1,5 +1,8 @@
-Welcome to the Binder documentation
-===================================
+Getting started with Binder
+===========================
+
+An interactive introduction to Binder
+-------------------------------------
 
 For a quick introduction to Binder, and a demonstration of how you can
 make a Binder-ready repository, click the Binder link below:
@@ -33,7 +36,7 @@ Generating a sharable Binder link
 ---------------------------------
 
 You may share a link that generates a Binder. To generate a link for your
-Binder repository, visit `mybinder.org`_ and type in the information for your repository.
+Binder repository, visit `mybinder.org <https://mybinder.org>`_ and type in the information for your repository.
 You will see your Binder link automatically generated as you fill in the form.
 
 The link structure is::
