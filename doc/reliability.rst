@@ -7,12 +7,14 @@ updates, building/launching statistics, and reliability metrics.
 Site Reliability Goals
 ----------------------
 
-``mybinder.org`` is a free service running on open-source software. It should
-be treated as "beta" technology. As such, the Binder team chooses reliability
-goals that are generally less than the gold-standard in industry.
+As ``mybinder.org`` is a research pilot project, the main goal for the project
+is to understand usage patterns and workloads for future project evolution.
+While we strive for site reliability and availability, we want our users to
+understand the intent of this service is research and we offer no guarantees
+of its performance in mission critical uses.
 
 We are still working on defining what the exact goals for uptime and reliability
-should be. Currently we shoot for 'best effort'.
+should be.
 
 .. note::
 
