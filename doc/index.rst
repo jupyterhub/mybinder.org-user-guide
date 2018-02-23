@@ -19,6 +19,12 @@ guides you through deploying your own BinderHub.
 See the `Binder Examples <https://github.com/binder-examples>`_ GitHub
 organization for sample Binder repositories demonstrating its functionality.
 
+.. note::
+
+   Binder is a research pilot, whose main goal is to understand usage patterns
+   and workloads for future evolution and development. It is not a service that
+   can be relied on for critical operations.
+
 Using Binder
 ------------
 
@@ -54,4 +60,5 @@ as resources for more information.
    dockerfile
    reproducibility
    faq
+   reliability
    more-info
