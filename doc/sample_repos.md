@@ -3,7 +3,9 @@
 
 Below we list several sample Binder repositories that
 demonstrate how to compose build files in order to create
-Binders with varying environments.
+Binders with varying environments. You can find all of the
+repositories listed on this page at the
+[binder-examples GitHub organization](https://github.com/binder-examples).
 
 
 ---------
@@ -17,7 +19,7 @@ The former corresponds to an anaconda python environment, and the latter corresp
 to a Julia environment. Both kernels will be available to you in a built Binder
 environment.
 
-### Files
+### Files in this repository
 ```
 REQUIRE
 environment.yml
@@ -26,6 +28,7 @@ python-and-julia.ipynb
 python.ipynb
 ```
 ```eval_rst
+|
 |
 
 ```
@@ -55,12 +58,13 @@ specifying explict versions wherever possible.
 In this example we include the library `seaborn`, and our notebook uses it
 to plot a figure. 
 
-### Files
+### Files in this repository
 ```
 index.ipynb
 requirements.txt
 ```
 ```eval_rst
+|
 |
 
 ```
@@ -87,12 +91,13 @@ conda env export > environment.yml
 Note that the only libraries available to you will be the ones specified in
 the `environment.yml`, so be sure to include everything that you need!
 
-### Files
+### Files in this repository
 ```
 environment.yml
 index.ipynb
 ```
 ```eval_rst
+|
 |
 
 ```
@@ -113,12 +118,13 @@ The notebooks use `boto` and `requests` to load both images and tables from S3.
 The image loading makes use of `PIL` and the table loading
 makes use of `pandas`.
 
-### Files
+### Files in this repository
 ```
 index.ipynb
 requirements.txt
 ```
 ```eval_rst
+|
 |
 
 ```
@@ -134,10 +140,10 @@ for Binder. This requires a few different build components:
 * `requirements.txt` for installing the python dependencies
 * `postBuild` for forcing matplotlib to build the font cache
 
-Thanks to @m-weigand for giving
+Thanks to [m-weigand](https://github.com/m-weigand) for giving
 [inspiration for this repo](https://github.com/m-weigand/binder-example-latex-mpl/blob/master/index.ipynb)!
 
-### Files
+### Files in this repository
 ```
 apt.txt
 index.ipynb
@@ -146,78 +152,96 @@ requirements.txt
 ```
 ```eval_rst
 |
+|
 
 ```
 ---------
 ## JupyterLab + Binder
 
-[![Binder](http://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/binder-examples/jupyterlab/master?urlpath=lab) | [repo link](https://github.com/binder-examples/jupyterlab)
+[![Binder](http://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/binder-examples/jupyterlab/master?urlpath=lab/tree/index.ipynb) | [repo link](https://github.com/binder-examples/jupyterlab)
 
-Demonstrate how to use JupyterLab with Binder.
+JupyterLab is packaged with Binder repositories by default. In order to
+run a JupyterLab session, you have two options:
 
-You can enable JupyterLab for a repository in Binder with the following steps:
+### Start JupyterLab after you start your Binder
 
-1. Install the required JupyterLab extensions (see how it is done in this repository)
-2. Configure the "Path to a notebook file" dropdown to "URL" and set the value to `lab`
+Do the following:
+
+1. Launch a Binder instance (e.g., by clicking the Binder badge)
+2. Replace `tree` at the end of your URL with `lab`.
 3. That's it!
 
-### Files
+### Create a Binder link that points to JupyterLab
+
+You can also create a Binder link that points to JupyterLab by adding the following
+to the end of your link:
+
+`?urlpath=lab`
+
+You can point to a specific file using JupterLab by including a file path
+beginning with `tree/` to the end of `urlpath`, like so:
+
+`?urlpath=lab/tree/path/to/my/notebook.ipynb`
+
+For example, the Binder badge above goes to the following URL:
+
+`http://mybinder.org/v2/gh/binder-examples/jupyterlab/master?urlpath=lab/tree/index.ipynb`
+
+Note: this repository also installs several JupyterLab extensions via a `postBuild` script, allowing
+you to use JupyterLab's extensions and widgets functionality.
+
+For a more complete demo of JupyterLab using Binder, see the
+[JupyterLab Demo](https://github.com/jupyterlab/jupyterlab-demo).
+
+### Files in this repository
 ```
+.profile
+.test
+.tmp
 binder
 geojson-extension.geojson
 index.ipynb
 ```
 ```eval_rst
 |
-
-```
----------
-## Specifying an R environment with Binder using a Dockerfile
-
-[![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/v2/gh/binder-examples/dockerfile-r/master?filepath=index.ipynb) | [repo link](https://github.com/binder-examples/dockerfile-r)
-
-While Python and Julia are the only two languages natively supported with
-build files, it's possible to create R Kernels for use with Binder as well.
-
-This repository shows how you can use a Dockerfile to install R and
-connect it with Jupyter. This lets you run R code from within the Jupyter Notebooks.
-
-### Files
-```
-Dockerfile
-index.ipynb
-```
-```eval_rst
 |
 
 ```
 ---------
-## RStudio in Binder using a Dockerfile
+## Specifying an R environment with a runtime.txt file
 
-[![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/v2/gh/binder-examples/dockerfile-rstudio/master) | [repo link](https://github.com/binder-examples/dockerfile-rstudio)
+Jupyter+R: [![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/v2/gh/binder-examples/r/master?filepath=index.ipynb)
 
-This is a proof-of-concept to deploy a Binder that exposes the
-RStudio UI instead of a Jupyter Notebook. It also installs
-several packages from the tidyverse, and includes a demo
-script to show off functionality.
+RStudio: [![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/v2/gh/binder-examples/r/master?urlpath=rstudio)
 
-To start your RStudio session, click on "new" in the top right,
-and at the bottom will be `RStudio Session`.
-Click that and your RStudio session will begin momentarily!
+Binder supports using R + RStudio, with libraries pinned to a specific 
+snapshot on [MRAN](https://mran.microsoft.com/documents/rro/reproducibility).
 
-See `instructions.ipynb` for more details.
+You need to have a `runtime.txt` file that is formatted like:
 
-*Special thanks to Ryan Lovett (@ryanlovett) for figuring out
-RStudio support with JupyterHub*
-
-### Files
 ```
-Dockerfile
-index.R
-instructions.ipynb
-rstudio_ui.png
+r-<YYYY>-<MM>-<DD>
+```
+
+where YYYY-MM-DD is a snapshot at MRAN that will be used for installing
+libraries.
+
+You can also have an `install.R` file that will be executed during build,
+and can be used to install libraries.
+
+Both [RStudio](https://www.rstudio.com/) and [IRKernel](https://irkernel.github.io/)
+are installed by default, so you can use either the Jupyter notebook interface or
+the RStudio interface.
+
+### Files in this repository
+```
+index.Rmd
+index.ipynb
+install.R
+runtime.txt
 ```
 ```eval_rst
+|
 |
 
 ```
@@ -244,13 +268,14 @@ If you *also* wish to install python 3 dependencies, you may do so
 by including a file called `requirements3.txt`. The packages
 inside will be installed into the python 3 environment.
 
-### Files
+### Files in this repository
 ```
 index.ipynb
 requirements.txt
 runtime.txt
 ```
 ```eval_rst
+|
 |
 
 ```
@@ -277,13 +302,14 @@ cells (e.g., python cells) and markdown cells. As this extension automatically
 runs code in the notebook, you need to be sure to "trust" the notebooks in your
 `postBuild` script (see the script in this repo for example).
 
-### Files
+### Files in this repository
 ```
 index.ipynb
 postBuild
 requirements.txt
 ```
 ```eval_rst
+|
 |
 
 ```
@@ -298,12 +324,13 @@ this case, you should **not** use a `requirements.txt` file, but instead use
 a `- pip` section in `environment.yml`. This repository is an example of how
 to construct your `environment.yml` file to accomplish this.
 
-### Files
+### Files in this repository
 ```
 environment.yml
 index.ipynb
 ```
 ```eval_rst
+|
 |
 
 ```
@@ -312,14 +339,17 @@ index.ipynb
 
 [![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/v2/gh/binder-examples/jupyter-rise/master?filepath=index.ipynb) | [repo link](https://github.com/binder-examples/jupyter-rise)
 
-In a recent release of RISE, there is support for automatically launching
-the RISE plugin when a notebook is opened. This repository demonstrates how
-to accomplish this for Binder.
+RISE allows you to quickly generate a live, interactive presentation from a
+Jupyter Notebook that is connected to the underlying Kernel of the notebook.
+Using a new feature for automatically launching
+the RISE plugin when a notebook is opened, RISE can be used to share interactive
+presentations that run in the cloud with Binder.
+This repository demonstrates how to accomplish this.
 
-To do this, add an `autolaunch=true` configuration
+To make your RISE presentation automatically-launch with it is open,
+add an `autolaunch=true` configuration
 parameter to a notebook's `livereveal` section in the
-metadata. When the notebook is launched, your
-presentation will automatically begin. E.g.:
+metadata. E.g.:
 
 ```
 ...
@@ -329,36 +359,44 @@ presentation will automatically begin. E.g.:
 ...
 ```
 
+When the notebook is launched, your
+presentation will automatically begin.
+
 See the [RISE Documentation](https://damianavila.github.io/RISE/)
 for more information.
 
-### Files
+### Files in this repository
 ```
 environment.yml
 index.ipynb
 ```
 ```eval_rst
 |
+|
 
 ```
 ---------
-## Creating webapps with Binder
+## Interactive apps from Jupyter Notebooks
 
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/binder-examples/appmode/master?urlpath=apps%2Findex.ipynb) | [repo link](https://github.com/binder-examples/appmode)
 
-This repository demonstrates how to create webapps with Binder. This is similar to how Shiny apps work in R.
+This repository demonstrates how to create interactive webapps from a Jupyter Notebook.
+This is similar to how Shiny apps work in R.
+
 Using the `appmode` Jupyter plugin, a notebook's code will be run, and then only the markdown cells and
 code outputs will be shown.
 
 You can check out the `appmode` repository here: https://github.com/oschuett/appmode
 
-### Files
+### Files in this repository
 ```
 environment.yml
 index.ipynb
+ipyvolume_demo.ipynb
 postBuild
 ```
 ```eval_rst
+|
 |
 
 ```
@@ -376,11 +414,12 @@ Note that in this case we are using a docker image that already satisfies
 the [criteria](http://mybinder.readthedocs.io/en/latest/dockerfile.html#preparing-your-dockerfile)
 for use on binder, we don't need to install notebook or anything manually.
 
-### Files
+### Files in this repository
 ```
 Dockerfile
 ```
 ```eval_rst
+|
 |
 
 ```
@@ -394,7 +433,7 @@ version of the language). This repository demonstrates how to handle these cases
 specify a Python 2.7 environment with the `runtime.txt` file. In this case, `repo2docker` will install Python 2
 *alongside* Python 3 (though all commands will default to Python 2). In this case, you can install Python 3 dependencies
 with `requirements3.txt`, while a file called `requirements.txt` alone will install to the Python 2 environment.
-### Files
+### Files in this repository
 ```
 index2.ipynb
 index3.ipynb
@@ -404,24 +443,87 @@ runtime.txt
 ```
 ```eval_rst
 |
+|
 
 ```
 ---------
-## Installing packages from apt with `apt.txt`
+## Installing packages from `apt` repositories
 
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/binder-examples/apt_install/master?filepath=index.ipynb) | [repo link](https://github.com/binder-examples/apt_install)
 
 Sometimes you want packages that exist outside of the language-specific packaging
-ecosystems of Python/R/Julia. `repo2docker` makes it possible to apt-install packages
+ecosystems of Python/R/Julia. Binder makes it possible to `apt-install` packages
 from the ubuntu apt repository. This repository demonstrates how to do this by specifying
 names in an `apt.txt` file.
-### Files
+### Files in this repository
 ```
 apt.txt
 index.ipynb
 postBuild
 ```
 ```eval_rst
+|
+|
+
+```
+---------
+## Importing data with Quilt
+
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/binder-examples/data-quilt/master?filepath=index.ipynb) | [repo link](https://github.com/binder-examples/data-quilt)
+
+### Pull data into Binder notebooks
+This example uses [Quilt](http://quiltdata.com) to inject data packages into a Jupyter notebook.
+
+Data packages are versioned, immutable snapshots of data. Data packages may contain data of any size. Here is an example of data package: [uciml/iris](https://quiltdata.com/package/uciml/iris).
+
+### How to specify data dependencies in your own Binder
+
+1. Add `quilt` to `requirements.txt`
+
+2. Specify data package dependencies in `quilt.yml` ([docs](https://docs.quiltdata.com/cli.html)). For example:
+
+```
+packages:
+  - vgauthier/DynamicPopEstimate   # get the latest version
+  - danWebster/sgRNAs:a972d92      # get a specific hash (short hash)
+  - akarve/sales:tag:latest        # get a specific tag
+  - asah/snli:v:1.0                # get a specific version
+```
+
+3. Include the following lines at the top of `postBuild`. (`postBuild` should be executable: `chmod +x postBuild` on UNIX, `git update-index --chmod=+x postBuild` for Windows).
+
+``` bash
+##!/bin/bash
+quilt install
+```
+    
+Now you can access the package data in your Jupyter notebooks:
+
+```
+In [1]: from quilt.data.akarve import sales
+In [2]: sales.transactions()
+Out[2]: 
+      Row ID  Order ID Order Date Order Priority  Order Quantity       Sales  \
+0          1         3 2010-10-13            Low               6    261.5400   
+1         49       293 2012-10-01           High              49  10123.0200   
+2         50       293 2012-10-01           High              27    244.5700   
+...
+```
+    
+### Developer
+
+* [Quilt repository](https://github.com/quiltdata/quilt)
+* [Quilt docs](https://docs.quiltdata.com)
+
+### Files in this repository
+```
+index.ipynb
+postBuild
+quilt.yml
+requirements.txt
+```
+```eval_rst
+|
 |
 
 ```
