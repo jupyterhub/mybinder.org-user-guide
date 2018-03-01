@@ -42,7 +42,7 @@ The Binder service will automatically send you to a live Jupyter session
 connected to this repository.
 
 If a previous version of the repository has already been built, Binder will
-only build a new one if the git hashes don't match. If Binder When Binder
+only build a new one if the git hashes don't match. When Binder
 *doesn't* need to build a repository, the process of connecting to the live
 computational environment is much faster.
 
