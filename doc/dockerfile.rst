@@ -155,6 +155,16 @@ For a Dockerfile to work on Binder, it must meet the following requirements:
    This chown is required because Docker will be default
    set the owner to ``root``, which would prevent users from editing files.
 
+5. It must specify a default command.
+
+   This is the command that is executed on startup.
+
+   .. code-block:: Dockerfile
+
+       # Specify the default command to run
+       CMD ["jupyter", "notebook", "--ip", "0.0.0.0"]
+
+
 Ensuring reproducibility with Dockerfiles
 -----------------------------------------
 
