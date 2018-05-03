@@ -1,6 +1,15 @@
 Frequently Asked Questions
 ==========================
 
+What is a Binder?
+-----------------
+
+A Binder is a Git repository that has been outfitted with the appropriate
+`build files <http://repo2docker.readthedocs.io/en/latest/samples.html>`_ so
+that its content can be connected with a BinderHub instance. Currently these
+repositories mostly live on `GitHub <https://github.com>`_, though we plan
+on supporting more online repositories such as GitLab or BitBucket.
+
 What is the Binder community?
 -----------------------------
 
@@ -75,12 +84,22 @@ leave your window open, this will be counted as "activity").
 Binder aims to provide at least 12 hours of session time per user session.
 Beyond that, we cannot guarantee that the session will remain running.
 
-What is a Binder?
------------------
+How does mybinder.org ensure user privacy?
+------------------------------------------
 
-A Binder is a GitHub repository that has been outfitted with the appropriate
-`build files <http://repo2docker.readthedocs.io/en/latest/samples.html>`_ so
-that its content can be connected with a BinderHub instance.
+We take user privacy very seriously! Because Binder runs as a public,
+free service, we don't require any kind of log-in that would let us
+keep track of user data. All code that is run, data analyzed, papers
+reproduced, classes taught - in short, everything that happens in a
+Binder session - is destroyed when the user logs off or becomes inactive
+for more than a few minutes.
+
+Here are the pieces of information we do keep: We run google analytics
+with anonymized IPs and no cookies, which gives us just enough information
+to know how Binder is being used, and but won't be able to identify users.
+We also retain logs of IP addresses for 30 days, which is used solely in
+the case of detecting abuse of the service. If you have suggestions for
+how we can ensure the privacy of our data and users, we'd love to hear it!
 
 Can I push data from my Binder session back to my repository?
 -------------------------------------------------------------
