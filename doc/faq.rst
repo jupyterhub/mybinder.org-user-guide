@@ -101,6 +101,33 @@ We also retain logs of IP addresses for 30 days, which is used solely in
 the case of detecting abuse of the service. If you have suggestions for
 how we can ensure the privacy of our data and users, we'd love to hear it!
 
+How secure is mybinder.org?
+---------------------------
+
+The Binder team has put in a lot of work to ensure that the mybinder.org
+service runs as secure as possible. However, it is a free, public service
+that is open to the world, and **you should never share sensitive or personal
+information within a Binder repository**. This includes passwords, data that
+shouldn't be public, API keys, etc.
+
+You should ensure that sensitive information doesn't make it into the built
+docker image for your Binder (aka, that it isn't used in one of your
+configuration files) and that you don't use this information from within
+a Binder session (e.g. hard-coding an API key into an HTTP request that you
+call from a Jupyter Notebook).
+
+If you require private information within your
+Binder instance, consider `deploying a BinderHub for your group <https://binderhub.readthedocs.io/en/latest/>`_.
+
+Where can I report a security issue?
+------------------------------------
+
+If you find a security vulnerability in with ``mybinder.org``, please report
+it to `security@ipython.org <security@ipython.org>`_.
+
+If you prefer to encrypt your security reports, you can use `this PGP public key
+<https://jupyter-notebook.readthedocs.io/en/stable/_downloads/ipython_security.asc>`_.
+
 Can I push data from my Binder session back to my repository?
 -------------------------------------------------------------
 
