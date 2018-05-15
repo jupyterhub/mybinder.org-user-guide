@@ -62,3 +62,15 @@ as resources for more information.
    faq
    reliability
    more-info
+
+Binder in the wild
+------------------
+
+This is a list of private or public `Binder <http://binderhub.readthedocs.io>`_
+instances. If you would like to list yours here `open an issue <https://github.com/jupyterhub/binder/issues/new>`
+and let us know.
+
+A list like this helps the project prioritize work based on actual usage patterns
+and gives us (and our funders) concrete evidence of adoption.
+
+* Be the first one! `Open an issue <https://github.com/jupyterhub/binder/issues/new>`.
