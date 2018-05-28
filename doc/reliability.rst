@@ -33,10 +33,4 @@ the ``mybinder.org`` deployment at `grafana.mybinder.org <https://grafana.mybind
 
 .. raw:: html
 
-   <iframe src="https://grafana.mybinder.org/dashboard-solo/db/service-level-objectives?orgId=1&panelId=1&from=1517940977444&to=1518545777444&theme=light" style="width: 100%; height: 200px" frameborder="0"></iframe>
-   <br />
-   <br />
-
-.. raw:: html
-
-   <iframe src="https://grafana.mybinder.org/dashboard-solo/db/service-level-objectives?orgId=1&panelId=2&from=1517940892627&to=1518545692627&theme=light" style="width: 100%; height: 200px" frameborder="0"></iframe>
+   <iframe src="https://grafana.mybinder.org/d/3SpLQinmk/1-overview?refresh=5m&orgId=1&panelId=16&fullscreen&from=1526706669051&to=1526749869051&theme=light" style="width: 100%; height: 200px" frameborder="0"></iframe>
