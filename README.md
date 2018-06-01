@@ -1,7 +1,6 @@
 # binder
 
-This repository is the metapackage for [binder](https://mybinder.org)
-usage, docs, and chat.
+This repository contains the documentation and usage instructions for the mybinder.org service.
 
 ## Communication
 
