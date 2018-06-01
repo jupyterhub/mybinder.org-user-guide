@@ -7,7 +7,7 @@ Help us stay on top of issues by submitting them to the right repository.  This 
 
 For issues related to:
 * ... mybinder.org site downtime or inaccessible pages visit: https://github.com/jupyterhub/mybinder.org-deploy/issues/new
-* ... binder software visit: https://github.com/jupyterhub/binderhub/issues/new
+* ... hosting your own Binder service visit: https://github.com/jupyterhub/binderhub/issues/new
 
 Thanks!
 -->
