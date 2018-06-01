@@ -1,19 +1,23 @@
 # binder
 
+This repository is the metapackage for [binder](https://mybinder.org)
+usage, docs, and chat.
+
+## Communication
+
 [![Join the chat at https://gitter.im/jupyterhub/binder](https://badges.gitter.im/jupyterhub/binder.svg)](https://gitter.im/jupyterhub/binder?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+## Related Repositories
 
-**For the main binder repository, visit [binderhub](https://github.com/jupyterhub/binderhub)**
+**For BinderHub, the open-source technology that runs Binder, please visit [jupyterhub/binderhub](https://github.com/jupyterhub/binderhub)**
 
-This repository is the metapackage for [binder](https://mybinder.org) usage, docs, and chat.
+ For deployment of the website [mybinder.org](https://mybinder.org), please
+ visit [mybinder.org-deploy](https://github.com/jupyterhub/mybinder.org-deploy).  
 
- Major binder development happens on [binderhub](https://github.com/jupyterhub/binderhub).  The majority of issues related to binder at this repo.  Please refer to BinderHub for further details on the binder project.
+BinderHub uses Helm to configure and manage deployment
+of the Binder service. For details about this deployment, please visit [helm-chart](https://github.com/jupyterhub/helm-chart).  
 
-## Additional repos
-
- For deployment of the website [mybinder.org](https://mybinder.org), visit [mybinder.org-deploy](https://github.com/jupyterhub/mybinder.org-deploy).  Helm charts are at [helm-chart](https://github.com/jupyterhub/helm-chart).  
-
- Binder is maintained by the [JupyterHub team](https://github.com/jupyterhub/team-compass#jupyterhub-team).  Administration is managed at [team compass](https://github.com/jupyterhub/team-compass).
+ Binder is maintained by the [Binder team](https://github.com/jupyterhub/team-compass#binder-team).  Administration is managed at [team compass](https://github.com/jupyterhub/team-compass).
 
 
 The JupyterHub team also maintains analysis of binder data including [billing data](https://github.com/jupyterhub/binder-billing) and [activity data](https://github.com/jupyterhub/binder-data).
