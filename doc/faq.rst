@@ -69,10 +69,10 @@ How much memory am I given when using Binder?
 ---------------------------------------------
 
 If you or another Binder user clicks on a Binder link, the ``mybinder.org``
-deployment will run the linked repository. While running, you have
-a maximum of 2G of RAM. (if you use more than
-this amount, your kernel will be restarted). We only guarantee 1G to each user,
-so when it is busy you might not be able to use more than 1G.
+deployment will run the linked repository. While running, users are guaranteed
+*at least* 1GB of RAM, with a *maximum* of 2GB. This means you will always have
+1GB, you may occasionally have between 1 and 2GB, and if you go over 2GB your kernel
+will be restarted.
 
 How long will my Binder session last?
 -------------------------------------
@@ -90,11 +90,10 @@ Can I use mybinder.org for a live demo or workshop?
 
 For sure! We hope the demo gods are with you. Please do make sure you have a
 backup plan in case there is a problem with mybinder.org during your workshop
-or demo. It can happen that the service is degraded for an hour or two. Either
-because mybinder.org is getting a lot of attention from somewhere on the
-internet, because we are deploying new versions of software or because none
-of the team members are around to respond to an outage.
-
+or demo. Occasionally, service on ``mybinder.org`` can be degraded, usually because
+the server is getting a lot of attention somewhere on the
+internet, because we are deploying new versions of software, or the team
+can't quickly respond to an outage.
 
 How does mybinder.org ensure user privacy?
 ------------------------------------------
