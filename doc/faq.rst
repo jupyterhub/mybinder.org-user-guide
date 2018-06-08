@@ -69,9 +69,9 @@ How much memory am I given when using Binder?
 ---------------------------------------------
 
 If you or another Binder user clicks on a Binder link, the ``mybinder.org``
-deployment will run the linked repository. While running, you are guaranteed
-to have at least 1G of RAM. There is an upper-limit of 4GB (if you use more than
-4GB your kernel will be restarted).
+deployment will run the linked repository. While running, you have
+a maximum of 1G of RAM. (if you use more than
+this amount, your kernel will be restarted).
 
 How long will my Binder session last?
 -------------------------------------
