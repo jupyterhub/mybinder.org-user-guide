@@ -199,6 +199,23 @@ If Binder sessions take a while to start, but you know that your image has
 already been built, there's a good chance you are in step 2, and the server is
 still pulling the image onto the node that you'll be using. Please be patient!
 
+Will repos with fewer notebooks launch faster? Should I split my notebooks into smaller repos?
+----------------------------------------------------------------------------------------------
+
+Number of notebooks in a repo shouldn't have any impact on binder launch time,
+assuming a docker image for that repo is already built. It is worth noting, however,
+that there is a limit to the number of instances of a repository that can be active
+at any moment in time.
+
+Will repos that are launched often get prioritized and launch faster?
+---------------------------------------------------------------------
+
+There isn't any intentional prioritization for repos that are launched frequently,
+however, in practice the repos that launch more often will tend to launch faster.
+This is because if a user pod is put on a node that doesn't already have the Docker
+image for that repo, then it'll have to do a Docker pull first, which takes time. If
+a repo is launched a lot, then most likely it will already be on a given node.
+
 What can I do if ``mybinder.org`` does not meet my needs?
 ---------------------------------------------------------
 
