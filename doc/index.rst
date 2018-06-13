@@ -60,5 +60,6 @@ as resources for more information.
    dockerfile
    reproducibility
    faq
+   status
    reliability
    more-info
