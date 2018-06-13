@@ -6,6 +6,12 @@ status of the `mybinder.org <https://mybinder.org>`_ service. You can find
 a more complete set of graphs the reflect the current state of ``mybinder.org``
 at `grafana.mybinder.org <https://grafana.mybinder.org>`_.
 
+.. note::
+
+   **If you notice an outage** or strong degradation of service at
+   `mybinder.org <https://mybinder.org>`_, please reach out to
+   the Binder team at the `Binder gitter channel <https://gitter.im/jupyterhub/binder>`_!
+
 Running Binder sessions
 -----------------------
 
