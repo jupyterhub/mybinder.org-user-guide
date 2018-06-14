@@ -19,7 +19,7 @@ The total number of user sessions running on Binder.
 
 .. raw:: html
 
-   <iframe src="https://grafana.mybinder.org/d-solo/fLoQvRHmk/status?panelId=6&orgId=1&tab=general&from=1528923497101&to=1528927097101&theme=light" width="500" height="200" frameborder="0"></iframe>
+   <iframe src="https://grafana.mybinder.org/d-solo/fLoQvRHmk/status?panelId=6&orgId=1&tab=general&theme=light" width="500" height="200" frameborder="0"></iframe>
 
 Binder launch success
 ---------------------
@@ -30,7 +30,7 @@ a dip that sustains itself over time, please alert the Binder team at the
 
 .. raw:: html
 
-   <iframe src="https://grafana.mybinder.org/d-solo/fLoQvRHmk/status?panelId=2&orgId=1&tab=general&from=1528923318404&to=1528926918404&theme=light" width="500" height="200" frameborder="0"></iframe>
+   <iframe src="https://grafana.mybinder.org/d-solo/fLoQvRHmk/status?panelId=2&orgId=1&tab=general&theme=light" width="500" height="200" frameborder="0"></iframe>
 
 Launch time percentiles
 -----------------------
@@ -41,4 +41,4 @@ time takes much longer.
 
 .. raw:: html
 
-   <iframe src="https://grafana.mybinder.org/d-solo/fLoQvRHmk/status?panelId=4&orgId=1&tab=general&from=1528923397583&to=1528926997583&theme=light" width="500" height="200" frameborder="0"></iframe>
+   <iframe src="https://grafana.mybinder.org/d-solo/fLoQvRHmk/status?panelId=4&orgId=1&tab=general&theme=light" width="500" height="200" frameborder="0"></iframe>
