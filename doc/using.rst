@@ -1,5 +1,6 @@
 .. _using-binder:
 
+============
 Using Binder
 ============
 
@@ -10,7 +11,7 @@ as well as how to build and launch that repository with Binder.
 .. _preparing_repositories:
 
 Preparing a repository for Binder
----------------------------------
+=================================
 
 All of the code in a repository is available to users,
 your Binder repository should contain at least:
@@ -30,10 +31,8 @@ your Binder repository should contain at least:
    For a list of sample repositories for use with Binder, see the
    `Sample Binder Repositories <sample_repos.html>`_ page.
 
-.. include:: config_files.txt
-
 Launching your Binder
----------------------
+=====================
 
 Once you have prepared your repository per the instructions above,
 it is time to build and launch your binder-ready repo. Navigate to ``mybinder.org``
@@ -47,7 +46,7 @@ only build a new one if the git hashes don't match. When Binder
 computational environment is much faster.
 
 Use cases
----------
+=========
 
 Below are some example use-cases and their respective repository
 configuration.
@@ -59,7 +58,7 @@ For a list of sample repositories for use with Binder, see the
 `Sample Binder Repositories <sample_repos.html>`_ page.
 
 Simple Python dependencies
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------
 
 Many repositories already contain a ``requirements.txt`` specifying the
 dependencies of that repository. For 'simple to install' dependencies, a
@@ -73,7 +72,7 @@ Take a look at the `binder-examples/requirements <https://github.com/binder-exam
 repository to see an example.
 
 Using conda packages
-~~~~~~~~~~~~~~~~~~~~
+--------------------
 
 For 'complex to install' packages, like ``geopandas``, we
 recommend using the `conda package manager <https://conda.io/docs/index.html>`_.
@@ -91,8 +90,8 @@ repository to see an example.
    a ``requirements.txt`` and an ``environment.yml`` in the same repository.
    See `binder-examples/python-conda_pip <https://github.com/binder-examples/python-conda_pip>`_.
 
-Using Python2
-~~~~~~~~~~~~~
+Using Python 2
+--------------
 
 To use python 2.7 for your repository create a ``runtime.txt`` with
 ``python-2.7`` as only content. This will install a python2 environment in
@@ -115,7 +114,7 @@ repository to see an example.
    installed into the python3 environment.
 
 Executing post-build commands
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------------
 
 You might need to run arbitrary commands at the end of the build process. Place
 these in the ``postBuild`` file and make it executable. One use case is having

@@ -1,0 +1,12 @@
+div.body p.caption {
+    font-size: 1.2em;
+}
+
+div.sphinxsidebarwrapper p.caption {
+    font-size: 1.4em;
+}
+
+div.sphinxsidebarwrapper ul {
+    font-size: .8em;
+    padding-left: 1em;
+}

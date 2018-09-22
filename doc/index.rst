@@ -1,3 +1,4 @@
+====================
 Binder Documentation
 ====================
 
@@ -11,7 +12,7 @@ which is an open-source tool that deploys the Binder service in the cloud.
 One-such deployment lives here, at `mybinder.org <https://mybinder.org>`_, and is free to use.
 
 This documentation provides information for those who
-wish to use a pre-existing Binder deployment such as `mybinder.org <https://mybinder.org>`_.
+wish to use a pre-existing BinderHub deployment such as `mybinder.org <https://mybinder.org>`_.
 If you'd like documentation on how to create and administer your own BinderHub deployment,
 see the `BinderHub documentation <http://binderhub.readthedocs.io>`_, which
 guides you through deploying your own BinderHub.
@@ -26,39 +27,57 @@ organization for sample Binder repositories demonstrating its functionality.
    can be relied on for critical operations.
 
 Using Binder
-------------
+============
 
 The following sections cover the basics of how to use a Binder service.
 
 .. toctree::
+   :caption: Getting started with Binder
    :maxdepth: 2
 
    introduction
    using
-   user-guidelines
 
-Sample repositories
--------------------
+.. toctree::
+   :caption: How to...
+   :maxdepth: 1
+
+   howto/languages
+   howto/user_interface
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Tutorials and in-depth guides
+
+   tutorials/reproducibility
+   tutorials/dockerfile
+
+
+Sample repositories and configuration
+=====================================
 
 The following is a list of sample repositories showing off various things
 you can do with Binder.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
+   :caption: Sample repositories and configuration
 
    sample_repos
+   config_files
 
-Advanced
---------
 
-These sections cover more advanced topics in the Binder ecosystem, as well
+Advanced usage
+==============
+
+These pages cover more advanced topics in the Binder ecosystem, as well
 as resources for more information.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
-   dockerfile
-   reproducibility
+   user-guidelines
    faq
    status
    reliability
