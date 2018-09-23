@@ -7,29 +7,25 @@ jobs:
       # Get our data and merge with upstream
       - run: sudo apt-get update
       - checkout
-      - run: echo $(git log -1 --pretty=%B) | tee gitlog.txt
-      - run: echo ${CI_PULL_REQUEST//*pull\//} | tee merge.txt
-      - run:
-         command: |
-           if [[ $(cat merge.txt) != "" ]] && [[ $(cat gitlog.txt) != *"[circle nomerge]"*  ]]; then
-             echo "Merging $(cat merge.txt)";
-             git pull --ff-only origin "refs/pull/$(cat merge.txt)/merge";
-           fi
       # Python env
       - run: echo "export PATH=~/.local/bin:$PATH" >> $BASH_ENV
-      - run: echo "export DISPLAY=:99" >> $BASH_ENV
-      - run: /sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_99.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :99 -screen 0 1400x900x24 -ac +extension GLX +render -noreset;
 
       - restore_cache:
           keys:
             - cache-pip
-      - run: pip install --user sphinx_rtd_theme sphinx pytest memory_profiler
+      - run: pip install --user sphinx_rtd_theme sphinx pytest memory_profiler recommonmark sphinx_copybutton
       - save_cache:
           key: cache-pip
           paths:
             - ~/.cache/pip
 
-      - run: python setup.py build_sphinx
+      # Build the docs
+      - run:
+          name: Build docs to store
+          command: |
+            cd doc
+            make html
+
       - store_artifacts:
           path: doc/_build/html/
           destination: html
