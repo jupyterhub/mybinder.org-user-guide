@@ -102,6 +102,36 @@ index.ipynb
 
 ```
 ---------
+## Python packages with setup.py
+
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/binder-examples/setup.py/master?filepath=example_notebook%2Fimport_mypackage.ipynb)
+
+A Binder-compatible repo with a python package and a `setup.py` file.
+
+Access this binder at the following URL:
+
+https://mybinder.org/v2/gh/binder-examples/setup.py/master?filepath=example_notebook%2Fimport_mypackage.ipynb
+
+### Notes
+This repository demonstrates how to install a python package with setup.py 
+
+### Files in this repository
+```
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+mypackage/__init__.py
+mypackage/__version__.py
+mypackage/core.py
+example_notebook/import_mypackage.ipynb
+
+```
+```eval_rst
+|
+|
+```
+---------
 ## Remote Storage with Binder
 
 [![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/v2/gh/binder-examples/remote_storage/master) | [repo link](https://github.com/binder-examples/remote_storage)
