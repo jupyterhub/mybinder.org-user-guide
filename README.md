@@ -1,4 +1,5 @@
 # binder
+[![Documentation Status](https://readthedocs.org/projects/pip/badge/?version=stable)](https://binder.readthedocs.io/en/latest/user-manual/index.html)
 
 This repository contains the documentation and usage instructions for the mybinder.org service.
 
