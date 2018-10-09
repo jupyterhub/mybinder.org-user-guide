@@ -1,10 +1,9 @@
 # binder
 
-This repository contains the documentation and usage instructions for the mybinder.org service.
-
-## Communication
-
+[![Documentation Status](https://readthedocs.org/projects/mybinder/badge/?version=latest)](https://mybinder.readthedocs.io/en/latest/?badge=latest)
 [![Join the chat at https://gitter.im/jupyterhub/binder](https://badges.gitter.im/jupyterhub/binder.svg)](https://gitter.im/jupyterhub/binder?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
+This repository contains the documentation and usage instructions for the mybinder.org service.
 
 ## Related Repositories
 
