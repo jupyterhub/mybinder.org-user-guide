@@ -1,7 +1,7 @@
 .. _dockerfile:
 
-Using a Dockerfile
-==================
+Use a Dockerfile for your Binder
+================================
 
 Binder supports configuration files for package
 installation, environment specification, post-build shell scripts, and more.

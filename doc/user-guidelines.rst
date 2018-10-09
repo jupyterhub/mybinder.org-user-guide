@@ -1,5 +1,5 @@
-Binder Usage Guidelines
-=======================
+``mybinder.org`` Usage Guidelines
+=================================
 
 This page details some guidelines and policies that we follow at ``mybinder.org``.
 
