@@ -15,6 +15,8 @@ This repository contains the documentation and usage instructions for the mybind
 BinderHub uses Helm to configure and manage deployment
 of the Binder service. For details about this deployment, please visit [helm-chart](https://github.com/jupyterhub/helm-chart).  
 
+## Maintainers
+
  Binder is maintained by the [Binder team](https://github.com/jupyterhub/team-compass#binder-team).  Administration is managed at [team compass](https://github.com/jupyterhub/team-compass).
 
 
