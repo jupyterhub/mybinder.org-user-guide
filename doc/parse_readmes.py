@@ -1,7 +1,8 @@
 """This is a helper file to auto-generate the sample
 READMEs page for the mybinder documentation. It expects
 a couple of environment variables to be set corresponding
-to your github username / password.
+to your github username / password, or to an access token
+you've created (see below for the proper variable names).
 
 The script grabs some metadata and the README text for
 all of the binder-examples repositories, and then constructs
@@ -14,12 +15,17 @@ import os
 
 EXCLUDE_FILES = ['.gitignore', 'LICENSE', 'README.md']
 EXCLUDE_REPOS = ['dockerfile-rstudio', 'zero-to-binder']
+path_file = os.path.dirname(os.path.abspath(__file__))
 
 # First create a Github instance:
-g = Github(os.environ['GITHUB_USERNAME'],
-           os.environ['GITHUB_PASSWORD'])
+try:
+    g = Github(os.environ['GITHUB_USERNAME'],
+            os.environ['GITHUB_PASSWORD'])
+    org = g.get_organization('binder-examples')
+except:
+    g = Github(os.environ['GITHUB_TOKEN'])
+    org = g.get_organization('binder-examples')
 
-org = g.get_organization('binder-examples')
 repos = list(org.get_repos())
 repos = [repo for repo in repos if repo.name not in EXCLUDE_REPOS]
 
@@ -71,7 +77,7 @@ for i_repo, repo in enumerate(repos):
 
 lines = [ln + '\n' for ln in lines]
 
-with open('sample_repos.md', 'w') as ff:
+with open(os.path.join(path_file, 'sample_repos.md'), 'w') as ff:
     ff.writelines(lines)
 
 print('Finished building docs for {} repos.'.format(len(repos)))
