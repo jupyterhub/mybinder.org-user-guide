@@ -9,6 +9,25 @@ repositories listed on this page at the
 
 
 ---------
+## Julia Binder demo
+
+This is a demo of Julia functionality for the Binder project. Simply
+go to the URL below and it will launch an interactive Julia environment:
+
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/binder-examples/demo-julia/master?filepath=demo.ipynb) | [repo link](https://github.com/binder-examples/demo-julia)
+
+
+### Files in this repository
+```
+REQUIRE
+demo.ipynb
+```
+```eval_rst
+|
+|
+
+```
+---------
 ## Julia and Python environments
 
 [![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/v2/gh/binder-examples/julia_python/master) | [repo link](https://github.com/binder-examples/julia-python)
@@ -216,7 +235,7 @@ RStudio: [![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/v2/gh/bi
 
 RShiny: [![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/v2/gh/binder-examples/r/master?urlpath=shiny/bus-dashboard/)
 
-Binder supports using R + RStudio, with libraries pinned to a specific
+Binder supports using R and RStudio, with libraries pinned to a specific
 snapshot on [MRAN](https://mran.microsoft.com/documents/rro/reproducibility).
 
 You need to have a `runtime.txt` file that is formatted like:
@@ -761,15 +780,12 @@ index.ipynb
 
 A Binder-compatible repo with a python package and a `setup.py` file.
 
-Access this binder at the following URL:
-
-https://mybinder.org/v2/gh/cranmer/setup.py/master?filepath=example_notebook%2Fimport_mypackage.ipynb
 
 ### Notes
 
-It is convenient to provide an [example Jupyter notebook ](example_notebook/import_mypackage.ipynb) for a new package and add the hooks necessary to run the example with Binder. However, normally the package will not be included in the python path. To do that, one needs a `setup.py` for the package (see [binder docs](https://mybinder.readthedocs.io/en/latest/using.html#setup-py)). Once this is done, it is possible to import the package in a notebook running within Binder. 
+It is convenient to provide an [example Jupyter notebook ](https://github.com/binder-examples/setup.py/blob/master/example_notebook/import_mypackage.ipynb) for a new package and add the hooks necessary to run the example with Binder. However, normally the package will not be included in the python path. To do that, one needs a `setup.py` for the package (see [binder docs](https://mybinder.readthedocs.io/en/latest/using.html#setup-py)). Once this is done, it is possible to import the package in a notebook running within Binder. 
 
-This setup.py was originally adapted from https://github.com/kennethreitz/setup.py by @cranmer
+This setup.py was originally adapted from [https://github.com/kennethreitz/setup.py](https://github.com/kennethreitz/setup.py) by @cranmer
 
 ### Files in this repository
 ```
@@ -777,6 +793,43 @@ MANIFEST.in
 example_notebook
 mypackage
 setup.py
+```
+```eval_rst
+|
+|
+
+```
+---------
+## Specifying an R environment by having a DESCRIPTION file
+
+Jupyter+R: [![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/v2/gh/binder-examples/binder-r-description/master?filepath=test-library.ipynb)
+
+RStudio: [![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/v2/gh/binder-examples/binder-r-description/master?urlpath=rstudio)
+
+
+Binder supports using R and RStudio, with libraries pinned to a specific
+snapshot on [MRAN](https://mran.microsoft.com/documents/rro/reproducibility).
+
+If you specify a `runtime.txt` file that is formatted like:
+
+```
+r-<YYYY>-<MM>-<DD>
+```
+
+where YYYY-MM-DD it will use the MRAN snapshot of that day for setting up the R runtime.
+
+Without specifying a `runtime.txt` it will use a 2-day old snapshot of MRAN.
+
+Both [RStudio](https://www.rstudio.com/) and [IRKernel](https://irkernel.github.io/)
+are installed by default, so you can use either the Jupyter notebook interface or
+the RStudio interface.
+
+### Files in this repository
+```
+DESCRIPTION
+NAMESPACE
+R
+test-library.ipynb
 ```
 ```eval_rst
 |
@@ -835,6 +888,102 @@ From this point, you can start adding files, installing packages, etc.
 ### Files in this repository
 ```
 Dockerfile
+```
+```eval_rst
+|
+|
+
+```
+---------
+## SoS: Using multiple kernels in a notebook
+
+[Script of Scripts](https://vatlab.github.io/sos-docs) is a polyglot
+notebook and a workflow engine. Ignoring the workflow engine part, SoS
+Notebook provides a SoS Kernel that acts as a super kernel to all Jupyter
+kernels so that you can use multiple Jupyter kernels in a single Jupyter
+notebook. Moreover, it provides a number of magics, most importantly `%get`
+to exchange variables between live kernels of supported languages.
+
+![sos-notebook](sos-notebook.png)
+
+### Use SoS with binder
+
+Although it is almost trivial to install SoS, setting up multiple kernels
+in a single binder environment is not very easy at this point. This repository
+contains multiple branches that demonstrates how to do it for the languages
+you are interested in. For more details, please refer to the [SoS
+Documentation](https://vatlab.github.io/sos-docs) on how to set up
+different kernels for SoS.
+
+#### The master branch
+
+[![Binder](http://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/binder-examples/jupyter-sos/master) | [repo link](https://github.com/binder-examples/jupyter-sos)
+
+The master branch uses a `Docker` file to set up most kernels that SoS
+supports. The docker file is derived from [mdabioinfo/sos-notebook](https://hub.docker.com/r/mdabioinfo/sos-notebook/tags/), which is in turn derived from [Jupyter Notebook Data Science
+Stack](https://github.com/jupyter/docker-stacks/tree/master/datascience-notebook) and contains the following kernels:
+
+* Python 2 kernel for Python 2.7
+* Python 3 kernel for Python 3.6
+* [Bash kernel](https://github.com/takluyver/bash_kernel) for using bash commands
+* [iJavaScript](https://github.com/n-riesco/ijavascript) for node.js
+* [iJulia](https://github.com/JuliaLang/IJulia.jl) for Julia
+* [ir](https://github.com/IRkernel/IRkernel) kernel for R
+* [markdown](https://github.com/vatlab/markdown-kernel) kernel that allows the expansion of SoS (Python) expressions in markdown contents.
+* [Octave Kernel](https://github.com/Calysto/octave_kernel) for octave
+* [SPARQL kernel](https://github.com/paulovn/sparql-kernel) for Sparql, included to demonstrate how SoS works with
+  any Jupyter kernel (not in a language that SoS understands)
+
+SoS also supports other languages such as Ruby, MATLAB, and SAS but they
+are not included since this image is already very big.
+
+This branch includes mostly examples for a talk on SoS during JupyterCon2018. You can watch the talk on Youtube
+using [this link](https://www.youtube.com/watch?v=U75eKosFbp8) if you are intested in learning SoS.
+
+
+#### The Python-Julia branch
+
+[![Binder](http://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/binder-examples/jupyter-sos/python-julia) | [repo link](https://github.com/binder-examples/jupyter-sos)
+
+This branch is much more lightweight as it contains only Python 3, Julia,
+and SoS kernels. It specifies the environment using
+
+* `environment.yml`: an anaconda python environment, also installs SoS and SoS Notebook
+* `REQURE`: a Julia environment with recommended packages
+* `postBuild`: Post build command to install the SoS Kernel.
+
+This branch contains a notebook `python-and-julia.ipynb` which demonstrates
+how to use Python3 and Julia in a single Jupyter notebook.
+
+#### The Python-R branch
+
+[![Binder](http://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/binder-examples/jupyter-sos/python-r) | [repo link](https://github.com/binder-examples/jupyter-sos)
+
+This branch contains only Python 3, R, and SoS kernels. It specifies the environment using
+
+* `environment.yml`: an anaconda python environment, also installs SoS and SoS Notebook
+* `runtime.txt`: specify version of R as [MRAN](https://mran.microsoft.com/) snapshots
+* `install.R`: additional packages to install
+* `postBuild`: Post build command to install the SoS Kernel.
+
+This branch contains a notebook `python-and-r.ipynb` which demonstrates
+how to use Python3 and R in a single Jupyter notebook.
+
+
+### Files in this repository
+```
+1_Expand_and_Capture.ipynb
+2_Data_Exchange.ipynb
+3_SoS_Magics.html
+3_SoS_Magics.ipynb
+4_Notebook_to_Workflow.ipynb
+5_Workflow_features.ipynb
+6_Task.ipynb
+Dockerfile
+REQUIRE
+python-and-julia.ipynb
+python-and-r.ipynb
+sos-notebook.png
 ```
 ```eval_rst
 |
