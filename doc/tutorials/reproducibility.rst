@@ -20,6 +20,8 @@ package in your environment in a format that can be used in ``requirements.txt``
 ``conda env export -n <env-name>`` is the equivalent for anaconda's environment.yml
 file.
 
+When exporting a conda environment, you can add the conda-forge broken channel (``conda-forge/label/broken``) as a low-priority channel in your exported ``environment.yml`` file in order to maximize durability. Thus, if a package is marked broken after you froze the environment, said package will still install during the Binder image build process. Only do this when you intend to truly freeze the environment.
+
 Using Dockerfiles
 -----------------
 
