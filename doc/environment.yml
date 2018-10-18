@@ -7,3 +7,7 @@ dependencies:
   - pip:
     - recommonmark==0.4.0
     - sphinx_copybutton
+    - traitlets
+    - jupyterhub
+    - alabaster
+    - alabaster_jupyterhub

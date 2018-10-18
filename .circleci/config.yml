@@ -13,7 +13,7 @@ jobs:
       - restore_cache:
           keys:
             - cache-pip
-      - run: pip install --user sphinx_rtd_theme sphinx pytest memory_profiler recommonmark sphinx_copybutton
+      - run: pip install --user -r doc/doc-requirements.txt
       - save_cache:
           key: cache-pip
           paths:
