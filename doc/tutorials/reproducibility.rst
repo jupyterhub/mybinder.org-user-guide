@@ -22,6 +22,15 @@ file.
 
 When exporting a conda environment, you can add the conda-forge broken channel (``conda-forge/label/broken``) as a low-priority channel in your exported ``environment.yml`` file in order to maximize durability. Thus, if a package is marked broken after you froze the environment, said package will still install during the Binder image build process. Only do this when you intend to truly freeze the environment.
 
+For example (in ``environment.yml``):
+
+  .. code-block:: yaml
+
+      channels:
+        - conda-forge
+        - defaults
+        - conda-forge/label/broken
+
 Using Dockerfiles
 -----------------
 
