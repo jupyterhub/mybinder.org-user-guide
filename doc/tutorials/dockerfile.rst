@@ -155,14 +155,20 @@ For a Dockerfile to work on Binder, it must meet the following requirements:
    This chown is required because Docker will be default
    set the owner to ``root``, which would prevent users from editing files.
 
-5. It must specify a default command.
+5. It must accept command arguments. The Dockerfile will effectively be launched as:
 
-   This is the command that is executed on startup.
-
-   .. code-block:: Dockerfile
-
-       # Specify the default command to run
-       CMD ["jupyter", "notebook", "--ip", "0.0.0.0"]
+   .. code-block:: sh
+   
+      docker run <image> jupyter notebook <arguments from the mybinder launcher>
+   
+   where `<arguments ...>` includes important information automatically set by the binder
+   environment, such as the port and token.
+   
+   If your Dockerfile sets or inherits the Docker `ENTRYPOINT` instruction, the program
+   specified as the `ENTRYPOINT` *must* `exec` the arguments passed by docker. Inherited
+   Dockerfiles may unset the entrypoint with `ENTRYPOINT []`.
+   
+   For more information, and a shell wrapper example, please see the `Dockerfile best practices: ENTRYPOINT  <https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#entrypoint>`_ documentation.
 
 
 Ensuring reproducibility with Dockerfiles
