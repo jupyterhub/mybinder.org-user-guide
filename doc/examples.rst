@@ -1,5 +1,5 @@
 =================================================
-A curated list of Binder repositories in the wild
+Interesting Binder repositories from around the web
 =================================================
 
 This page lists several Binder repositories broken down by use-case. If you've got
