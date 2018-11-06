@@ -64,6 +64,7 @@ you can do with Binder.
    :maxdepth: 1
    :caption: Sample repositories and configuration
 
+   examples
    sample_repos
    config_files
 
