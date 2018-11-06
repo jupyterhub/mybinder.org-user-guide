@@ -1,4 +1,4 @@
-# Sample Binder Repositories
+# The Binder demo repositories
 
 
 Below we list several sample Binder repositories that
