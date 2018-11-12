@@ -7,7 +7,9 @@ This repository contains the documentation and usage instructions for the mybind
 
 ## Related Repositories
 
-**For BinderHub, the open-source technology that runs Binder, please visit [jupyterhub/binderhub](https://github.com/jupyterhub/binderhub)**
+**For BinderHub, the open-source technology that runs mybinder.org, please visit [jupyterhub/binderhub](https://github.com/jupyterhub/binderhub)**
+
+**For repo2docker, the open-source technology to turn Git repositories into Jupyter enabled Docker Images, please visit [jupyter/repo2docker](https://github.com/jupyter/repo2docker)**
 
  For deployment of the website [mybinder.org](https://mybinder.org), please
  visit [mybinder.org-deploy](https://github.com/jupyterhub/mybinder.org-deploy).  
