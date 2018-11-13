@@ -4,7 +4,7 @@ Generate custom launch badges for your Binder
 
 Sometimes you want something more specific than the default "launch binder" badge.
 This page is meant to help you create a custom badge for your Binder using the
-`sheilds.io <https://shields.io/#/>`_ service.
+`shields.io <https://shields.io/#/>`_ service.
 
 The text in the "left" and "right" boxes will be used to populate your badge text,
 and the color box will let you choose a background. Finally, the URL box will be used
