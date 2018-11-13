@@ -19,6 +19,8 @@ files) into computational environments (a Docker image) and serve this
 environment through the cloud. The underlying technology that manages this
 process is called `BinderHub`_.
 
+For more information, check out :ref:`about`.
+
 What is BinderHub?
 ------------------
 
@@ -37,6 +39,8 @@ of the BinderHub technology, though it is by no means the only BinderHub
 in existence. If you're interested in deploying your own BinderHub for your
 own uses, please see the `BinderHub documentation <BinderHub_>`_
 and don't hesitate to reach out to the `Binder community <https://gitter.im/jupyterhub/binder>`_.
+
+For more information, check out :ref:`about`.
 
 Is ``mybinder.org`` free to use?
 --------------------------------
@@ -58,8 +62,9 @@ repository. In addition, you can explore these costs with the binder link below!
 How can ``mybinder.org`` be free to use?
 ----------------------------------------
 
-The Binder project has a `grant from the Moore Foundation <https://figshare.com/s/e9d0ad7bdc4e405cccfa>`_
-to sustain the cloud resources running ``mybinder.org``. In the future we hope to see more
+See :ref:`about` for more information on the mybinder.org team and who provides
+the resources to pay for the service. Generally, mybinder.org is run with modest resources
+provided to users in order to keep costs down. In the future we hope to see more
 public BinderHub services running that can form a collection of community
 resources for interactive cloud computing.
 
