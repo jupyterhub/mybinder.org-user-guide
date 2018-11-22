@@ -83,3 +83,19 @@ as resources for more information.
    status
    reliability
    more-info
+
+.. _citing:
+
+Citing Binder
+=============
+
+If you publish work that uses Binder, please consider citing the
+`Binder paper from the 2018 SciPy proceedings <http://conference.scipy.org/proceedings/scipy2018/project_jupyter.html>`_!
+
+Here is a citation that you can use:
+
+.. code-block:: none
+
+   Jupyter et al., "Binder 2.0 - Reproducible, Interactive, Sharable
+   Environments for Science at Scale." Proceedings of the 17th Python
+   in Science Conference. 2018. 10.25080/Majora-4af1f417-011

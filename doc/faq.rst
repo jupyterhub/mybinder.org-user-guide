@@ -229,4 +229,9 @@ for instructions on how to deploy your own BinderHub, and the
 `Zero to JupyterHub <https://zero-to-jupyterhub.readthedocs.io/en/latest/user-experience.html#set-user-memory-and-cpu-guarantees-limits>`_
 documentation for how to customize the user environment.
 
+How can I cite Binder?
+----------------------
+
+For information on how to cite Binder, see :ref:`citing`.
+
 .. _BinderHub: https://binderhub.readthedocs.io/en/latest
