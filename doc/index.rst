@@ -10,6 +10,8 @@ Binder Documentation
 and used by many remote users. It is powered by `BinderHub <https://github.com/jupyterhub/binderhub>`_,
 which is an open-source tool that deploys the Binder service in the cloud.
 One-such deployment lives here, at `mybinder.org <https://mybinder.org>`_, and is free to use.
+For more information about the mybinder.org deployment and the team that runs it, see
+:ref:`about`.
 
 This documentation provides information for those who
 wish to use a pre-existing BinderHub deployment such as `mybinder.org <https://mybinder.org>`_.
@@ -81,6 +83,7 @@ as resources for more information.
    user-guidelines
    faq
    status
+   about
    reliability
    more-info
 
