@@ -42,7 +42,7 @@ The following sections cover the basics of how to use a Binder service.
 
 .. toctree::
    :caption: How to...
-   :maxdepth: 1
+   :maxdepth: 2
 
    howto/languages
    howto/user_interface

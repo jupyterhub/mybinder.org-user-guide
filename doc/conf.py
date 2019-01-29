@@ -170,10 +170,13 @@ with open('./config_files.rst', 'w') as ff:
 
 # Grab the latest version of the configuration file examples
 print('Updating latest howto pages from repo2docker...')
-howto_imports = ["languages.rst", "user_interface.rst"]
-url_howto = "https://raw.githubusercontent.com/jupyter/repo2docker/master/docs/source/howto/{}"
+howto_imports = ["jupyter/repo2docker/master/docs/source/howto/languages.rst",
+                 "jupyter/repo2docker/master/docs/source/howto/user_interface.rst",
+                 "jupyter/repo2docker/master/docs/source/howto/lab_workspaces.rst",
+                 "jupyterhub/mybinder.org-deploy/master/docs/source/analytics/events-archive.rst"]
+url_base = "https://raw.githubusercontent.com/{}"
 for rst_file in howto_imports:
-    this_url = url_howto.format(rst_file)
+    this_url = url_base.format(rst_file)
     resp = requests.get(this_url)
     dir_howto = os.path.join(os.path.dirname(__file__), 'howto')
     if not os.path.exists(dir_howto):
