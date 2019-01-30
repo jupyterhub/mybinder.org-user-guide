@@ -1,10 +1,17 @@
+.. _binder-docs:
+
 ====================
 Binder Documentation
 ====================
 
 .. image:: https://badges.gitter.im/jupyterhub/binder.svg
    :alt: Join the chat at https://gitter.im/jupyterhub/binder
-   :target: https://gitter.im/jupyterhub/binder?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
+   :target: https://gitter.im/jupyterhub/binder
+
+.. image:: https://img.shields.io/discourse/https/discourse.jupyter.org/users.svg?colorB=blue&label=discourse&style=flat
+   :alt: Join our community Discourse page at https://discourse.jupyter.org
+   :target: https://discourse.jupyter.org
+
 
 **Binder** allows you to create custom computing environments that can be shared
 and used by many remote users. It is powered by `BinderHub <https://github.com/jupyterhub/binderhub>`_,
@@ -19,19 +26,10 @@ If you'd like documentation on how to create and administer your own BinderHub d
 see the `BinderHub documentation <http://binderhub.readthedocs.io>`_, which
 guides you through deploying your own BinderHub.
 
-See the `Binder Examples <https://github.com/binder-examples>`_ GitHub
-organization for sample Binder repositories demonstrating its functionality.
+Getting Started with Binder
+===========================
 
-.. note::
-
-   Binder is a research pilot, whose main goal is to understand usage patterns
-   and workloads for future evolution and development. It is not a service that
-   can be relied on for critical operations.
-
-Using Binder
-============
-
-The following sections cover the basics of how to use a Binder service.
+If you're just getting started with Binder, see the pages below...
 
 .. toctree::
    :caption: Getting started with Binder
@@ -39,6 +37,20 @@ The following sections cover the basics of how to use a Binder service.
 
    introduction
    using
+
+How-To guides and Tutorials
+===========================
+
+The following sections some more in-depth topics in preparing and sharing
+your Binder repository. How-To guides are shorter, actionable patterns that
+accomplish something specific. Tutorials are more high-level and thorough,
+and often cover more conceptual topics.
+
+.. note::
+
+   Binder is a research pilot, whose main goal is to understand usage patterns
+   and workloads for future evolution and development. It is not a service that
+   can be relied on for critical operations.
 
 .. toctree::
    :caption: How to...
@@ -60,25 +72,35 @@ Sample repositories and configuration
 =====================================
 
 The following is a list of sample repositories showing off various things
-you can do with Binder.
+you can do with Binder configuration files.
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Sample repositories and configuration
 
-   examples
    sample_repos
    config_files
 
+Finally, here is a list of interesting Binder repositories from around the web:
 
-Advanced usage
-==============
+.. toctree::
 
-These pages cover more advanced topics in the Binder ecosystem, as well
-as resources for more information.
+   examples
+
+See the `Binder Examples <https://github.com/binder-examples>`_ GitHub
+organization for more Binder repositories demonstrating its functionality.
+
+
+The Binder Community
+====================
+
+These pages cover more advanced topics in the Binder ecosystem, community
+guidelines for users and developers, and information about the ``mybinder.org``
+service.
 
 .. toctree::
    :maxdepth: 1
+   :caption: Binder community
 
    user-guidelines
    faq

@@ -1,128 +1,111 @@
 .. _using-binder:
 
-============
-Using Binder
-============
+===============================
+Common usage patterns in Binder
+===============================
 
-This page describes how to use Binder to create interactive, sharable
-repositories. It includes how to prepare your repository to be binder-ready,
-as well as how to build and launch that repository with Binder.
+This page describes some common patterns and use-cases for Binder.
+If you're new to Binder, we recommend checking out :ref:`introduction`
+for an introduction to Binder, repository structure, and how to build your
+own repository.
 
-.. _preparing_repositories:
-
-Preparing a repository for Binder
-=================================
-
-All of the code in a repository is available to users,
-your Binder repository should contain at least:
-
-* The code you want users to run. This might be a collection of Jupyter
-  notebooks or scripts.
-* Configuration files (one or more text files) that specify the requirements
-  for building your project's code. For a complete list of supported files,
-  see :ref:`config-files`. Configuration files may be placed in the root of
-  your repository or in a ``binder/`` folder in the repository's root
-  (i.e. ``myproject/binder/``). If a ``binder/`` folder is used, Binder will
-  only read configuration files from that location and will ignore those in
-  the repository's root.
-
-.. tip::
-
-   For a list of sample repositories for use with Binder, see the
-   `Sample Binder Repositories <sample_repos.html>`_ page.
-
-Launching your Binder
-=====================
-
-Once you have prepared your repository per the instructions above,
-it is time to build and launch your binder-ready repo. Navigate to ``mybinder.org``
-and insert the URL for your git repository. Press ``Launch`` to automatically create your Binder.
-The Binder service will automatically send you to a live Jupyter session
-connected to this repository.
-
-If a previous version of the repository has already been built, Binder will
-only build a new one if the git hashes don't match. When Binder
-*doesn't* need to build a repository, the process of connecting to the live
-computational environment is much faster.
-
-Use cases
-=========
-
-Below are some example use-cases and their respective repository
-configuration.
-
-For a full guide on how to configure your repository for
-Binder, see the `repo2docker configuration guide
-<http://repo2docker.readthedocs.io/en/latest/usage.html#preparing-your-repository>`_.
-For a list of sample repositories for use with Binder, see the
+For a more complete list of sample repositories for use with Binder, see the
 `Sample Binder Repositories <sample_repos.html>`_ page.
 
-Simple Python dependencies
---------------------------
+Choose from many open source languages
+======================================
 
-Many repositories already contain a ``requirements.txt`` specifying the
-dependencies of that repository. For 'simple to install' dependencies, a
-``requirements.txt`` should meet your needs. To generate a ``requirements.txt`` from
-the environment you have locally use ``pip freeze > requirements.txt``. This
-will list all packages you have installed, and can be a starting point for
-constructing your ``requirements.txt``. We recommend you only list those
-packages you really need to successfully build the repository.
+Binder runs on JupyterHub, a language-agnostic tool for serving data
+analytics sessions in the cloud. This means that you can build Binders
+using many popular open source languages.
 
-Take a look at the `binder-examples/requirements <https://github.com/binder-examples/requirements>`_
-repository to see an example.
+For example, here's a short list of Binder repositories that are built
+with several popular languages:
 
-Using conda packages
---------------------
+* Python
+    * `A simple pip environment <https://github.com/binder-examples/requirements>`_.
+    * `An Anaconda Python environment <https://github.com/binder-examples/conda>`_.
+* R
+    * `Using R, RStudio, and Shiny <https://github.com/binder-examples/r>`_.
+* Julia
+    * `A simple Julia repository <https://github.com/binder-examples/julia-python>`_.
 
-For 'complex to install' packages, like ``geopandas``, we
-recommend using the `conda package manager <https://conda.io/docs/index.html>`_.
-To specify your dependencies create an ``environment.yml`` listing the packages
-and versions required. For syntax help read `create an environment file manually <https://conda.io/docs/user-guide/tasks/manage-environments.html#creating-an-environment-file-manually>`_
-from the conda documentation.
+You can also control the versions used for each of these languages. For
+more information about this, see the :ref:`config-files` page.
 
-Take a look at the `binder-examples/conda <https://github.com/binder-examples/conda>`_
-repository to see an example.
+Choose from multiple user interfaces
+====================================
 
-.. note::
+Binder is also agnostic to the specific user interface that you'd like
+to share with your Binder. BinderHub will make some assumptions about the
+interface you'd like depending on the environment you specify (for example,
+if you use Python and have Jupyter Notebooks in the repository, Binder
+will use a notebook interface for links). However, you can configure Binder
+to use whatever interface you'd like.
 
-   Packages that require ``pip`` for installation can be specified in
-   the ``environment.yml`` file.  We recommend this approach instead of having
-   a ``requirements.txt`` and an ``environment.yml`` in the same repository.
-   See `binder-examples/python-conda_pip <https://github.com/binder-examples/python-conda_pip>`_.
+For example, here are a few repositories demonstrating different user
+interfaces.
 
-Using Python 2
---------------
+* `The Classic Notebook interface <https://github.com/binder-examples/python-conda_pip>`_
+* `Jupyter Lab <https://github.com/jupyterlab/jupyterlab-demo>`_
+* `The nteract interface <https://mybinder.org/v2/gh/nteract/examples/master?urlpath=%2Fnteract%2Fedit%2Fpython%2Fintro.ipynb>`_
+* `RStudio sessions <https://github.com/binder-examples/r>`_
 
-To use python 2.7 for your repository create a ``runtime.txt`` with
-``python-2.7`` as only content. This will install a python2 environment in
-addition to the default python environment. The contents of ``requirements.txt``
-are installed into the python2 environment.
+For a more complete description of the interfaces people have used
+with Binder, see :ref:`user_interface`.
 
-Take a look at the `binder-examples/python2_runtime <https://github.com/binder-examples/python2_runtime>`_
-repository to see an example.
 
-.. note::
+Creating live demonstrations
+============================
 
-   Make sure that you save your notebooks with a python2 kernel activated,
-   as this defines which kernel Binder will use when a notebook is opened.
-   The active kernel is displayed in the upper right corner of the notebook.
+Binder is useful if you want to interactively demonstrate something to
+a group of people, and would like them to immediately interact with the
+material as well.
 
-.. note::
+There are several tools that make it easy to show off computational ideas
+and narratives. For example, you can build a Binder that is powered
+by Jupyter Notebooks, or turn them into an `interactive presentation with RISE <https://github.com/binder-examples/jupyter-rise>`_.
 
-   If you also wish to install dependencies into the python3 environment,
-   include a file called ``requirements3.txt``. The packages inside it will be
-   installed into the python3 environment.
+If you're using Binder for a presentation, demo, or tutorial, just make
+sure that you've built the latest version of your Binder *before* you share
+a link with your audience to ensure that the build process has completed.
 
-Executing post-build commands
------------------------------
 
-You might need to run arbitrary commands at the end of the build process. Place
-these in the ``postBuild`` file and make it executable. One use case is having
-a repository that contains a Python package and examples that use the package.
-In this case you can run ``python setup.py install`` from the ``postBuild``
-file to avoid having to place your package in the ``requirements.txt``. It is
-also useful for activating notebook extensions you installed via a
-``requirements.txt`` directive earlier.
+Share computational work with Binder
+====================================
 
-Take a look at the `binder-examples/jupyter-extension <https://github.com/binder-examples/jupyter-extension>`_
-repository to see an example.
+Another common use for Binder is to use Binder to quickly show off your
+data science work. For example, if you'd like to share some analyses and
+visualizations on a dataset of interest. In this case, it is common
+to "prepare" your Binder for the analysis. For example,
+by downloading and modifying some data.
+
+Binder allows you to run an arbitrary
+script *after* the environment has been installed. This is accomplished
+with a **``postBuild``** file. It will be run from the shell.
+
+The Docker image for the repository will be run **after** the ``postBuild``
+script has finished, meaning that the state of the repository will be baked
+into the image itself. Be careful - this means that if you download a 10GB
+dataset, you'll have at least a 10GB Docker image for your repository.
+
+Another common task is to ensure some code is run just before users begin
+their session. You can accomplish this with a **``start``** configuration file.
+This file will be run **just before an interactive session begins**. It will
+not be baked into your Binder's Docker image.
+
+Use Binder in educational courses
+=================================
+
+Binder gives users quick, interactive experiences with computational
+material that you provide. This can be useful in a teaching context, where
+you'd like students to quickly dive-in to the work you are covering.
+
+It is beyond the scope of the Binder documentation to cover the many
+ways that Binder can be used in an educational context. We recommend
+checking out the `Jupyter for Education guide <https://jupyter4edu.github.io/jupyter-edu-book/>`_
+for a collection of information about creating courses with open source content,
+including how to incorporate Binder into your course.
+
+For more information about all of the things you can do with Binder, see
+the :ref:`config-files` page or see the whole :ref:`binder-docs`.
