@@ -48,11 +48,14 @@ The following sections cover the basics of how to use a Binder service.
    howto/user_interface
    howto/badges
 
+   howto/lab_workspaces
+
 .. toctree::
    :maxdepth: 2
    :caption: Tutorials and in-depth guides
 
    tutorials/reproducibility
+   tutorials/events-archive
    tutorials/dockerfile
 
 

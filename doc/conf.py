@@ -173,21 +173,23 @@ with open('./config_files.rst', 'w') as ff:
 
 # Grab the latest version of the configuration file examples
 print('Updating latest howto pages from repo2docker...')
-howto_imports = ["jupyter/repo2docker/master/docs/source/howto/languages.rst",
-                 "jupyter/repo2docker/master/docs/source/howto/user_interface.rst",
-                 "jupyter/repo2docker/master/docs/source/howto/lab_workspaces.rst",
-                 "jupyterhub/mybinder.org-deploy/master/docs/source/analytics/events-archive.rst"]
+imports = {'howto': ["jupyter/repo2docker/master/docs/source/howto/languages.rst",
+                     "jupyter/repo2docker/master/docs/source/howto/user_interface.rst",
+                     "jupyter/repo2docker/master/docs/source/howto/lab_workspaces.rst"],
+           'tutorials': ["jupyterhub/mybinder.org-deploy/master/docs/source/analytics/events-archive.rst"]}
+howto_imports = []
 url_base = "https://raw.githubusercontent.com/{}"
-for rst_file in howto_imports:
-    this_url = url_base.format(rst_file)
-    resp = requests.get(this_url)
-    dir_howto = os.path.join(os.path.dirname(__file__), 'howto')
-    if not os.path.exists(dir_howto):
-        os.makedirs(dir_howto)
-    path_write = os.path.join(dir_howto, os.path.basename(rst_file))
-    with open(path_write, 'w') as ff:
-        ff.write('.. ##################################################\n')
-        ff.write('.. THIS PAGE IS AUTOMATICALLY IMPORTED FROM {}.\n.. DO NOT EDIT IT DIRECTLY.\n'.format(this_url))
-        ff.write('.. ##################################################\n\n')
+for kind, files in imports.items():
+    for rst_file in files:
+        this_url = url_base.format(rst_file)
+        resp = requests.get(this_url)
 
-        ff.write(resp.text)
+        dir_new = os.path.join(os.path.dirname(__file__), kind)
+        if not os.path.exists(dir_new):
+            os.makedirs(dir_new)
+        path_write = os.path.join(dir_new, os.path.basename(rst_file))
+        with open(path_write, 'w') as ff:
+            ff.write('.. ##################################################\n')
+            ff.write('.. THIS PAGE IS AUTOMATICALLY IMPORTED FROM {}.\n.. DO NOT EDIT IT DIRECTLY.\n'.format(this_url))
+            ff.write('.. ##################################################\n\n')
+            ff.write(resp.text)
