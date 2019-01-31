@@ -79,7 +79,7 @@ To run it, navigate to the ``doc`` directory and run:
      python generate_sample_repos.py
 
 Note that if you run this multiple times, you'll hit your GitHub API rate limit
-unless you have a token configured on your computer.
+unless you have a `token <https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/>`_ configured on your computer.
 
 How the documentation is organized
 ==================================
