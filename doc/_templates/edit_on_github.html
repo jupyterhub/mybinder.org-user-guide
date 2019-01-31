@@ -1,0 +1,12 @@
+<div role="note" aria-label="source link">
+    {% if sourcename is defined %}
+    {% set src = sourcename.split('.') %}
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+        <li>
+            <a href="https://github.com/{{ github_user }}/{{ github_repo }}/edit/{{ github_version }}/{{ doc_path }}/{{ pagename }}.{{ src[-2] }}">Edit this page</a>
+        </li>
+    </ul>
+     {% endif %}
+</div>
+
