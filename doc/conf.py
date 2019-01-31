@@ -96,10 +96,7 @@ html_theme_path = [alabaster_jupyterhub.get_html_theme_path()]
 # further.  For a list of options available for each theme, see the
 # documentation.
 #
-# html_theme_options = {
-#     'github_user': 'jupyterhub',
-#     'github_repo': 'binder',
-# }
+# html_theme_options = { }
 
 html_context = {
     "github_user": "jupyterhub",
