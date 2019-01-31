@@ -9,7 +9,7 @@ Writing documentation
    Heavily inspired by the
    `django project's guidelines <https://docs.djangoproject.com/en/dev/internals/contributing/writing-documentation/>`_
 
-We place a high importance on consistency, readability and completeness of documentation.
+We place a high importance on consistency, readability, and completeness of documentation.
 If a feature is not documented, it does not exist. If a behavior is not documented,
 it is a bug! We try to treat our
 documentation like we treat our code: we aim to improve it as often as
