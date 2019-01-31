@@ -36,8 +36,8 @@ more information about this, see the :ref:`config-files` page.
 Choose from multiple user interfaces
 ====================================
 
-Binder is also agnostic to the specific user interface that you'd like
-to share with your Binder. BinderHub will make some assumptions about the
+BinderHub is also agnostic to the specific user interface that you'd like
+to share with your Binder repository. BinderHub will make some assumptions about the
 interface you'd like depending on the environment you specify (for example,
 if you use Python and have Jupyter Notebooks in the repository, Binder
 will use a notebook interface for links). However, you can configure Binder
@@ -67,17 +67,18 @@ and narratives. For example, you can build a Binder that is powered
 by Jupyter Notebooks, or turn them into an `interactive presentation with RISE <https://github.com/binder-examples/jupyter-rise>`_.
 
 If you're using Binder for a presentation, demo, or tutorial, just make
-sure that you've built the latest version of your Binder *before* you share
-a link with your audience to ensure that the build process has completed.
+sure that you've built the latest version of your Binder repository *before*
+you share a link with your audience to ensure that the build process has
+completed.
 
 
-Share computational work with Binder
-====================================
+Share computational work or papers
+==================================
 
 Another common use for Binder is to use Binder to quickly show off your
 data science work. For example, if you'd like to share some analyses and
 visualizations on a dataset of interest. In this case, it is common
-to "prepare" your Binder for the analysis. For example,
+to "prepare" your Binder repository for the analysis. For example,
 by downloading and modifying some data.
 
 Binder allows you to run an arbitrary
@@ -92,10 +93,10 @@ dataset, you'll have at least a 10GB Docker image for your repository.
 Another common task is to ensure some code is run just before users begin
 their session. You can accomplish this with a **``start``** configuration file.
 This file will be run **just before an interactive session begins**. It will
-not be baked into your Binder's Docker image.
+not be baked into your Binder repository's Docker image.
 
-Use Binder in educational courses
-=================================
+Sharing course content and educational material
+===============================================
 
 Binder gives users quick, interactive experiences with computational
 material that you provide. This can be useful in a teaching context, where
@@ -106,6 +107,22 @@ ways that Binder can be used in an educational context. We recommend
 checking out the `Jupyter for Education guide <https://jupyter4edu.github.io/jupyter-edu-book/>`_
 for a collection of information about creating courses with open source content,
 including how to incorporate Binder into your course.
+
+Generating interactive open-source package documentation
+========================================================
+
+Binder is a useful resource for those who are developing packages
+in an open source language such as Python, Julia, or R. It's important
+to give users the ability to quickly interact with features, APIs,
+and tutorials that teach people how (and why) to use a package.
+
+Binder is useful for generating quick, interactive experiences that
+serve this purpose. For example, `Sphinx-Gallery <https://sphinx-gallery.readthedocs.io/en/latest>`_ allows you to
+build documentation from Python examples and create a visual gallery
+for each. It can `automatically create Binder links <https://sphinx-gallery.readthedocs.io/en/latest/configuration.html?highlight=binder#binder-links>`_
+for each page. In addition, the R community has a tool called
+`holepunch <https://github.com/karthik/holepunch>`_ that helps you quickly
+generate binder-ready repositories for R workflows.
 
 For more information about all of the things you can do with Binder, see
 the :ref:`config-files` page or see the whole :ref:`binder-docs`.

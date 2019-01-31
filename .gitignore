@@ -2,3 +2,4 @@ doc/_build
 doc/config_files.rst
 doc/howto/user_interface.rst
 doc/howto/languages.rst
+.ipynb_checkpoints

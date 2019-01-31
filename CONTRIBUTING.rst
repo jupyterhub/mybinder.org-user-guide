@@ -76,6 +76,8 @@ generate the sample repositories page from the ``binder-examples`` GitHub organi
 
 To run it, navigate to the ``doc`` directory and run:
 
+.. code-block::
+
      python generate_sample_repos.py
 
 Note that if you run this multiple times, you'll hit your GitHub API rate limit
@@ -132,8 +134,8 @@ Here are some style guidelines on commonly used terms throughout the
 documentation:
 
 * **Binder** -- A catch-all for the Binder project
-* **Binder repository** or **A Binder** -- Refers to a Binder-ready repository that
-  a user may build with a BinderHub
+* **Binder repository** or **A Binder-ready repository** -- Refers to a repository that
+  has been prepared to be built by a BinderHub
 * **BinderHub deployment** -- A deployment of BinderHub (such as the one running at ``mybinder.org``).
 
 
