@@ -9,7 +9,7 @@ Writing documentation
    Heavily inspired by the
    `django project's guidelines <https://docs.djangoproject.com/en/dev/internals/contributing/writing-documentation/>`_
 
-We place a high importance on consistency, readability and completeness of documentation.
+We place a high importance on consistency, readability, and completeness of documentation.
 If a feature is not documented, it does not exist. If a behavior is not documented,
 it is a bug! We try to treat our
 documentation like we treat our code: we aim to improve it as often as
@@ -32,7 +32,7 @@ Getting the raw documentation
 Though Binder's documentation is intended to be read as HTML at
 https://mybinder.readthedocs.io/en/latest/, we edit it as a collection of text files for
 maximum flexibility. These files live in the top-level ``doc/`` directory of
-this repository.
+`this repository <https://github.com/jupyterhub/binder>`_.
 
 If you'd like to start contributing to our docs, get the development version of
 the Binder docs from the source code repository. The development version has the
@@ -81,7 +81,7 @@ To run it, navigate to the ``doc`` directory and run:
      python generate_sample_repos.py
 
 Note that if you run this multiple times, you'll hit your GitHub API rate limit
-unless you have a token configured on your computer.
+unless you have a `token <https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/>`_ configured on your computer.
 
 How the documentation is organized
 ==================================

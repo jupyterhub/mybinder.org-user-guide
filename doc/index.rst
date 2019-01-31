@@ -41,7 +41,7 @@ If you're just getting started with Binder, see the pages below...
 How-To guides and Tutorials
 ===========================
 
-The following sections some more in-depth topics in preparing and sharing
+The following sections discuss some more in-depth topics on preparing and sharing
 your Binder repository. How-To guides are shorter, actionable patterns that
 accomplish something specific. Tutorials are more high-level and thorough,
 and often cover more conceptual topics.
