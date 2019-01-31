@@ -32,7 +32,7 @@ Getting the raw documentation
 Though Binder's documentation is intended to be read as HTML at
 https://mybinder.readthedocs.io/en/latest/, we edit it as a collection of text files for
 maximum flexibility. These files live in the top-level ``doc/`` directory of
-this repository.
+`this repository <https://github.com/jupyterhub/binder>`_.
 
 If you'd like to start contributing to our docs, get the development version of
 the Binder docs from the source code repository. The development version has the
