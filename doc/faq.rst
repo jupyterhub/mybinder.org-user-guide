@@ -56,7 +56,7 @@ Great question! If you're interested in the technical costs of running
 `binder-data <https://github.com/jupyterhub/binder-data/tree/master/billing/data/proc>`_
 repository. In addition, you can explore these costs with the binder link below!
 
-.. image:: https://mybinder.org/badge.svg
+.. image:: https://mybinder.org/badge_logo.svg
    :target: https://mybinder.org/v2/gh/jupyterhub/binder-billing/master?filepath=analyze_data.ipynb
 
 How can ``mybinder.org`` be free to use?
@@ -127,7 +127,7 @@ information within a Binder repository**. This includes passwords, data that
 shouldn't be public, API keys, etc.
 
 You should ensure that sensitive information doesn't make it into the built
-docker image for your Binder (aka, that it isn't used in one of your
+docker image for your Binder repository (aka, that it isn't used in one of your
 configuration files) and that you don't use this information from within
 a Binder session (e.g. hard-coding an API key into an HTTP request that you
 call from a Jupyter Notebook).

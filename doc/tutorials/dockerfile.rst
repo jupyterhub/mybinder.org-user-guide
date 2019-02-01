@@ -1,7 +1,7 @@
 .. _dockerfile:
 
-Use a Dockerfile for your Binder
-================================
+Use a Dockerfile for your Binder repository
+===========================================
 
 Binder supports configuration files for package
 installation, environment specification, post-build shell scripts, and more.
@@ -158,16 +158,16 @@ For a Dockerfile to work on Binder, it must meet the following requirements:
 5. It must accept command arguments. The Dockerfile will effectively be launched as:
 
    .. code-block:: sh
-   
+
       docker run <image> jupyter notebook <arguments from the mybinder launcher>
-   
+
    where `<arguments ...>` includes important information automatically set by the binder
    environment, such as the port and token.
-   
+
    If your Dockerfile sets or inherits the Docker `ENTRYPOINT` instruction, the program
    specified as the `ENTRYPOINT` *must* `exec` the arguments passed by docker. Inherited
    Dockerfiles may unset the entrypoint with `ENTRYPOINT []`.
-   
+
    For more information, and a shell wrapper example, please see the `Dockerfile best practices: ENTRYPOINT  <https://docs.docker.com/develop/develop-images/dockerfile_best-practices/#entrypoint>`_ documentation.
 
 

@@ -1,9 +1,9 @@
-=============================================
-Generate custom launch badges for your Binder
-=============================================
+========================================================
+Generate custom launch badges for your Binder repository
+========================================================
 
 Sometimes you want something more specific than the default "launch binder" badge.
-This page is meant to help you create a custom badge for your Binder using the
+This page is meant to help you create a custom badge for your Binder repository using the
 `shields.io <https://shields.io/#/>`_ service.
 
 The text in the "left" and "right" boxes will be used to populate your badge text,
@@ -30,7 +30,7 @@ to generate the rST and markdown that you can use to generate a link.
     text-decoration: none
    }
    </style>
-  
+
    <form id="badgeform" class="pure-form">
       <input type="text" class="pure-input-1-4" id="lefttext" placeholder="left text">
       <input type="text" class="pure-input-1-4" id="righttext" placeholder="right text">
@@ -79,7 +79,7 @@ to generate the rST and markdown that you can use to generate a link.
        var md_new = `[![badge](${badgeurl})](${url})`
        var md_code = document.querySelectorAll('div#markdown div pre')[0];
        md_code.textContent = md_new;
-       
+
    }
    </script>
 

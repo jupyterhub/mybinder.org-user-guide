@@ -7,3 +7,4 @@ alabaster
 alabaster_jupyterhub
 memory_profiler
 pytest
+PyGitHub
