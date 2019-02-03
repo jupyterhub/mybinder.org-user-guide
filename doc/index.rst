@@ -60,11 +60,14 @@ and often cover more conceptual topics.
    howto/user_interface
    howto/badges
 
+   howto/lab_workspaces
+
 .. toctree::
    :maxdepth: 2
    :caption: Tutorials and in-depth guides
 
    tutorials/reproducibility
+   tutorials/events-archive
    tutorials/dockerfile
 
 
