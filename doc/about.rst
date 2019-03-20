@@ -35,8 +35,8 @@ What technology runs mybinder.org?
 The technology behind mybinder.org is primarily composed of three open-source projects:
 
 * `JupyterHub <https://z2jh.jupyter.org>`_, which manages cloud infrastructure for user instances
-* `repo2docker <repo2docker.readthedocs.io>`_, which builds Docker images from GitHub repositories
-* `BinderHub <binderhub.readthedocs.io>`_, which orchestrates the above two projects and
+* `repo2docker <https://repo2docker.readthedocs.io>`_, which builds Docker images from GitHub repositories
+* `BinderHub <https://binderhub.readthedocs.io>`_, which orchestrates the above two projects and
   provides the Binder interface.
 
 Each of these are open and inclusively-governed projects. Currently, these are all officially
