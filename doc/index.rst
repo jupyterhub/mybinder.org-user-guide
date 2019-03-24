@@ -59,7 +59,7 @@ and often cover more conceptual topics.
    howto/languages
    howto/user_interface
    howto/badges
-
+   howto/repo_data
    howto/lab_workspaces
 
 .. toctree::
@@ -67,7 +67,6 @@ and often cover more conceptual topics.
    :caption: Tutorials and in-depth guides
 
    tutorials/reproducibility
-   tutorials/events-archive
    tutorials/dockerfile
 
 
