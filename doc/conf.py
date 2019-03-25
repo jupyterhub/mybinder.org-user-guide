@@ -185,8 +185,7 @@ with open('./config_files.rst', 'w') as ff:
 print('Updating latest howto pages from repo2docker...')
 imports = {'howto': ["jupyter/repo2docker/master/docs/source/howto/languages.rst",
                      "jupyter/repo2docker/master/docs/source/howto/user_interface.rst",
-                     "jupyter/repo2docker/master/docs/source/howto/lab_workspaces.rst"],
-           'tutorials': ["jupyterhub/mybinder.org-deploy/master/docs/source/analytics/events-archive.rst"]}
+                     "jupyter/repo2docker/master/docs/source/howto/lab_workspaces.rst"]}
 howto_imports = []
 url_base = "https://raw.githubusercontent.com/{}"
 for kind, files in imports.items():
