@@ -5,9 +5,9 @@ What is a Binder?
 -----------------
 
 A Binder is a Git repository that has been outfitted with the appropriate
-`build files <http://repo2docker.readthedocs.io/en/latest/samples.html>`_ so
+:ref:`build files <sample_repos>` so
 that its content can be connected with a BinderHub instance. Currently these
-repositories mostly live on `GitHub <https://github.com>`_, though we plan
+repositories mostly live on `GitHub <https://github.com/binder-examples>`_, though we plan
 on supporting more online repositories such as GitLab or BitBucket.
 
 What is the Binder community?
