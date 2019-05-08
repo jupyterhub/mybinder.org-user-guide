@@ -57,7 +57,7 @@ Great question! If you're interested in the technical costs of running
 repository. In addition, you can explore these costs with the binder link below!
 
 .. image:: https://mybinder.org/badge_logo.svg
-   :target: https://mybinder.org/v2/gh/jupyterhub/binder-billing/master?filepath=analyze_data.ipynb
+   :target: https://mybinder.org/v2/gh/jupyterhub/binder-billing/master?urlpath=lab/tree/analyze_data.ipynb
 
 How can ``mybinder.org`` be free to use?
 ----------------------------------------
