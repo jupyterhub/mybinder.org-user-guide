@@ -33,6 +33,10 @@ Textbooks and teaching
     * `github <https://github.com/moorepants/resonance>`_
     * .. image:: https://mybinder.org/badge_logo.svg
          :target: https://mybinder.org/v2/gh/moorepants/resonance/master
+* **Learn You a Haskell for Great Good!**
+    * `github <https://github.com/jamesdbrock/learn-you-a-haskell-notebook>`_
+    * .. image :: https://mybinder.org/badge_logo.svg
+         :target: https://mybinder.org/v2/gh/jamesdbrock/learn-you-a-haskell-notebook/master?urlpath=lab/tree/learn_you_a_haskell/00-preface.ipynb
 
 
 
