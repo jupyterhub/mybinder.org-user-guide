@@ -117,9 +117,9 @@ to give users the ability to quickly interact with features, APIs,
 and tutorials that teach people how (and why) to use a package.
 
 Binder is useful for generating quick, interactive experiences that
-serve this purpose. For example, `Sphinx-Gallery <https://sphinx-gallery.readthedocs.io/en/latest>`_ allows you to
+serve this purpose. For example, `Sphinx-Gallery <https://sphinx-gallery.github.io>`_ allows you to
 build documentation from Python examples and create a visual gallery
-for each. It can `automatically create Binder links <https://sphinx-gallery.readthedocs.io/en/latest/configuration.html?highlight=binder#binder-links>`_
+for each. It can `automatically create Binder links <https://sphinx-gallery.github.io/configuration.html?highlight=binder#binder-links>`_
 for each page. In addition, the R community has a tool called
 `holepunch <https://github.com/karthik/holepunch>`_ that helps you quickly
 generate binder-ready repositories for R workflows.
