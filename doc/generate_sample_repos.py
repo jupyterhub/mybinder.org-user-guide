@@ -30,7 +30,7 @@ except:
 # These are the repositories we'll display. Break them down by topic since the list is getting long
 repos = {'Managing languages': ['requirements', 'conda', 'setup.py', 'julia-python', 'demo-julia', 'r', 'binder-r-description', 'octave'],
          'User interfaces': ['jupyterlab', 'jupyter-extension', 'jupyter-rise', 'appmode', 'bokeh', 'stencila-py'],
-         'System environents': ['python2_runtime', 'python2_with_3', 'latex', 'apt_install', 'multi-language-demo', 'python-conda_pip'],
+         'System environments': ['python2_runtime', 'python2_with_3', 'latex', 'apt_install', 'multi-language-demo', 'python-conda_pip'],
          'Data and reproducibility': ['remote_storage', 'data-quilt', 'nix'],
          'Dockerfile environments': ['minimal-dockerfile', 'jupyter-stacks', 'rocker']}
 
