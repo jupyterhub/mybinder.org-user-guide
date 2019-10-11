@@ -155,7 +155,10 @@ For a Dockerfile to work on Binder, it must meet the following requirements:
        USER ${NB_USER}
 
    This chown is required because Docker will be default
-   set the owner to ``root``, which would prevent users from editing files.
+   set the owner to ``root``, which would prevent users from editing files. Note that the repository 
+   should in general be clone with ``COPY``; although ``RUN git clone ...`` is a valid command for the
+   ``Dockerfile``, it does not invalidate the build cache of mybinder. Thus, if available, the the cached
+   repository will be used even after changes to the repository. 
 
 5. It must accept command arguments. The Dockerfile will effectively be launched as:
 
