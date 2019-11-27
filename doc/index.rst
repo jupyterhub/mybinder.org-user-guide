@@ -26,17 +26,11 @@ If you'd like documentation on how to create and administer your own BinderHub d
 see the `BinderHub documentation <http://binderhub.readthedocs.io>`_, which
 guides you through deploying your own BinderHub.
 
-Getting Started with Binder
-===========================
-
-If you're just getting started with Binder, see the pages below...
-
 .. toctree::
-   :caption: Getting started with Binder
    :maxdepth: 2
 
-   introduction
-   using
+   index-getting-started
+
 
 How-To guides and Tutorials
 ===========================
@@ -46,28 +40,11 @@ your Binder repository. How-To guides are shorter, actionable patterns that
 accomplish something specific. Tutorials are more high-level and thorough,
 and often cover more conceptual topics.
 
-.. note::
-
-   Binder is a research pilot, whose main goal is to understand usage patterns
-   and workloads for future evolution and development. It is not a service that
-   can be relied on for critical operations.
-
-.. toctree::
-   :caption: How to...
-   :maxdepth: 1
-
-   howto/languages
-   howto/user_interface
-   howto/badges
-   howto/repo_data
-   howto/lab_workspaces
-
 .. toctree::
    :maxdepth: 2
-   :caption: Tutorials and in-depth guides
-
-   tutorials/reproducibility
-   tutorials/dockerfile
+   
+   howto/index
+   tutorials/index 
 
 
 Sample repositories and configuration
@@ -78,16 +55,8 @@ you can do with Binder configuration files.
 
 .. toctree::
    :maxdepth: 2
-   :caption: Sample repositories and configuration
-
-   sample_repos
-   config_files
-
-Finally, here is a list of interesting Binder repositories from around the web:
-
-.. toctree::
-
-   examples
+   
+   index-repo-reference
 
 See the `Binder Examples <https://github.com/binder-examples>`_ GitHub
 organization for more Binder repositories demonstrating its functionality.
@@ -101,15 +70,10 @@ guidelines for users and developers, and information about the ``mybinder.org``
 service.
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Binder community
 
-   user-guidelines
-   faq
-   status
-   about
-   reliability
-   more-info
+   index-community
 
 .. _citing:
 
