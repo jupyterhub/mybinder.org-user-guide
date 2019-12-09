@@ -89,4 +89,6 @@ Here is a citation that you can use:
 
    Jupyter et al., "Binder 2.0 - Reproducible, Interactive, Sharable
    Environments for Science at Scale." Proceedings of the 17th Python
-   in Science Conference. 2018. 10.25080/Majora-4af1f417-011
+   in Science Conference. 2018. doi://10.25080/Majora-4af1f417-011
+
+`<https://doi.org/10.25080/Majora-4af1f417-011>`_
