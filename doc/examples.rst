@@ -61,3 +61,12 @@ Scientific research and reproducibility
     * `github <https://github.com/costrouc/nix-binder-example>`_
     * .. image:: https://mybinder.org/badge_logo.svg
          :target: https://mybinder.org/v2/gh/costrouc/nix-binder-example/master
+         
+         
+Machine learning and deep learning
+==================================
+
+* Monitoring training of deep neural networks using **tensorboard** on binder.
+    * `github <https://github.com/btel/binder-tensorboard>`_
+    * .. image:: https://mybinder.org/badge_logo.svg
+         :target: https://mybinder.org/v2/gh/btel/binder-tensorboard/master?urlpath=%2fproxy%2f6006%2f
