@@ -61,3 +61,8 @@ Scientific research and reproducibility
     * `github <https://github.com/costrouc/nix-binder-example>`_
     * .. image:: https://mybinder.org/badge_logo.svg
          :target: https://mybinder.org/v2/gh/costrouc/nix-binder-example/master
+
+* An R Shiny app
+    * `github <https://github.com/pablobernabeu/Modality-switch-effects-emerge-early-and-increase-throughout-conceptual-processing/tree/master/Shiny-app>`_
+    * .. image:: https://mybinder.org/badge_logo.svg
+         :target: https://mybinder.org/v2/gh/pablobernabeu/Modality-switch-effects-emerge-early-and-increase-throughout-conceptual-processing/cd4ea149820fd48c9247191a4d5670c5fa34961d?urlpath=shiny/Shiny-app/
