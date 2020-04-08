@@ -188,5 +188,5 @@ of another image. This ensures that you will continue building off of
 the same image even if the image is updated to a new version.
 
 Next, make sure that all packages installed with your Dockerfile
-are pinned to specific versions. You should do this with the the image you are
+are pinned to specific versions. You should do this with the image you are
 sourcing as well.
