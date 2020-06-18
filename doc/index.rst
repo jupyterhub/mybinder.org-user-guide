@@ -42,10 +42,15 @@ and often cover more conceptual topics.
 
 .. toctree::
    :maxdepth: 2
-   
-   howto/index
-   tutorials/index 
 
+   howto/index
+   tutorials/index
+
+`The Turing Way <https://github.com/alan-turing-institute/the-turing-way>`_ also maintains a Zero-to-Binder tutorial in 3 common programming languages.
+
+* `Julia <http://bit.ly/zero-to-binder-julia>`_
+* `Python <http://bit.ly/zero-to-binder-python>`_
+* `R <http://bit.ly/zero-to-binder-r>`_
 
 Sample repositories and configuration
 =====================================
@@ -55,7 +60,7 @@ you can do with Binder configuration files.
 
 .. toctree::
    :maxdepth: 2
-   
+
    index-repo-reference
 
 See the `Binder Examples <https://github.com/binder-examples>`_ GitHub
