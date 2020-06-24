@@ -11,6 +11,7 @@ accomplish something specific.
 
    languages
    user_interface
+   speed
    badges
    repo_data
    lab_workspaces
