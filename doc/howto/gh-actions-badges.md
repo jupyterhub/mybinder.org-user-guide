@@ -60,22 +60,22 @@ jobs:
       with:
         github-token: ${{secrets.GITHUB_TOKEN}}
         script: |
-         // Get the branch name
-         octokit.pulls.get({
-            owner: context.repo.owner,
-            repo: context.repo.repo,
-            pull_number: context.payload.issue.number
-         }).then( (pr) => {
+          // Get the branch name
+          octokit.pulls.get({
+             owner: context.repo.owner,
+             repo: context.repo.repo,
+             pull_number: context.payload.issue.number
+          }).then( (pr) => {
 
-            // use the branch name to make a comment  on the PR with a Binder badge
-            var BRANCH_NAME = pr.data.head.ref
-            octokit.issues.createComment({
-               issue_number: context.payload.issue.number,
-               owner: context.repo.owner,
-               repo: context.repo.repo,
-               body: `[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/${context.repo.owner}/${context.repo.repo}/${BRANCH_NAME}) :point_left: Launch a binder notebook on this branch`
-               })
-         })
+             // use the branch name to make a comment  on the PR with a Binder badge
+             var BRANCH_NAME = pr.data.head.ref
+             octokit.issues.createComment({
+                issue_number: context.payload.issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                body: `[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/${context.repo.owner}/${context.repo.repo}/${BRANCH_NAME}) :point_left: Launch a binder notebook on this branch`
+                })
+          })
 
 ```
 
