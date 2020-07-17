@@ -15,3 +15,4 @@ accomplish something specific.
    badges
    repo_data
    lab_workspaces
+   gh-actions-badges
