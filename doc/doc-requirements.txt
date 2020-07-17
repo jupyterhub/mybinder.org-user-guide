@@ -1,4 +1,4 @@
-recommonmark==0.4.0
+myst_parser>2,<3
 sphinx_copybutton
 traitlets
 jupyterhub
@@ -7,4 +7,4 @@ memory_profiler
 pytest
 PyGitHub
 pydata_sphinx_theme
-myst_parser
+
