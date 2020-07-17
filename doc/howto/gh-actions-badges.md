@@ -46,7 +46,7 @@ An `issue_comment` event is triggered when you comment on a pull request.  This 
 
 Similarly, when triggering GitHub Actions on a [pull_request](https://docs.github.com/en/actions/reference/events-that-trigger-workflows#pull_request) event, you can access the association of the person who opened the pull request with the variable `github.event.pull_request.author_association`.
 
-For example, this is how you can conditionally trigger the workflow shown in **Example 1** if the person opening the PR is a `OWNER`, `COLLABORATOR`, `CONTRIBUTOR`, or `MEMBER`:
+For example, this is how you can conditionally trigger the workflow shown in **Example 1** if the person opening the PR is a `OWNER`, `COLLABORATOR`, `MEMBER`, or `CONTRIBUTOR`:
 
 Download the below file: {download}`binder-badge-permissions.yaml <./binder-badge-permissions.yaml>`
 
