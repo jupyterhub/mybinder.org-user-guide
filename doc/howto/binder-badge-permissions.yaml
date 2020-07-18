@@ -4,7 +4,7 @@ on: [pull_request]
 
 jobs:
   binder:
-    if: |         
+    if: |
       (
         (github.event.issue.author_association == 'OWNER') ||
         (github.event.issue.author_association == 'COLLABORATOR') ||
