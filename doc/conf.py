@@ -3,14 +3,8 @@
 
 import os
 import requests
-from recommonmark.transform import AutoStructify
 github_doc_root = 'https://github.com/rtfd/recommonmark/tree/master/doc/'
 def setup(app):
-    app.add_config_value('recommonmark_config', {
-            'url_resolver': lambda url: github_doc_root + url,
-            'auto_toc_tree_section': 'Contents',
-            }, True)
-    app.add_transform(AutoStructify)
     app.add_stylesheet('custom.css')
 
 
@@ -23,7 +17,7 @@ def setup(app):
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['sphinx_copybutton']
+extensions = ['sphinx_copybutton', 'myst_parser']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -32,12 +26,6 @@ templates_path = ['_templates']
 # You can specify multiple suffix as a list of string:
 
 source_suffix = ['.rst', '.md']
-
-from recommonmark.parser import CommonMarkParser
-source_parsers = {
-    '.md': CommonMarkParser,
-}
-
 
 # The master toctree document.
 master_doc = 'index'
