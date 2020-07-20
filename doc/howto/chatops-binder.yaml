@@ -17,7 +17,7 @@ jobs:
         github-token: ${{secrets.GITHUB_TOKEN}}
         script: |
           // Get the branch name
-          octokit.pulls.get({
+          github.pulls.get({
             owner: context.repo.owner,
             repo: context.repo.repo,
             pull_number: context.payload.issue.number
@@ -25,7 +25,7 @@ jobs:
 
             // use the branch name to make a comment  on the PR with a Binder badge
             var BRANCH_NAME = pr.data.head.ref
-            octokit.issues.createComment({
+            github.issues.createComment({
               issue_number: context.payload.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
