@@ -7,13 +7,9 @@ To enable GitHub Actions, you must place .yaml files that define your GitHub Act
 
 ## Example 1: Comment on pull request with a binder badge
 
-```{note}
-This example will not work on pull requests from forks.  This is to protect repositories from malicious actors.  To trigger a GitHub Action with sufficient permissions to comment on a pull request from a fork, you must trigger the action via another event, such as a comment or a label.  This is demonstrated in Example 2 below.
-```
-
 The below action uses the [github/script](https://github.com/actions/github-script) Action to call the [GitHub API](https://docs.github.com/en/rest/reference/issues#comments) for the purposes of making a comment on a PR that looks like this:
 
-> ![Binder](https://mybinder.org/badge_logo.svg) 👈 Launch a binder notebook on this branch
+> ![Binder](https://mybinder.org/badge_logo.svg) 👈 Launch a binder notebook on this branch for commit xxxxxxx
 
 Download the below file: {download}`binder-badge.yaml <./binder-badge.yaml>`
 
