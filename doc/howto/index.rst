@@ -16,3 +16,4 @@ accomplish something specific.
    repo_data
    lab_workspaces
    gh-actions-badges
+   external_binder_setup

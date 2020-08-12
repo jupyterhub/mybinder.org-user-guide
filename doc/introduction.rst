@@ -131,5 +131,7 @@ the Binder link will not re-trigger the build process. However, if you
 push any changes to the repository, then it will be re-built the next time
 somebody clicks a link.
 
+If your environment files and content files are not housed in the same branch of the same repository, see the :ref:`external_binder_setup` page for how to generate a URL.
+
 Now that you're acquainted with Binder, see the :ref:`using-binder` page
 for more information about what you can do with it.
