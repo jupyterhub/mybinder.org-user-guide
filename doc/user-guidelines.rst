@@ -15,6 +15,10 @@ result in temporary banning include:
 * Sessions that routinely use a large amount of CPU.
 * Sessions that attempt to perform a lot of outgoing networking traffic.
 
+If you are concerned that your repository may be liable for banning, please feel free to
+`open an issue <https://github.com/jupyterhub/mybinder.org-deploy/issues/new?labels=question&template=ban_check.md>`_
+and a member of the team can help you.
+
 The ``mybinder.org`` team uses the following workflow in discussing / deciding
 when to temporarily ban a repository:
 
