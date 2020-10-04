@@ -1,6 +1,6 @@
-===========================
-Example Binder repositories
-===========================
+====================
+Example repositories
+====================
 
 Reference and example repositories that can be used as guidance and inspiration for
 creating your own Binder repositories.

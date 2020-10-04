@@ -11,4 +11,3 @@ concepts behind reproducible research and the technology that facililitates it.
 
    reproducibility
    dockerfile
-   ../config_files
