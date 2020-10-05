@@ -4,7 +4,7 @@ This page details some guidelines and policies that we follow at ``mybinder.org`
 
 :::{admonition,warning} When in doubt, open an issue
 If you're not sure whether your use-case is reasonable for `mybinder.org`, don't
-hesitate to [open an issue](https://github.com/jupyterhub/mybinder.org-deploy/issues/new?labels=impact&template=request_resources.md)
+hesitate to [open an issue](https://github.com/jupyterhub/mybinder.org-deploy/issues/new?labels=question&template=ban_check.md)
 to ask if your planned usage is OK.
 :::
 
