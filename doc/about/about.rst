@@ -101,7 +101,7 @@ Check out :doc:`user-guidelines` for more information about using ``mybinder.org
 Is ``mybinder.org`` free to use?
 --------------------------------
 
-Yes! Though note that it has relatively :ref:`limited computational resources
+Yes! Though note that it has :ref:`limited computational resources
 <user_memory>`.
 
 .. _user_memory:
