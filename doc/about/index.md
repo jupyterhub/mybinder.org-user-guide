@@ -1,4 +1,4 @@
-# mybinder.org info
+# Information about mybinder.org
 
 This is a collection of pages about the Binder service running at mybinder.org.
 
