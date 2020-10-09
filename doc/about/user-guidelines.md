@@ -48,7 +48,17 @@ If you think you have a *really* good reason for why this number should be
 higher, please [Open an Issue](https://github.com/jupyterhub/mybinder.org-deploy/issues).
 to discuss with the community!
 
-## Maximum Concurrent Users for a Service
+## Using mybinder.org as backend for your service
+
+Please do not use mybinder.org as backend for your for-profit service or product.
+
+The cloud resources consumed by mybinder.org are funded through donations or grants. Because
+of this we can not subsidise for-profit products or services by offering free cloud resources to them.
+This means we will prevent you from using mybinder.org as a service for your product.
+
+Operating mybinder.org relies on the good will of volunteers and organisations to obtain the
+resources required to do so. This is easier if we are not seen as supporting for-profit services
+that are not a net contributor to the service.
 
 You may be considering using `mybinder.org` as a part of your service or product.
 Think that is great, and encourage people to experiment with using Binder technology
