@@ -20,7 +20,12 @@ def setup(app):
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ["sphinx_copybutton", "myst_parser", "sphinx_panels"]
+extensions = [
+    "sphinx_copybutton",
+    "myst_parser",
+    "sphinx_panels",
+    "sphinxext.rediraffe",
+]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ["_templates"]
@@ -99,6 +104,21 @@ html_context = {
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ["_static"]
+
+rediraffe_redirects = {
+    "faq.rst": "using/faq.md",
+    "about.rst": "about/index.md",
+    "examples.rst": "examples/examples.md",
+    "index-repo-reference.rst": "examples/index.rst",
+    "sample_repos.md": "examples/sample_repos.md",
+    "index-community.rst": "about/index.md",
+    "index-getting-started.rst": "introduction.md",
+    "more-info.rst": "using/faq.md",
+    "reliability.rst": "about/status.rst",
+    "status.rst": "about/status.rst",
+    "user-guidelines.rst": "about/user-guidelines.md",
+    "using.rst": "using/using.rst",
+}
 
 # -- MyST Configuration ------------------------------------------
 # See https://myst-parser.readthedocs.io/en/latest/using/syntax-optional.html#definition-lists
