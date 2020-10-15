@@ -34,13 +34,15 @@ repos = {'Managing languages': ['requirements', 'conda', 'setup.py', 'julia-pyth
          'Data and reproducibility': ['remote_storage', 'data-quilt', 'nix'],
          'Dockerfile environments': ['minimal-dockerfile', 'jupyter-stacks', 'rocker']}
 
-lines = ['# Sample Binder Repositories\n',
-         '\n'
-         'Below we list several sample Binder repositories that\n'
-         'demonstrate how to compose build files in order to create\n'
-         'Binders with varying environments. You can find all of the\n'
-         'repositories listed on this page at the\n'
-         '[binder-examples GitHub organization](https://github.com/binder-examples).\n\n']
+lines = ['% !!!! PROGRAMMATICALLY GENERATED                       !!!!',
+         '% !!!! Run generate_sample_repos.py to update this page !!!!',
+         '# Sample Binder Repositories',
+         ''
+         'Below we list several sample Binder repositories that'
+         'demonstrate how to compose build files in order to create'
+         'Binders with varying environments. You can find all of the'
+         'repositories listed on this page at the'
+         '[binder-examples GitHub organization](https://github.com/binder-examples).\n']
 
 for category, repo_list in repos.items():
     print(category)
@@ -59,7 +61,7 @@ for category, repo_list in repos.items():
         file_names = ['{}'.format(this_name) for this_name in file_names]
 
         # Parse readme
-        readme = repo.get_file_contents('README.md')
+        readme = repo.get_contents('README.md')
         readme_text = readme.decoded_content.decode()
         readme_text = readme_text.replace('beta.mybinder.org', 'mybinder.org')
         readme_text = readme_text.replace('badge.svg', 'badge_logo.svg')
@@ -70,10 +72,7 @@ for category, repo_list in repos.items():
             if line.startswith('#'):
                 readme_text[i_line] = '##' + line
             if line.startswith('[![Binder]'):
-                readme_text[i_line] = line + ' | [repo link]({})'.format(link)
-
-        if i_line != 0:
-            lines.append('---------')
+                readme_text[i_line] = line + f' | [![](https://img.shields.io/github/forks/{repo.full_name}?label=GitHub%20Repo&style=social)]({link})'
 
         # Append to doc file
         lines += readme_text
@@ -82,7 +81,6 @@ for category, repo_list in repos.items():
         for this_file in file_names:
             lines.append(this_file)
         lines.append('```')
-        lines.append('```eval_rst\n|\n|\n\n```')
 
 lines = [ln + '\n' for ln in lines]
 

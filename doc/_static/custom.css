@@ -10,3 +10,20 @@ div.sphinxsidebarwrapper ul {
     font-size: .8em;
     padding-left: 1em;
 }
+
+
+/* Federation grid */
+.federation-members .card-header a.btn {
+    font-size: 1.4rem !important;
+}
+
+/* Badges on front page */
+div.badges img {
+    float: left;
+    padding-right: .5em;
+}
+
+/* Logo */
+img.logo{
+    padding: 0.2em;
+}

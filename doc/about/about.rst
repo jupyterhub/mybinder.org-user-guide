@@ -1,72 +1,108 @@
-Frequently Asked Questions
-==========================
+.. _about:
 
-What is a Binder?
------------------
+======================
+About ``mybinder.org``
+======================
 
-A Binder is a Git repository that has been outfitted with the appropriate
-`build files <https://repo2docker.readthedocs.io/en/latest/config_files.html>`_ so
-that its content can be connected with a BinderHub instance. This git repository
-can live on `GitHub <https://github.com/binder-examples>`_ or on any other 
-platform such as GitLab or BitBucket.
+mybinder.org is a deployment of the BinderHub technology. It is run as a public
+service for those who'd like to share their interactive repositories publicly.
+It is used by the Binder project to demonstrate the "cutting edge" of its technology.
 
-What is the Binder community?
------------------------------
+This page explains some of the teams and organizations behind mybinder.org, as
+well as common questions about using mybinder.org
 
-A collection of people that aim to make it easy to turn
-computational material (e.g. Jupyter notebooks, R scripts, and environment
-files) into computational environments (a Docker image) and serve this
-environment through the cloud. The underlying technology that manages this
-process is called `BinderHub`_.
 
-For more information, check out :ref:`about`.
+About ``mybinder.org``
+======================
 
-What is BinderHub?
-------------------
+Information about the Binder service at ``mybinder.org`` and the teams behind it.
 
-`BinderHub`_ is the server technology that
-turns computational material into
-interactive computational environments in the cloud. It utilizes
-`Kubernetes and JupyterHub <https://z2jh.jupyter.org>`_ in order to
-simplify the deployment process and make it easy to scale.
+.. _about-binder-project:
 
-What is ``mybinder.org``?
--------------------------
+What is the Binder Project?
+---------------------------
 
-``mybinder.org`` is a single deployment of a BinderHub instance, managed by
-the Binder community. It serves as both a public service and a demonstration
-of the BinderHub technology, though it is by no means the only BinderHub
-in existence. If you're interested in deploying your own BinderHub for your
-own uses, please see the `BinderHub documentation <BinderHub_>`_
-and don't hesitate to reach out to the `Binder community <https://gitter.im/jupyterhub/binder>`_.
+The Binder Project is an open community that makes it possible to create sharable,
+interactive, reproducible environments. The main technical product that
+the community creates is called BinderHub, which you can try out
+at `mybinder.org`. 
 
-For more information, check out :ref:`about`.
+The Binder Project is currently housed as a member of Project Jupyter, which is
+itself housed under NumFocus, a 501c3 non-profit. 
+
+.. _citing:
+
+How can I cite Binder?
+----------------------
+
+If you publish work that uses Binder, please consider citing the
+`Binder paper from the 2018 SciPy proceedings <http://conference.scipy.org/proceedings/scipy2018/project_jupyter.html>`_!
+
+Here is a citation that you can use:
+
+.. code-block:: raw
+
+   Jupyter et al., "Binder 2.0 - Reproducible, Interactive, Sharable
+   Environments for Science at Scale." Proceedings of the 17th Python
+   in Science Conference. 2018. doi://10.25080/Majora-4af1f417-011
+
+https://doi.org/10.25080/Majora-4af1f417-011
+
+
+Who runs mybinder.org?
+----------------------
+
+The service at ``mybinder.org`` is powered by a collection of BinderHub
+deployments called :doc:`The BinderHub Federation <federation>` and run by
+the `Binder team <https://jupyterhub-team-compass.readthedocs.io/en/latest/team.html#binder-team>`_.
+
+For more information about the BinderHubs behind ``mybinder.org``, see
+:doc:`The BinderHub Federation <federation>`.
+
+Who pays for mybinder.org?
+--------------------------
+
+The service at mybinder.org is provided by a federation of BinderHub deployments
+that are maintained by several members and organizations in the Binder community.
+For information about who runs and pays for these deployments, see {ref}`about/federation`.
+
+Is there dedicated funding for the Binder Project?
+--------------------------------------------------
+
+The Binder Project currently has no dedicated funding (beyond the time and hardware costs
+provided by its {ref}`federation members <about/federation>`).
+
+In 2017 the Binder Project received a 1-year grant from the
+`Moore Foundation <https://figshare.com/s/e9d0ad7bdc4e405cccfa>`_.
+
+What technology runs mybinder.org?
+----------------------------------
+
+The technology behind mybinder.org is primarily composed of three open-source projects:
+
+* `JupyterHub <https://z2jh.jupyter.org>`_, which manages cloud infrastructure for user instances
+* `repo2docker <https://repo2docker.readthedocs.io>`_, which builds Docker images from GitHub repositories
+* `BinderHub <https://binderhub.readthedocs.io>`_, which orchestrates the above two projects and
+  provides the Binder interface.
+
+Each of these are open and inclusively-governed projects. Currently, these are all officially
+hosted as a part of `Project Jupyter <https://github.com/jupyter/governance>`_,
+an open project that creates open tools for data science
+infrastructure and interactive computation. The Binder team is
+heavily involved in each.
+
+Using the ``mybinder.org`` service
+==================================
+
+Information about using the ``mybinder.org`` service.
+
+Check out :doc:`user-guidelines` for more information about using ``mybinder.org``.
 
 Is ``mybinder.org`` free to use?
 --------------------------------
 
-Yes! Though note that it has relatively :ref:`limited computational resources
+Yes! Though note that it has :ref:`limited computational resources
 <user_memory>`.
-
-How much does running ``mybinder.org`` cost?
---------------------------------------------
-
-Great question! If you're interested in the technical costs of running
-``mybinder.org``, we publish a semi-up-to-date dataset of our costs at the
-`binder-data <https://github.com/jupyterhub/binder-data/tree/master/billing/data/proc>`_
-repository. In addition, you can explore these costs with the binder link below!
-
-.. image:: https://mybinder.org/badge_logo.svg
-   :target: https://mybinder.org/v2/gh/jupyterhub/binder-billing/master?urlpath=lab/tree/analyze_data.ipynb
-
-How can ``mybinder.org`` be free to use?
-----------------------------------------
-
-See :ref:`about` for more information on the mybinder.org team and who provides
-the resources to pay for the service. Generally, mybinder.org is run with modest resources
-provided to users in order to keep costs down. In the future we hope to see more
-public BinderHub services running that can form a collection of community
-resources for interactive cloud computing.
 
 .. _user_memory:
 
@@ -90,6 +126,26 @@ leave your window open, this will be counted as "activity").
 Binder aims to provide at least 12 hours of session time per user session.
 Beyond that, we cannot guarantee that the session will remain running.
 
+How much does running ``mybinder.org`` cost?
+--------------------------------------------
+
+Great question! If you're interested in the technical costs of running
+``mybinder.org``, we publish a semi-up-to-date dataset of our costs at the
+`binder-data <https://github.com/jupyterhub/binder-data/tree/master/billing/data/proc>`_
+repository. In addition, you can explore these costs with the binder link below!
+
+.. image:: https://mybinder.org/badge_logo.svg
+   :target: https://mybinder.org/v2/gh/jupyterhub/binder-billing/master?urlpath=lab/tree/analyze_data.ipynb
+
+How can ``mybinder.org`` be free to use?
+----------------------------------------
+
+See :ref:`about` for more information on the mybinder.org team and who provides
+the resources to pay for the service. Generally, mybinder.org is run with modest resources
+provided to users in order to keep costs down. In the future we hope to see more
+public BinderHub services running that can form a collection of community
+resources for interactive cloud computing.
+
 Can I use mybinder.org for a live demo or workshop?
 ---------------------------------------------------
 
@@ -99,6 +155,8 @@ or demo. Occasionally, service on ``mybinder.org`` can be degraded, usually beca
 the server is getting a lot of attention somewhere on the
 internet, because we are deploying new versions of software, or the team
 can't quickly respond to an outage.
+
+Check out :doc:`user-guidelines` for more information about using ``mybinder.org``.
 
 How does mybinder.org ensure user privacy?
 ------------------------------------------
@@ -233,10 +291,3 @@ For more information, see the `BinderHub documentation <BinderHub_>`_
 for instructions on how to deploy your own BinderHub, and the
 `Zero to JupyterHub <https://zero-to-jupyterhub.readthedocs.io/en/latest/user-experience.html#set-user-memory-and-cpu-guarantees-limits>`_
 documentation for how to customize the user environment.
-
-How can I cite Binder?
-----------------------
-
-For information on how to cite Binder, see :ref:`citing`.
-
-.. _BinderHub: https://binderhub.readthedocs.io/en/latest

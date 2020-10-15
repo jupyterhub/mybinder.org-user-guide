@@ -1,0 +1,56 @@
+
+````{panels}
+:card: +text-center federation-members
+
+---
+```{link-button} https://gke.mybinder.org
+:classes: stretched-link
+:text: gke.mybinder.org
+```
+^^^
+![The Binder Team](https://binderhub.readthedocs.io/en/latest/_static/logo.png)
++++
+Run by [The Binder Team](https://jupyterhub-team-compass.readthedocs.io/en/latest/team.html#binder-team)
+
+Funded by [Google Cloud Platform](https://cloud.google.com/)
+
+
+---
+```{link-button} https://ovh.mybinder.org
+:classes: stretched-link
+:text: ovh.mybinder.org
+```
+^^^
+![The OVH Team](https://www.ovh.com/fr/images/logos/logo-ovh-twitter.jpg)
++++
+Run by [The OVH Team](https://www.ovh.com/world/)
+
+Funded by [OVH](https://www.ovh.com/world/)
+
+
+---
+```{link-button} https://gesis.mybinder.org
+:classes: stretched-link
+:text: gesis.mybinder.org
+```
+^^^
+![The GESIS Notebooks Team](https://notebooks.gesis.org/static/images/logo/logo_text_2.png)
++++
+Run by [The GESIS Notebooks Team](https://notebooks.gesis.org/about/)
+
+Funded by [GESIS](https://www.gesis.org/en/home)
+
+
+---
+```{link-button} https://turing.mybinder.org
+:classes: stretched-link
+:text: turing.mybinder.org
+```
+^^^
+![The Turing Way team led by Sarah Gibson](https://www.turing.ac.uk/sites/default/files/inline-images/Turing%20logo_0.png)
++++
+Run by [The Turing Way team led by Sarah Gibson](https://www.turing.ac.uk/research/research-projects/turing-way-handbook-reproducible-data-science#organisers)
+
+Funded by [The Alan Turing Institute](https://turing.ac.uk)
+
+````
