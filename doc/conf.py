@@ -125,7 +125,7 @@ rediraffe_redirects = {
 myst_admonition_enable = True
 myst_deflist_enable = True
 
-panels_add_boostrap_css = False
+panels_add_bootstrap_css = False
 
 # -- Options for HTMLHelp output ------------------------------------------
 
