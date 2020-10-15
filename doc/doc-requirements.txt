@@ -6,5 +6,5 @@ jupyterhub
 memory_profiler
 pytest
 PyGitHub
-pydata_sphinx_theme
+git+https://github.com/pandas-dev/pydata-sphinx-theme
 sphinxext-rediraffe
