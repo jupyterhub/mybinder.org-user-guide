@@ -9,7 +9,7 @@ For more FAQs about the Binder service at **mybinder.org**, see [](../about/abou
 
 ## How can I cite Binder?
 
-For information about citing Binder, see :ref:`citing`.
+For information about citing Binder, see {ref}`citing`.
 
 ## Where can I find more information about Binder?
 
