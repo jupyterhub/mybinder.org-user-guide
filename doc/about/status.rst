@@ -18,7 +18,7 @@ Federation status
 The following table lists BinderHub deployments in the mybinder.org
 federation, along with the status of each. For more information about
 the BinderHub federation, who is in it, how to join it, etc, see
-`the BinderHub federation page <https://binderhub.readthedocs.io/en/latest/federation/federation.html>`_.
+`the mybinder federation page <https://mybinder.readthedocs.io/en/latest/about/federation.html>`_.
 
 ==========================  ========  ===============  ==============  =============== =====
   URL                       Response  Docker registry  JupyterHub API  User/Build Pods Quota
