@@ -9,7 +9,7 @@ To enable GitHub Actions, you must place .yaml files that define your GitHub Act
 
 The below action uses the [github/script](https://github.com/actions/github-script) Action to call the [GitHub API](https://docs.github.com/en/rest/reference/issues#comments) for the purposes of making a comment on a PR that looks like this:
 
-> ![Binder](https://mybinder.org/badge_logo.svg) 👈 Launch a binder notebook on this branch for commit xxxxxxx
+> ![Binder](https://mybinder.org/badge_logo.svg) 👈 Launch a binder notebook on branch _xxxxxxx_
 
 Download the below file: {download}`binder-badge.yaml <./binder-badge.yaml>`
 
