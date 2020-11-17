@@ -34,7 +34,7 @@ how to un-ban the repository.
 
 ## Running events with `mybinder.org`
 
-If you'd like to run an event with `mybinder.org` and expect more than 50 users
+If you'd like to run an event with `mybinder.org` and expect more than 100 users
 to join at once, please [request an increase in quota for your repository](https://github.com/jupyterhub/mybinder.org-deploy/issues/new?labels=impact&template=request_resources.md).
 
 The Binder Team occasionally increases the number of sessions that can run for a single repository if it is being used for purposes that align with the mission of the Binder Project. However, there is no guarantee that this will be done for your event.
