@@ -70,7 +70,7 @@ Is there dedicated funding for the Binder Project?
 --------------------------------------------------
 
 The Binder Project currently has no dedicated funding (beyond the time and hardware costs
-provided by its {ref}`about/federation`).
+provided by :doc:`The BinderHub Federation members <federation>`).
 
 In 2017 the Binder Project received a 1-year grant from the
 `Moore Foundation <https://figshare.com/s/e9d0ad7bdc4e405cccfa>`_.
