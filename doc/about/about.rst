@@ -64,7 +64,7 @@ Who pays for mybinder.org?
 
 The service at mybinder.org is provided by a federation of BinderHub deployments
 that are maintained by several members and organizations in the Binder community.
-For information about who runs and pays for these deployments, see {ref}`about/federation`.
+For information about who runs and pays for these deployments, see :doc:`The BinderHub Federation <federation>`.
 
 Is there dedicated funding for the Binder Project?
 --------------------------------------------------
