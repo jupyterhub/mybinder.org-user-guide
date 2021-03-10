@@ -120,10 +120,12 @@ How long will my Binder session last?
 
 Binder is meant for interactive and ephemeral interactive coding, meaning that
 it is ideally suited for relatively short sessions. Binder will automatically
-shut down user sessions that have more than 10 minutes of inactivity (if you
-leave your window open, this will be counted as "activity").
+shut down user sessions that have more than 10 minutes of inactivity
+(if you leave a jupyterlab window open in the foreground,
+this will generally be counted as "activity").
 
-Binder aims to provide at least 12 hours of session time per user session.
+Binder aims to provide up to six hours of session time per user session,
+or up to one cpu-hour for more computationally intensive sessions.
 Beyond that, we cannot guarantee that the session will remain running.
 
 How much does running ``mybinder.org`` cost?
