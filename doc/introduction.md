@@ -3,7 +3,9 @@
 
 This page will help you get started building your own repositories and sharing them with Binder. For more information about the Binder Project in general, see [](../about/about).
 
-:::{admonition,tip} Another useful resource
+:::{admonition} Another useful resource
+:class: tip
+
 ````{div} row
 ```{div} col-3
 ![](https://the-turing-way.netlify.app/_static/logo.jpg)
@@ -53,8 +55,8 @@ in existence. If you're interested in deploying your own BinderHub for your
 own uses, please see the [BinderHub documentation][BinderHub]
 and don't hesitate to reach out to the [Binder community](https://gitter.im/jupyterhub/binder).
 
-:::{admonition,tip} For more about the Binder Project
-
+:::{admonition} For more about the Binder Project
+:class: tip
 For more information about using `mybinder.org` as well as the team behind it,
 check out [](about).
 :::

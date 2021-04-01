@@ -293,3 +293,16 @@ For more information, see the `BinderHub documentation <BinderHub_>`_
 for instructions on how to deploy your own BinderHub, and the
 `Zero to JupyterHub <https://zero-to-jupyterhub.readthedocs.io/en/latest/user-experience.html#set-user-memory-and-cpu-guarantees-limits>`_
 documentation for how to customize the user environment.
+
+
+Other tools in the Binder ecosystem
+-----------------------------------
+
+.. panels::
+   :card: text-center
+
+   Google Chrome extension:
+   `Open in Binder <https://carreau.github.io/posts/32-open-with-binder-chrome.html>`_.
+   +++
+   `Matthias Bussonier <https://carreau.github.io>`_.
+

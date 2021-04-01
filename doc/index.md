@@ -16,7 +16,8 @@ One such deployment lives at [mybinder.org](https://mybinder.org), and is free t
 For more information about the mybinder.org deployment and the team that runs it, see
 [](about/about.md).
 
-:::{admonition,tip} Other documentation in the Binder ecosystem
+:::{admonition} Other documentation in the Binder ecosystem
+:class: tip
 This documentation is for creators of Binder repositories, and those who wish to use
 and learn more about the service at `mybinder.org`. You may be interested in the following
 other documentation sites:
@@ -31,10 +32,14 @@ other documentation sites:
 : Has team information, practices, and guides for the JupyterHub community. This is also a great resource if you're looking for ways to get involved!
 :::
 
+## Get started
+
+To learn more about Binder, check out our tutorials, which will help you get started and learn more about sharing reproducible environments with Binder.
+
 ```{toctree}
 :maxdepth: 2
 
-introduction
+tutorials/index
 ```
 
 ## How-To guides and Tutorials
@@ -47,7 +52,15 @@ and often cover more conceptual topics.
 ```{toctree}
 :maxdepth: 2
 
-using/index
+howto/index
+```
+
+## Reference information about Binder
+
+```{toctree}
+:maxdepth: 2
+
+reference/index
 ```
 
 ## Information about `mybinder.org`

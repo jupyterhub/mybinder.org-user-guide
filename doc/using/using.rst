@@ -1,8 +1,8 @@
 .. _using-binder:
 
-===============================
-Common usage patterns in Binder
-===============================
+================
+Common use-cases
+================
 
 This page describes some common patterns and use-cases for Binder.
 If you're new to Binder, we recommend checking out :ref:`introduction`
@@ -11,48 +11,6 @@ own repository.
 
 For a more complete list of sample repositories for use with Binder, see the
 `Sample Binder Repositories <sample_repos.html>`_ page.
-
-Choose from many open source languages
-======================================
-
-Binder runs on JupyterHub, a language-agnostic tool for serving data
-analytics sessions in the cloud. This means that you can build Binders
-using many popular open source languages.
-
-For example, here's a short list of Binder repositories that are built
-with several popular languages:
-
-* Python
-    * `A simple pip environment <https://github.com/binder-examples/requirements>`_.
-    * `An Anaconda Python environment <https://github.com/binder-examples/conda>`_.
-* R
-    * `Using R, RStudio, and Shiny <https://github.com/binder-examples/r>`_.
-* Julia
-    * `A simple Julia repository <https://github.com/binder-examples/julia-python>`_.
-
-You can also control the versions used for each of these languages. For
-more information about this, see the :ref:`config-files` page.
-
-Choose from multiple user interfaces
-====================================
-
-BinderHub is also agnostic to the specific user interface that you'd like
-to share with your Binder repository. BinderHub will make some assumptions about the
-interface you'd like depending on the environment you specify (for example,
-if you use Python and have Jupyter Notebooks in the repository, Binder
-will use a notebook interface for links). However, you can configure Binder
-to use whatever interface you'd like.
-
-For example, here are a few repositories demonstrating different user
-interfaces.
-
-* `The Classic Notebook interface <https://github.com/binder-examples/python-conda_pip>`_
-* `Jupyter Lab <https://github.com/jupyterlab/jupyterlab-demo>`_
-* `The nteract interface <https://mybinder.org/v2/gh/nteract/examples/master?urlpath=%2Fnteract%2Fedit%2Fpython%2Fintro.ipynb>`_
-* `RStudio sessions <https://github.com/binder-examples/r>`_
-
-For a more complete description of the interfaces people have used
-with Binder, see :ref:`user_interface`.
 
 
 Creating live demonstrations
