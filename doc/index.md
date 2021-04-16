@@ -10,8 +10,10 @@
 <br />
 
 **Binder** allows you to create custom computing environments that can be shared
-and used by many remote users. It is powered by [BinderHub](https://github.com/jupyterhub/binderhub),
-which is an open-source tool that deploys the Binder service in the cloud.
+and used by many remote users. You can [use many open source languages](howto/languages.rst), [configure the user interface](howto/user_interface.rst), and more!
+
+A Binder service is powered by [BinderHub](https://github.com/jupyterhub/binderhub),
+an open-source tool that runs on Kubernetes.
 One such deployment lives at [mybinder.org](https://mybinder.org), and is free to use.
 For more information about the mybinder.org deployment and the team that runs it, see
 [](about/about.md).

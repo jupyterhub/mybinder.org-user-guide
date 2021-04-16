@@ -1,6 +1,6 @@
-=============================================
-How can I speed up my repository launch time?
-=============================================
+==================================
+Speed up my repository launch time
+==================================
 
 People often ask how they can speed up the launches for their Binder repositories.
 Binder is a bit different from other cloud services because it builds and launches

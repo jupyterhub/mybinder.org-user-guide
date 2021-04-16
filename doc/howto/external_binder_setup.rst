@@ -1,8 +1,8 @@
 .. _external_binder_setup:
 
-===============================================
-Separate my Binder setup files from my content?
-===============================================
+======================================================
+Use different repositories for content and environment
+======================================================
 
 Separating your Binder setup files from your repository content can be useful for a variety of reasons. Maybe they need different access permissions or you manage your working environment external to your code repository. Whatever the reason, with a custom Binder URL you can store your environment independent of your content.
 

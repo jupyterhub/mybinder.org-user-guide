@@ -8,3 +8,4 @@ pytest
 PyGitHub
 git+https://github.com/pandas-dev/pydata-sphinx-theme
 sphinxext-rediraffe
+sphinx-autobuild

@@ -19,7 +19,7 @@ of the Binder service. For details about this deployment, please visit [helm-cha
 
 ## Maintainers
 
- Binder is maintained by the [Binder team](https://github.com/jupyterhub/team-compass#binder-team).  Administration is managed at [team compass](https://github.com/jupyterhub/team-compass).
+Binder is maintained by the [Binder team](https://github.com/jupyterhub/team-compass#binder-team).  Administration is managed at [team compass](https://github.com/jupyterhub/team-compass).
 
 
 The JupyterHub team also maintains analysis of binder data including [billing data](https://github.com/jupyterhub/binder-billing) and [activity data](https://github.com/jupyterhub/binder-data).
