@@ -97,6 +97,13 @@ For a list of sample repositories for use with Binder, see the
 [Sample Binder Repositories](examples/sample_repos) page.
 :::
 
+## How can I customize my Binder environment?
+
+There are many ways to customize the Binder environment.
+For example, you can [use many open source languages](howto/languages.rst), [configure the user interface](howto/user_interface.rst), and more!
+
+For more information, check out [the How-to guides](../howto/index.md) or [the sample repository examples](../examples/index.md).
+
 ## A Binder example
 
 For example, let's take a look at a simple repository that requires a
