@@ -81,11 +81,9 @@ simplify the deployment process and make it easy to scale.
 
 (preparing_repositories)=
 
-## Preparing a repository for Binder
+## How can I prepare a repository for Binder?
 
-In order to prepare your repository for use with the BinderHub
-at mybinder.org, all you
-need to do is ensure that the following conditions are met:
+To prepare your repository for use with the BinderHub at mybinder.org, you should ensure that the following conditions are met:
 
 * The repository is in a public location online (e.g., on GitHub or BitBucket)
 * The repository does not require any personal or sensitive information

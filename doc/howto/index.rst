@@ -12,13 +12,20 @@ accomplish something specific.
 
 
 .. toctree::
+   :caption: User environment
    :maxdepth: 1
 
    languages
    user_interface
+   lab_workspaces
+   external_binder_setup
+
+.. toctree::
+   :caption: Advanced
+   :maxdepth: 1
+
    speed
    badges
    repo_data
-   lab_workspaces
    gh-actions-badges
-   external_binder_setup
+   
