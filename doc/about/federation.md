@@ -64,14 +64,40 @@ following questions:
 3. **What kind of cloud resources would I need?** This depends on how many
    you have :-)  We can increase or decrease the percentage of `mybinder.org`
    traffic that goes to your BinderHub based on what you can handle.
+3. **What are the minimal responsibilities I would be expected to carry out?**
+   This depends a bit on whether you are providing compute power that the
+   `mybinder.org` team has full access to or not. See [](federation/minimal-responsibilities) for more info.
 4. **I'm still interested, what should I do next to join?** If you'd still
    like to join the BinderHub federation, see [](federation/how-to-join).
 
+(federation/minimal-responsibilities)=
+### What are the minimal responsibilities of being a Federation member?
+
+Here is a list of activities that you could expect to **occasionally** participate
+in as a member of the BinderHub Federation. This list is designed to be unobtrusive
+and respectful of people's volunteered time. These activities are more important
+if you are donating compute power which the `mybinder.org` team
+**do not have full control over**.
+
+- Introduce yourself in the
+  [discourse forum](https://discourse.jupyter.org/t/introduce-yourself/17) or
+  [gitter chat](https://gitter.im/jupyterhub/mybinder.org-deploy)! The team love
+  to get to know the people we collaborate with :-)
+- Watch the [team-compass](https://github.com/jupyterhub/team-compass) for any
+  relevant updates or opportunities for participation.
+- Attend the [monthly team meetings](https://jupyterhub-team-compass.readthedocs.io/en/latest/meetings.html)
+  when able. This does **not** have to be every month since the provided link
+  also contains a monthly report archive for missed meetings.
+- Be available in the [mybinder.org-deploy gitter chat](https://gitter.im/jupyterhub/mybinder.org-deploy)
+  to liaise with the `mybinder.org` team should the cluster experience any
+  technical difficulties.
+- Be willing to co-work/pair programme with the `mybinder.org` team to debug any
+  issues with the cluster.
 
 (federation/how-to-join)=
 ### How to join the BinderHub Federation
 
-If you've read through [](federation/things-to-consider) and would
+If you've read through [](federation/things-to-consider) and [](federation/minimal-responsibilities) and would
 like to join the BinderHub federation, please reach out to the
 Binder team by opening an issue at `the mybinder.org repository <https://github.com/jupyterhub/mybinder.org-deploy>`_.
 Mention that you'd like to join the federation, what kind of computational
