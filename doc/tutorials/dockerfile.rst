@@ -88,6 +88,13 @@ For a Dockerfile to work on Binder, it must meet the following requirements:
    .. code-block:: Dockerfile
 
        RUN pip install --no-cache-dir notebook==5.*
+   
+   If you would like to use the repository with an authenticated Binder you
+   should also install the `jupyterhub` package.
+   
+   .. code-block:: Dockerfile
+
+       RUN pip install --no-cache-dir jupyterhub
 
 2. It must explicitly specify a tag in the image you source.
 
