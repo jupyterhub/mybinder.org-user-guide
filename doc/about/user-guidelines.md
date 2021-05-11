@@ -70,4 +70,4 @@ In general, please be respectful of the Binder Project's limited resources. Do n
 ## Reporting Abuse
 
 If you'd like to report any abuse of the `mybinder.org` service, please
-[click here to send an abuse report](mailto:binder-team@googlegroups.com?subject=[ABUSE] your-message-here).
+[click here to send an abuse report](mailto:binder-team@googlegroups.com?subject=[ABUSE]%20your-message-here).
