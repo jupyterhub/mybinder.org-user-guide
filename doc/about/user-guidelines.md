@@ -2,7 +2,8 @@
 
 This page details some guidelines and policies that we follow at ``mybinder.org``.
 
-:::{admonition,warning} When in doubt, open an issue
+:::{admonition} When in doubt, open an issue
+:class: warning
 If you're not sure whether your use-case is reasonable for `mybinder.org`, don't
 hesitate to [open an issue](https://github.com/jupyterhub/mybinder.org-deploy/issues/new?labels=question&template=ban_check.md)
 to ask if your planned usage is OK.
@@ -50,7 +51,9 @@ to discuss with the community!
 
 ## Using mybinder.org as backend for your service
 
-:::{admonition,warning} A note on for-profit services
+:::{admonition} A note on for-profit services
+:class: warning
+
 Please do not use `mybinder.org` as backend for your for-profit service or product.
 
 The cloud resources consumed by `mybinder.org` are funded through donations or grants. Because of this we can not subsidise for-profit products or services by offering free cloud resources to them. This means we will prevent you from using `mybinder.org` as a service for your product.

@@ -1,4 +1,4 @@
-# Use GitHub Actions to place a MyBinder.org badge on pull requests
+# Automatically place a launch badge on pull requests
 
 You can facilitate review of GitHub pull requests on [mybinder.org](https://mybinder.org) by using [GitHub Actions](https://github.com/features/actions) to place a ![Binder](https://mybinder.org/badge_logo.svg) badge or link on Pull Requests.  Below are several examples of how to accomplish this.
 

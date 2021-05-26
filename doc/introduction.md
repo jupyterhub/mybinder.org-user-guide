@@ -3,7 +3,9 @@
 
 This page will help you get started building your own repositories and sharing them with Binder. For more information about the Binder Project in general, see [](../about/about).
 
-:::{admonition,tip} Another useful resource
+:::{admonition} Another useful resource
+:class: tip
+
 ````{div} row
 ```{div} col-3
 ![](https://the-turing-way.netlify.app/_static/logo.jpg)
@@ -53,8 +55,8 @@ in existence. If you're interested in deploying your own BinderHub for your
 own uses, please see the [BinderHub documentation][BinderHub]
 and don't hesitate to reach out to the [Binder community](https://gitter.im/jupyterhub/binder).
 
-:::{admonition,tip} For more about the Binder Project
-
+:::{admonition} For more about the Binder Project
+:class: tip
 For more information about using `mybinder.org` as well as the team behind it,
 check out [](about).
 :::
@@ -79,11 +81,9 @@ simplify the deployment process and make it easy to scale.
 
 (preparing_repositories)=
 
-## Preparing a repository for Binder
+## How can I prepare a repository for Binder?
 
-In order to prepare your repository for use with the BinderHub
-at mybinder.org, all you
-need to do is ensure that the following conditions are met:
+To prepare your repository for use with the BinderHub at mybinder.org, you should ensure that the following conditions are met:
 
 * The repository is in a public location online (e.g., on GitHub or BitBucket)
 * The repository does not require any personal or sensitive information
@@ -96,6 +96,13 @@ need to do is ensure that the following conditions are met:
 For a list of sample repositories for use with Binder, see the
 [Sample Binder Repositories](examples/sample_repos) page.
 :::
+
+## How can I customize my Binder environment?
+
+There are many ways to customize the Binder environment.
+For example, you can [use many open source languages](howto/languages.rst), [configure the user interface](howto/user_interface.rst), and more!
+
+For more information, check out [the How-to guides](../howto/index.md) or [the sample repository examples](../examples/index.md).
 
 ## A Binder example
 

@@ -10,13 +10,16 @@
 <br />
 
 **Binder** allows you to create custom computing environments that can be shared
-and used by many remote users. It is powered by [BinderHub](https://github.com/jupyterhub/binderhub),
-which is an open-source tool that deploys the Binder service in the cloud.
+and used by many remote users. You can [use many open source languages](howto/languages.rst), [configure the user interface](howto/user_interface.rst), and more!
+
+A Binder service is powered by [BinderHub](https://github.com/jupyterhub/binderhub),
+an open-source tool that runs on Kubernetes.
 One such deployment lives at [mybinder.org](https://mybinder.org), and is free to use.
 For more information about the mybinder.org deployment and the team that runs it, see
 [](about/about.md).
 
-:::{admonition,tip} Other documentation in the Binder ecosystem
+:::{admonition} Other documentation in the Binder ecosystem
+:class: tip
 This documentation is for creators of Binder repositories, and those who wish to use
 and learn more about the service at `mybinder.org`. You may be interested in the following
 other documentation sites:
@@ -31,10 +34,14 @@ other documentation sites:
 : Has team information, practices, and guides for the JupyterHub community. This is also a great resource if you're looking for ways to get involved!
 :::
 
+## Get started
+
+To learn more about Binder, check out our tutorials, which will help you get started and learn more about sharing reproducible environments with Binder.
+
 ```{toctree}
 :maxdepth: 2
 
-introduction
+tutorials/index
 ```
 
 ## How-To guides and Tutorials
@@ -47,7 +54,15 @@ and often cover more conceptual topics.
 ```{toctree}
 :maxdepth: 2
 
-using/index
+howto/index
+```
+
+## Reference information about Binder
+
+```{toctree}
+:maxdepth: 2
+
+reference/index
 ```
 
 ## Information about `mybinder.org`

@@ -1,6 +1,6 @@
-========================================================
-Generate custom launch badges for your Binder repository
-========================================================
+=============================
+Generate custom launch badges
+=============================
 
 Sometimes you want something more specific than the default "launch binder" badge.
 This page is meant to help you create a custom badge for your Binder repository using the

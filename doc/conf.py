@@ -106,14 +106,12 @@ html_context = {
 html_static_path = ["_static"]
 
 rediraffe_redirects = {
-    "faq.rst": "using/faq.md",
     "about.rst": "about/index.md",
     "examples.rst": "examples/examples.md",
     "index-repo-reference.rst": "examples/index.rst",
     "sample_repos.md": "examples/sample_repos.md",
     "index-community.rst": "about/index.md",
     "index-getting-started.rst": "introduction.md",
-    "more-info.rst": "using/faq.md",
     "reliability.rst": "about/status.rst",
     "status.rst": "about/status.rst",
     "user-guidelines.rst": "about/user-guidelines.md",
@@ -122,8 +120,10 @@ rediraffe_redirects = {
 
 # -- MyST Configuration ------------------------------------------
 # See https://myst-parser.readthedocs.io/en/latest/using/syntax-optional.html#definition-lists
-myst_admonition_enable = True
-myst_deflist_enable = True
+myst_enable_extensions = [
+    "colon_fence",
+    "deflist",
+]
 
 panels_add_bootstrap_css = False
 
