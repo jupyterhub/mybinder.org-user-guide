@@ -1,4 +1,5 @@
 myst_parser
+sphinx<4
 sphinx-panels
 sphinx_copybutton
 traitlets
