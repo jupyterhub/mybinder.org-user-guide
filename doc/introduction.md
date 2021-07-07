@@ -128,12 +128,13 @@ In this case, we have two important files:
 * **An environment configuration file**: `environment.yml` is a standard
   file that specifies an Anaconda environment.
 
-.. important::
 
-   You may notice that `environment.yml` is not Binder-specific. This is
-   intentional! Binder tries to use environment configuration files that are
-   already standards in the data science community. For a list of all
-   configuration files available, see the [](config-files) page.
+:::{important}
+You may notice that `environment.yml` is not Binder-specific. This is
+intentional! Binder tries to use environment configuration files that are
+already standards in the data science community. For a list of all
+configuration files available, see the [](config-files) page.
+:::
 
 ### Get your own copy of this repository
 
