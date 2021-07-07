@@ -13,6 +13,13 @@ to determine how to build it. In general, ``repo2docker`` uses the same
 configuration files as other software installation tools,
 rather than creating new custom configuration files.
 
+As explained in :ref:`the repo2docker documentation <repo2docker:usage-config-file-location>`,
+the configuration files can be placed in:
+
+- A folder named ``binder/`` in the root of the repository.
+- A folder named ``.binder/`` in the root of the repository.
+- The root directory of the repository.
+
 A number of ``repo2docker`` configuration files can be combined to compose more
 complex setups.
 
