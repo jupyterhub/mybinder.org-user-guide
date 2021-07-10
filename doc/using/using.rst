@@ -41,7 +41,7 @@ by downloading and modifying some data.
 
 Binder allows you to run an arbitrary
 script *after* the environment has been installed. This is accomplished
-with a **``postBuild``** file. It will be run from the shell.
+with a ``postBuild`` file. It will be run from the shell.
 
 The Docker image for the repository will be run **after** the ``postBuild``
 script has finished, meaning that the state of the repository will be baked
@@ -49,7 +49,7 @@ into the image itself. Be careful - this means that if you download a 10GB
 dataset, you'll have at least a 10GB Docker image for your repository.
 
 Another common task is to ensure some code is run just before users begin
-their session. You can accomplish this with a **``start``** configuration file.
+their session. You can accomplish this with a ``start`` configuration file.
 This file will be run **just before an interactive session begins**. It will
 not be baked into your Binder repository's Docker image.
 
