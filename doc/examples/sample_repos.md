@@ -132,8 +132,7 @@ python.ipynb
 This is a demo of Julia functionality for the Binder project. Simply
 go to the URL below and it will launch an interactive Julia environment:
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/binder-examples/demo-julia/master?filepath=demo.ipynb) | [![](https://img.shields.io/github/forks/binder-examples/demo-julia?label=GitHub%20Repo&style=social)](https://github.com/binder-examples/demo-julia)
-
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/binder-examples/demo-julia/HEAD?filepath=demo.ipynb) | [![](https://img.shields.io/github/forks/binder-examples/demo-julia?label=GitHub%20Repo&style=social)](https://github.com/binder-examples/demo-julia)
 
 #### Files in this repository
 ```
@@ -152,7 +151,9 @@ RShiny: [![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/g
 Binder supports using R and RStudio, with libraries pinned to a specific 
 snapshot on [MRAN](https://mran.microsoft.com/documents/rro/reproducibility).
 
-**Note:** An alternative is to use the [holepunch package for R](https://karthik.github.io/holepunch/articles/getting_started.html).
+**Note:** We recommend to follow [r-conda](https://github.com/binder-examples/r-conda) instead. Especially if you want to use a specific version of R or need faster build times.
+
+**Note:** Another alternative is to use the [holepunch package for R](https://karthik.github.io/holepunch/articles/getting_started.html).
 
 ##### Requirements and suggestions
 
@@ -357,6 +358,48 @@ presentation will automatically begin.
 
 See the [RISE Documentation](https://damianavila.github.io/RISE/)
 for more information.
+
+#### Files in this repository
+```
+environment.yml
+index.ipynb
+```
+### Interactive dashboard from notebook with Voilà
+
+| Voilà | JupyterLab |
+| :-----------------------: | :---------------------: |
+| [![voila-binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/binder-examples/voila/HEAD?urlpath=voila%2Frender%2Findex.ipynb)| [![jupyterlab-binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/binder-examples/voila/HEAD?urlpath=lab%2Ftree%2Findex.ipynb) |
+
+This example demonstrates how to use [Voilà](https://github.com/voila-dashboards/voila) on Binder.
+
+![screenshot](https://user-images.githubusercontent.com/591645/132238479-9af8dff6-ea12-465f-bb7c-2570defcdd26.png)
+
+#### Configuration
+
+If you would like to use the same configuration as this repository but for another project, check out the following steps:
+
+1. Make sure the repository is publicly available (on GitHub, Gitlab or as a [GitHub Gist](https://gist.github.com)
+2. Define the dependencies in [`environment.yml`](./environment.yml). `requirements.txt` is also supported. In the dependency file, add `voila`.
+3. Go to [mybinder.org](https://mybinder.org) and enter the URL of the repository.
+4. In `Path to a notebook file`, select `URL` and use the Voilà endpoint: `voila/render/path/to/notebook.ipynb`
+5. Click `Launch`.
+6. Binder will trigger a new build if this is the first launch (or if there have been new changes since
+   the last build). This might take a few minutes to complete. If an image is already available,
+   the server will be able to start within a few seconds.
+
+Here is an overview of the Binder configuration on [mybinder.org](https://mybinder.org):
+
+![image](https://user-images.githubusercontent.com/591645/132292481-01f877c3-77f8-46ba-b265-23bd3e25f513.png)
+
+For more details, check out the Voilà documentation on https://voila.readthedocs.io/en/latest/deploy.html#deployment-on-binder
+
+#### JupyterLab Preview Extension for Voilà
+
+The JupyterLab Preview Extension for Voilà should normally be automatically available, since Binder now defaults to JupyterLab 3.0.
+
+For consistency, you can add `jupyterlab=3` as a dependency in `environment.yml`.
+
+![lab-preview](https://user-images.githubusercontent.com/591645/132293167-88c22f5a-e9a7-4e26-badb-09e094d2191e.png)
 
 #### Files in this repository
 ```
