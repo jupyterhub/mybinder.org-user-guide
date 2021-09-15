@@ -138,7 +138,7 @@ For a Dockerfile to work on Binder, it must meet the following requirements:
        ${NB_USER}
    ```
 
-   This is the user that will be running the jupyter notebook process
+   This is the user that will be running the JupyterLab process
    when your repo is launched with binder. So any files you would like to
    be writeable by the launched binder notebook should be owned by this user.
 
@@ -166,7 +166,7 @@ For a Dockerfile to work on Binder, it must meet the following requirements:
 5. It must accept command arguments. The Dockerfile will effectively be launched as:
 
    ```shell
-   docker run <image> jupyter notebook <arguments from the mybinder launcher>
+   docker run <image> jupyter lab <arguments from the mybinder launcher>
    ```
 
    where {}`<arguments ...>` includes important information automatically set by the binder
@@ -189,7 +189,7 @@ You can build and test your image locally like this.
 2. Try starting a container from the image.
 
    ```shell
-   docker run -it --rm -p 8888:8888 my-image jupyter-notebook --ip=0.0.0.0 --port=8888
+   docker run -it --rm -p 8888:8888 my-image jupyter-lab --ip=0.0.0.0 --port=8888
    ```
 
 3. Inspect the container from terminal.
