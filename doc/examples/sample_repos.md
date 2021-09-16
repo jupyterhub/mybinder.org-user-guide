@@ -8,13 +8,13 @@ Below we list several sample Binder repositories thatdemonstrate how to compose 
 
 ### Python environment with a requirements.txt
 
-[![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/binder-examples/requirements/master) | [![](https://img.shields.io/github/forks/binder-examples/requirements?label=GitHub%20Repo&style=social)](https://github.com/binder-examples/requirements)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/binder-examples/requirements/master) | [![](https://img.shields.io/github/forks/binder-examples/requirements?label=GitHub%20Repo&style=social)](https://github.com/binder-examples/requirements)
 
 A Binder-compatible repo with a `requirements.txt` file.
 
 Access this Binder at the following URL
 
-http://mybinder.org/v2/gh/binder-examples/requirements/master
+https://mybinder.org/v2/gh/binder-examples/requirements/master
 
 #### Notes
 The `requirements.txt` file should list all Python libraries that your notebooks
@@ -53,13 +53,13 @@ runtime.txt
 ```
 ### Conda environment with environment.yml
 
-[![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/binder-examples/conda_environment/master?filepath=index.ipynb) | [![](https://img.shields.io/github/forks/binder-examples/conda?label=GitHub%20Repo&style=social)](https://github.com/binder-examples/conda)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/binder-examples/conda_environment/master?filepath=index.ipynb) | [![](https://img.shields.io/github/forks/binder-examples/conda?label=GitHub%20Repo&style=social)](https://github.com/binder-examples/conda)
 
 A Binder-compatible repo with an `environment.yml` file.
 
 Access this Binder by clicking the blue badge above or at the following URL:
 
-http://mybinder.org/v2/gh/binder-examples/conda_environment/master?filepath=index.ipynb
+https://mybinder.org/v2/gh/binder-examples/conda_environment/master?filepath=index.ipynb
 
 #### Notes
 The `environment.yml` file should list all Python libraries on which your notebooks
@@ -71,7 +71,7 @@ conda env export --from-history -f environment.yml
 ```
 
 Note that the only libraries available to you will be the ones specified in
-the `environment.yml`, so be sure to include everything that you need! 
+the `environment.yml`, so be sure to include everything that you need!
 
 Also note that if you skip the `--from-history`, conda may include OS-specific
 packages in `environment.yml`, which you would have to manually prune from
@@ -98,7 +98,7 @@ A Binder-compatible repo with a python package and a `setup.py` file.
 
 #### Notes
 
-It is convenient to provide an [example Jupyter notebook ](https://github.com/binder-examples/setup.py/blob/master/example_notebook/import_mypackage.ipynb) for a new package and add the hooks necessary to run the example with Binder. However, normally the package will not be included in the python path. To do that, one needs a `setup.py` for the package (see [binder docs](https://mybinder.readthedocs.io/en/latest/using.html#setup-py)). Once this is done, it is possible to import the package in a notebook running within Binder. 
+It is convenient to provide an [example Jupyter notebook ](https://github.com/binder-examples/setup.py/blob/master/example_notebook/import_mypackage.ipynb) for a new package and add the hooks necessary to run the example with Binder. However, normally the package will not be included in the python path. To do that, one needs a `setup.py` for the package (see [binder docs](https://mybinder.readthedocs.io/en/latest/using.html#setup-py)). Once this is done, it is possible to import the package in a notebook running within Binder.
 
 This setup.py was originally adapted from [https://github.com/kennethreitz/setup.py](https://github.com/kennethreitz/setup.py) by @cranmer
 
@@ -111,7 +111,7 @@ setup.py
 ```
 ### Julia and Python environments
 
-[![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/binder-examples/julia_python/master) | [![](https://img.shields.io/github/forks/binder-examples/julia-python?label=GitHub%20Repo&style=social)](https://github.com/binder-examples/julia-python)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/binder-examples/julia_python/master) | [![](https://img.shields.io/github/forks/binder-examples/julia-python?label=GitHub%20Repo&style=social)](https://github.com/binder-examples/julia-python)
 
 This example shows how you can install a Julia and Python environment side-by-side.
 In this repository are *both* an `environment.yml` file as well as a `REQUIRE` file.
@@ -142,13 +142,13 @@ demo.ipynb
 ```
 ### Specifying an R environment with a runtime.txt file
 
-Jupyter+R: [![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/binder-examples/r/master?filepath=index.ipynb)
+Jupyter+R: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/binder-examples/r/master?filepath=index.ipynb)
 
-RStudio: [![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/binder-examples/r/master?urlpath=rstudio)
+RStudio: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/binder-examples/r/master?urlpath=rstudio)
 
-RShiny: [![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/binder-examples/r/master?urlpath=shiny/bus-dashboard/)
+RShiny: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/binder-examples/r/master?urlpath=shiny/bus-dashboard/)
 
-Binder supports using R and RStudio, with libraries pinned to a specific 
+Binder supports using R and RStudio, with libraries pinned to a specific
 snapshot on [MRAN](https://mran.microsoft.com/documents/rro/reproducibility).
 
 **Note:** We recommend to follow [r-conda](https://github.com/binder-examples/r-conda) instead. Especially if you want to use a specific version of R or need faster build times.
@@ -163,9 +163,9 @@ You need to have a `runtime.txt` file that is formatted like:
 r-<YYYY>-<MM>-<DD>
 ```
 
-where YYYY-MM-DD is a snapshot at MRAN that will be used for installing 
-libraries. In this line, you can request a [specific 
-version of R](https://github.com/jupyter/repo2docker/pull/772#issue-313426641). To do this list the version between the 'r' 
+where YYYY-MM-DD is a snapshot at MRAN that will be used for installing
+libraries. In this line, you can request a [specific
+version of R](https://github.com/jupyter/repo2docker/pull/772#issue-313426641). To do this list the version between the 'r'
 and the year, as in `r-3.6-2019-09-24`. Right now the default version of R is 3.6.
 
 > We recommend using https://github.com/binder-examples/r-conda for faster installs than using a `install.R`
@@ -180,21 +180,21 @@ This repository also contains an example of a [Shiny app](https://github.com/bin
 
 ##### URL addresses for RStudio and Shiny environments
 
-The Binder repository can be used to allow anyone to access an RStudio environment containing our code and data right 
-in their web browser. It also allows hosting a Shiny app. For those purposes, we have to append a bit of text to the 
-URL of our Binder repository, which we can find out at [mybinder.org](https://mybinder.org/) when we enter 
+The Binder repository can be used to allow anyone to access an RStudio environment containing our code and data right
+in their web browser. It also allows hosting a Shiny app. For those purposes, we have to append a bit of text to the
+URL of our Binder repository, which we can find out at [mybinder.org](https://mybinder.org/) when we enter
 the URL of our original repository from GitHub or Figshare, etc.
 
 - For the RStudio environment, we must add the following at the end of the URL: `?urlpath=rstudio`
 
-  - Example: http://mybinder.org/v2/gh/binder-examples/r/master?urlpath=rstudio
-  
-- For the Shiny app environment, we must add the following at the end of the URL: `?urlpath=shiny`. In this case, we 
-also have to note that if the Shiny app files are located in a folder, this folder should be specified in the URL, 
-after a slash. We would then also have to put in a trailing slash at the end of the URL, and to avoid spaces in the 
+  - Example: https://mybinder.org/v2/gh/binder-examples/r/master?urlpath=rstudio
+
+- For the Shiny app environment, we must add the following at the end of the URL: `?urlpath=shiny`. In this case, we
+also have to note that if the Shiny app files are located in a folder, this folder should be specified in the URL,
+after a slash. We would then also have to put in a trailing slash at the end of the URL, and to avoid spaces in the
 name of the repository, placing instead a hyphen (the reason is that spaces are converted to `%20`).
 
-  - Example: http://mybinder.org/v2/gh/binder-examples/r/master?urlpath=shiny/bus-dashboard/
+  - Example: https://mybinder.org/v2/gh/binder-examples/r/master?urlpath=shiny/bus-dashboard/
 
 #### Files in this repository
 ```
@@ -206,9 +206,9 @@ runtime.txt
 ```
 ### Specifying an R environment by having a DESCRIPTION file
 
-Jupyter+R: [![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/binder-examples/binder-r-description/master?filepath=test-library.ipynb)
+Jupyter+R: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/binder-examples/binder-r-description/master?filepath=test-library.ipynb)
 
-RStudio: [![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/binder-examples/binder-r-description/master?urlpath=rstudio)
+RStudio: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/binder-examples/binder-r-description/master?urlpath=rstudio)
 
 
 Binder supports using R and RStudio, with libraries pinned to a specific
@@ -256,43 +256,75 @@ index.ipynb
 
 ### JupyterLab + Binder
 
-[![Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/binder-examples/jupyterlab/master?urlpath=lab/tree/index.ipynb) | [![](https://img.shields.io/github/forks/binder-examples/jupyterlab?label=GitHub%20Repo&style=social)](https://github.com/binder-examples/jupyterlab)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/binder-examples/jupyterlab/HEAD?filepath=/index.ipynb) | [![](https://img.shields.io/github/forks/binder-examples/jupyterlab?label=GitHub%20Repo&style=social)](https://github.com/binder-examples/jupyterlab)
 
-JupyterLab is packaged with Binder repositories by default. In order to
-run a JupyterLab session, you have two options:
+JupyterLab is the default UI on Binder.
 
-#### Start JupyterLab after you start your Binder
+#### Create a Binder link that points to a file in JupyterLab
 
-Do the following:
-
-1. Launch a Binder instance (e.g., by clicking the Binder badge)
-2. Replace `tree` at the end of your URL with `lab`.
-3. That's it!
-
-#### Create a Binder link that points to JupyterLab
-
-You can also create a Binder link that points to JupyterLab by adding the following
+You can also create a Binder link that points to a specific file in JupyterLab by adding the following
 to the end of your link:
 
-`?urlpath=lab`
+```
+?filepath=path/to/my/notebook.ipynb
+```
 
-You can point to a specific file using JupterLab by including a file path
-beginning with `tree/` to the end of `urlpath`, like so:
-
-`?urlpath=lab/tree/path/to/my/notebook.ipynb`
 
 For example, the Binder badge above goes to the following URL:
 
-`http://mybinder.org/v2/gh/binder-examples/jupyterlab/master?urlpath=lab/tree/index.ipynb`
+`https://mybinder.org/v2/gh/binder-examples/jupyterlab/HEAD?filepath=/index.ipynb`
 
 Note: this repository also installs several JupyterLab extensions via a `postBuild` script, allowing
 you to use JupyterLab's extensions and widgets functionality.
 
 For a more complete demo of JupyterLab using Binder, see the
-[JupyterLab Demo](https://github.com/jupyterlab/jupyterlab-demo). 
- 
+[JupyterLab Demo](https://github.com/jupyterlab/jupyterlab-demo).
+
+
+### Classic notebook interface on Binder
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/binder-examples/requirements/HEAD?urlpath=/tree/index.ipynb) | [![](https://img.shields.io/github/forks/binder-examples/requirements?label=GitHub%20Repo&style=social)](https://github.com/binder-examples/requirements)
+
+JupyterLab is the default UI on Binder,
+but the classic notebook is available, too.
+In order to run a JupyterLab session, you have two options:
+
+#### Start classic notebook after you start your Binder
+
+Do the following:
+
+1. Launch a Binder instance (e.g., by clicking the Binder badge)
+2. Replace `lab` at the end of your URL with `tree`.
+3. That's it!
+
+#### Create a Binder link that points to the classic notebook interface
+
+You can also create a Binder link that points to the classic notebook landing page
+by adding the following to the end of your link:
+
+```
+?urlpath=/tree/
+```
+
+You can point to a specific file or directory using the classic notebook interface by including a path
+beginning with `/tree/` to the end of `urlpath`, like so:
+
+`?urlpath=/tree/path/to/my/notebook.ipynb`
+
+For example, the Binder badge above goes to the following URL:
+
+```
+https://mybinder.org/v2/gh/binder-examples/requirements/HEAD?urlpath=/tree/index.ipynb
+```
+
+Note: this repository also installs several JupyterLab extensions via a `postBuild` script, allowing
+you to use JupyterLab's extensions and widgets functionality.
+
+For a more complete demo of JupyterLab using Binder, see the
+[JupyterLab Demo](https://github.com/jupyterlab/jupyterlab-demo).
 
 #### Files in this repository
+
 ```
 .profile
 binder
@@ -331,7 +363,7 @@ requirements.txt
 ```
 ### Creating interactive presentations on Binder with RISE
 
-[![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/binder-examples/jupyter-rise/master?filepath=index.ipynb) | [![](https://img.shields.io/github/forks/binder-examples/jupyter-rise?label=GitHub%20Repo&style=social)](https://github.com/binder-examples/jupyter-rise)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/binder-examples/jupyter-rise/master?filepath=index.ipynb) | [![](https://img.shields.io/github/forks/binder-examples/jupyter-rise?label=GitHub%20Repo&style=social)](https://github.com/binder-examples/jupyter-rise)
 
 RISE allows you to quickly generate a live, interactive presentation from a
 Jupyter Notebook that is connected to the underlying Kernel of the notebook.
@@ -432,16 +464,16 @@ postBuild
 This repository demonstrates how to run a Bokeh server from within Binder. To do so, we did the following things:
 
 1. Created a `bokeh-app` directory in the repo with a `main.py` file in it. This is the application that will be served. We've added the
-   [Bokeh weather example](https://github.com/bokeh/bokeh/tree/master/examples/app/weather) as a demo. 
+   [Bokeh weather example](https://github.com/bokeh/bokeh/tree/master/examples/app/weather) as a demo.
 2. Installed `bokeh` for the viz and `jupyter_server_proxy` which we'll use to direct people to the port on which Bokeh runs. See `environment.yml`.
 3. Added a custom server extension (`bokehserverextension.py`) that will be run to direct people to the Bokeh app (which is run on a port)
-4. Used `postBuild` to enable the `jupyter_server_proxy` extension, then set up and enable our custom server extension for Bokeh. 
+4. Used `postBuild` to enable the `jupyter_server_proxy` extension, then set up and enable our custom server extension for Bokeh.
 5. Created a Binder link that uses `urlpath` to point users to the port on which the Bokeh server will run:
 
    ```
    https://mybinder.org/v2/gh/binder-examples/bokeh/master?urlpath=/proxy/5006/bokeh-app
    ```
-   
+
 When people click on the Binder link, they should be directed to the running Bokeh app.
 
 #### Files in this repository
@@ -468,7 +500,7 @@ article
 
 ### Specifying a Python 2 environment with `runtime.txt`
 
-[![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/binder-examples/python2_runtime/master) | [![](https://img.shields.io/github/forks/binder-examples/python2_runtime?label=GitHub%20Repo&style=social)](https://github.com/binder-examples/python2_runtime)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/binder-examples/python2_runtime/master) | [![](https://img.shields.io/github/forks/binder-examples/python2_runtime?label=GitHub%20Repo&style=social)](https://github.com/binder-examples/python2_runtime)
 
 We can specify various runtime parameters with a `runtime.txt` file. In this
 repository, we demonstrate how to install python 2 with the environment.
@@ -513,7 +545,7 @@ runtime.txt
 ```
 ### Using latex with Binder
 
-[![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/binder-examples/latex/master?filepath=index.ipynb) | [![](https://img.shields.io/github/forks/binder-examples/latex?label=GitHub%20Repo&style=social)](https://github.com/binder-examples/latex)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/binder-examples/latex/master?filepath=index.ipynb) | [![](https://img.shields.io/github/forks/binder-examples/latex?label=GitHub%20Repo&style=social)](https://github.com/binder-examples/latex)
 
 This repository demonstrates how to install latex alongside matplotlib
 for Binder. This repository also makes use of [JupyterLab Latex](https://github.com/jupyterlab/jupyterlab-latex) to render latex files in Jupyter lab. This requires a few different build components:
@@ -565,11 +597,11 @@ postBuild
 ```
 ### Multi-language demo.
 
-This is a demo showing how you can intermingle Python,  R, Rust, Fortran, Cython, C. 
+This is a demo showing how you can intermingle Python,  R, Rust, Fortran, Cython, C.
 
 You can try it :
 
-[![Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/binder-examples/multi-language-demo/master) | [![](https://img.shields.io/github/forks/binder-examples/multi-language-demo?label=GitHub%20Repo&style=social)](https://github.com/binder-examples/multi-language-demo)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/binder-examples/multi-language-demo/master) | [![](https://img.shields.io/github/forks/binder-examples/multi-language-demo?label=GitHub%20Repo&style=social)](https://github.com/binder-examples/multi-language-demo)
 
 And read the [accompanying blog post](https://blog.jupyter.org/i-python-you-r-we-julia-baf064ca1fb6).
 
@@ -589,7 +621,7 @@ postBuild
 ```
 ### Using conda with pip in the same build
 
-[![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/binder-examples/python-conda_pip/master?filepath=index.ipynb) | [![](https://img.shields.io/github/forks/binder-examples/python-conda_pip?label=GitHub%20Repo&style=social)](https://github.com/binder-examples/python-conda_pip)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/binder-examples/python-conda_pip/master?filepath=index.ipynb) | [![](https://img.shields.io/github/forks/binder-examples/python-conda_pip?label=GitHub%20Repo&style=social)](https://github.com/binder-examples/python-conda_pip)
 
 If you use `environment.yml`, then Binder will use a Miniconda distribution
 to install your packages. However, you may still want to use `pip`. In
@@ -607,13 +639,13 @@ index.ipynb
 
 ### Remote Storage with Binder
 
-[![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/binder-examples/remote_storage/master) | [![](https://img.shields.io/github/forks/binder-examples/remote_storage?label=GitHub%20Repo&style=social)](https://github.com/binder-examples/remote_storage)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/binder-examples/remote_storage/master) | [![](https://img.shields.io/github/forks/binder-examples/remote_storage?label=GitHub%20Repo&style=social)](https://github.com/binder-examples/remote_storage)
 
 A Binder-compatible repo that shows accessing data from remote sources.
 
 Access this Binder at the following URL:
 
-http://mybinder.org/v2/gh/binder-examples/remote_storage/master
+https://mybinder.org/v2/gh/binder-examples/remote_storage/master
 
 
 #### Notes
@@ -630,7 +662,7 @@ requirements.txt
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/quiltdata/data2binder/master?filepath=index.ipynb) | [![](https://img.shields.io/github/forks/binder-examples/data-quilt?label=GitHub%20Repo&style=social)](https://github.com/binder-examples/data-quilt)
 
 ### Pull data into Binder notebooks
-This example uses [Quilt](http://quiltdata.com) to inject data packages into a Jupyter notebook.
+This example uses [Quilt](https://quiltdata.com) to inject data packages into a Jupyter notebook.
 
 Data packages are versioned, immutable snapshots of data. Data packages may contain data of any size. Here is an example of data package: [uciml/iris](https://quiltdata.com/package/uciml/iris).
 
@@ -660,19 +692,19 @@ If you are adopting the `binder` folder pattern for your `repo2docker` configura
 quilt install @./binder/quilt.yml
 ```
 
-    
+
 Now you can access the package data in your Jupyter notebooks:
 ```
 In [1]: from quilt.data.akarve import sales
 In [2]: sales.transactions()
-Out[2]: 
+Out[2]:
       Row ID  Order ID Order Date Order Priority  Order Quantity       Sales  \
-0          1         3 2010-10-13            Low               6    261.5400   
-1         49       293 2012-10-01           High              49  10123.0200   
-2         50       293 2012-10-01           High              27    244.5700   
+0          1         3 2010-10-13            Low               6    261.5400
+1         49       293 2012-10-01           High              49  10123.0200
+2         50       293 2012-10-01           High              27    244.5700
 ...
 ```
-    
+
 ### Developer
 * [Quilt repository](https://github.com/quiltdata/quilt)
 * [Quilt docs](https://docs.quiltdata.com)
@@ -780,7 +812,7 @@ and perhaps add just an extra library or two. This example shows you how
 to do that - check out the Dockerfile.
 
 Note that in this case we are using a docker image that already satisfies
-the [criteria](http://mybinder.readthedocs.io/en/latest/dockerfile.html#preparing-your-dockerfile)
+the [criteria](https://mybinder.readthedocs.io/en/latest/dockerfile.html#preparing-your-dockerfile)
 for use on binder, we don't need to install notebook or anything manually.
 
 #### Files in this repository
@@ -789,11 +821,11 @@ Dockerfile
 ```
 ### Specifying an R environment with a runtime.txt file
 
-Jupyter+R: [![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/binder-examples/rocker/master?filepath=index.ipynb)
+Jupyter+R: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/binder-examples/rocker/master?filepath=index.ipynb)
 
-RStudio: [![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/binder-examples/rocker/master?urlpath=rstudio)
+RStudio: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/binder-examples/rocker/master?urlpath=rstudio)
 
-RShiny: [![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/binder-examples/rocker/master?urlpath=shiny/bus-dashboard/)
+RShiny: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/binder-examples/rocker/master?urlpath=shiny/bus-dashboard/)
 
 Both [RStudio](https://www.rstudio.com/) and [IRKernel](https://irkernel.github.io/)
 are installed by default, so you can use either the Jupyter notebook interface or

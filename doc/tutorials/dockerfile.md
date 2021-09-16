@@ -79,12 +79,12 @@ languages. If interested, please
 
 For a Dockerfile to work on Binder, it must meet the following requirements:
 
-1. It must install a recent version of Jupyter Notebook.
-   This should be installed via `pip` with the {}`notebook` package.
-   So in your dockerfile, you should have a command such as:
+1. It must install a recent version of Jupyter Notebook and JupyterLab.
+   This should be installed via `pip` with the `notebook` and `jupyterlab` packages.
+   So in your dockerfile, you should have a command like:
 
    ```Dockerfile
-   RUN pip install --no-cache-dir notebook
+   RUN python3 -m pip install --no-cache-dir notebook jupyterlab
    ```
 
    If you would like to use the repository with an authenticated Binder you
@@ -119,7 +119,7 @@ For a Dockerfile to work on Binder, it must meet the following requirements:
    FROM jupyter/scipy-notebook:latest
    ```
 
-3. It must set up a user whose uid is {}`1000`.
+3. It must set up a user whose uid is `1000`.
    It is bad practice to run processes in containers as root, and on binder
    we do not allow root container processes. If you are using an ubuntu or
    debian based container image, you can create a user easily with the following
@@ -163,10 +163,10 @@ For a Dockerfile to work on Binder, it must meet the following requirements:
    `Dockerfile`, it does not invalidate the build cache of mybinder. Thus, if available, the the cached
    repository will be used even after changes to the repository.
 
-5. It must accept command arguments. The Dockerfile will effectively be launched as:
+5. It must accept command-line arguments. The Dockerfile will effectively be launched as:
 
    ```shell
-   docker run <image> jupyter lab <arguments from the mybinder launcher>
+   docker run <image> jupyter notebook --NotebookApp.default_url=/lab/ <arguments from the mybinder launcher>
    ```
 
    where {}`<arguments ...>` includes important information automatically set by the binder
@@ -189,7 +189,7 @@ You can build and test your image locally like this.
 2. Try starting a container from the image.
 
    ```shell
-   docker run -it --rm -p 8888:8888 my-image jupyter-lab --ip=0.0.0.0 --port=8888
+   docker run -it --rm -p 8888:8888 my-image jupyter notebook --NotebookApp.default_url=/lab/ --ip=0.0.0.0 --port=8888
    ```
 
 3. Inspect the container from terminal.
@@ -225,5 +225,3 @@ the same image even if the image is updated to a new version.
 Next, make sure that all packages installed with your Dockerfile
 are pinned to specific versions. You should do this with the image you are
 sourcing as well.
-
-
