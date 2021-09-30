@@ -48,7 +48,7 @@ Dockerfile. For example, this code sources the Jupyter-Scipy notebook:
 FROM jupyter/scipy-notebook:cf6258237ff9
 ```
 
-See [Preparing your Dockerfile](preparing your dockerfile) for instructions on how to
+See [Preparing your Dockerfile](#preparing-your-dockerfile) for instructions on how to
 do this properly.
 
 ### When you are building complex software
