@@ -1,7 +1,7 @@
 Ensure reproducibility for your Binder repository
 =================================================
 
-Binder will create a new Docker image the first time is run with a repository.
+Binder will create a new Docker image the first time it is run with a repository.
 From then on, a new image will only be created if the commit hash changes
 (if you're linking Binder to a branch and not a specific commit hash). Here
 are some tips to ensure reproducibility of your Binder links even if you must
