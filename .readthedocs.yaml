@@ -1,10 +1,19 @@
-name: mybinder
-type: sphinx
-requirements_file: doc/doc-requirements.txt
+# Configuration on how ReadTheDocs (RTD) builds our documentation
+# ref: https://readthedocs.org/projects/mybinder/
+# ref: https://docs.readthedocs.io/en/stable/config-file/v2.html
+#
+version: 2
+
+build:
+  os: ubuntu-20.04
+  tools:
+    python: "3.9"
+
+sphinx:
+  configuration: doc/conf.py
+
+formats: []
+
 python:
-  version: 3
-formats:
-  - htmlzip
-  - epub
-  # pdf disabled due to bug in sphinx 1.8 + recommonmark
-  # - pdf
+  install:
+    - requirements: doc/doc-requirements.txt
