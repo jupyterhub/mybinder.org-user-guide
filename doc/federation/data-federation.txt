@@ -47,9 +47,9 @@ Funded by [GESIS](https://www.gesis.org/en/home)
 :text: turing.mybinder.org
 ```
 ^^^
-![The Turing Way team led by Sarah Gibson](https://www.turing.ac.uk/sites/default/files/inline-images/Turing%20logo_0.png)
+![The Turing Way team](https://www.turing.ac.uk/sites/default/files/inline-images/Turing%20logo_0.png)
 +++
-Run by [The Turing Way team led by Sarah Gibson](https://www.turing.ac.uk/research/research-projects/turing-way-handbook-reproducible-data-science#organisers)
+Run by [The Turing Way team](https://www.turing.ac.uk/research/research-projects/turing-way-handbook-reproducible-data-science#organisers)
 
 Funded by [The Alan Turing Institute](https://turing.ac.uk)
 
