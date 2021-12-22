@@ -160,4 +160,4 @@ the ``mybinder.org`` deployment at `grafana.mybinder.org <https://grafana.mybind
 
 .. raw:: html
 
-   <iframe src="https://grafana.mybinder.org/d-solo/KPtswm7ik/service-level-objectives?orgId=1&refresh=1m&from=1601224257009&to=1601829057011&theme=light&panelId=3" width="450" height="200" frameborder="0"></iframe>
+   <iframe src="https://grafana.mybinder.org/d-solo/KPtswm7ik/service-level-objectives?orgId=1&theme=light&panelId=3&from=now-7d&to=now" width="450" height="200" frameborder="0"></iframe>
