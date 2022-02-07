@@ -11,11 +11,7 @@ This page will help you get started building your own repositories and sharing t
 ![](https://the-turing-way.netlify.app/_static/logo.jpg)
 ```
 ```{div} col-9
-[The Turing Way](https://github.com/alan-turing-institute/the-turing-way) also maintains a Zero-to-Binder tutorial in 3 common programming languages.
-
-* [Julia](http://bit.ly/zero-to-binder-julia)
-* [Python](http://bit.ly/zero-to-binder-python)
-* [R](http://bit.ly/zero-to-binder-r)
+[The Turing Way](https://github.com/alan-turing-institute/the-turing-way) also maintains a [Zero-to-Binder tutorial](https://the-turing-way.netlify.app/communication/binder/zero-to-binder.html) in 3 common programming languages.
 ```
 ````
 :::
