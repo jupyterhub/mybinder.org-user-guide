@@ -16,3 +16,7 @@ information.
 ## Contribute to the codebase of the Binder Project
 
 Most of the code used by the Binder Project is not hosted in this repository. If you'd like to contribute to the code, check out [the JupyterHub Team Compass guide to contributing](https://jupyterhub-team-compass.readthedocs.io/en/latest/team/skills.html).
+
+## Contribute financial or cloud resources to the project
+
+See our [supporting mybinder.org page](support.md) for more information.

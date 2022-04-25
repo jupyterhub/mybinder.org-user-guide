@@ -78,16 +78,6 @@ about/index
 See the [Binder Examples](https://github.com/binder-examples) GitHub
 organization for more Binder repositories demonstrating its functionality.
 
-## Contribute to Binder
-
-For information about contributing to Binder, see the following page:
-
-```{toctree}
-:maxdepth: 2
-
-contribute
-```
-
 ## Cite Binder
 
 For information on how to cite Binder, see [](citing).

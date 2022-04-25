@@ -6,8 +6,9 @@ This is a collection of pages about the Binder service running at mybinder.org.
 :maxdepth: 1
 
 user-guidelines
-support
 faq
+support
+contribute
 federation
 status
 ```
