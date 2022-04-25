@@ -91,6 +91,13 @@ html_theme_options = {
     "google_analytics_id": "UA-101904940-3",
     "github_url": "https://github.com/jupyterhub/binder",
     "twitter_url": "https://twitter.com/mybinderteam",
+    "icon_links": [
+        {
+            "name": "Support",
+            "url": "https://mybinder.readthedocs.io/en/latest/about/support.html",
+            "icon": "fa fa-heart",
+        }
+   ]
 }
 
 html_context = {

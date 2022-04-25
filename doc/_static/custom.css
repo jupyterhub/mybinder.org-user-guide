@@ -3,6 +3,13 @@
     --sd-color-secondary: #f5a252;    
 }
 
+/* Header */
+i.fa.fa-heart {
+    color: #e66783;
+}
+
+/* Text elements */
+
 div.body p.caption {
     font-size: 1.2em;
 }
