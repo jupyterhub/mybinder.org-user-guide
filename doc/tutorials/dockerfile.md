@@ -87,6 +87,11 @@ For a Dockerfile to work on Binder, it must meet the following requirements:
    RUN pip install --no-cache-dir notebook
    ```
 
+   :::{note}
+   If you install [the classic notebook interface](https://jupyter-notebook.readthedocs.io/en/stable/) but not [JupyterLab](https://jupyterlab.readthedocs.io/), you must manually change your mybinder.org URLs from `/lab` to `/tree` as described [in the user interface documentation](<https://mybinder.readthedocs.io/en/latest/howto/user_interface.html#jupyterlab>).
+   Otherwise, you might get a `404: Not Found` error when launching your project on binder.
+   :::
+
    If you would like to use the repository with an authenticated Binder you
    should also install the `jupyterhub` package.
 
