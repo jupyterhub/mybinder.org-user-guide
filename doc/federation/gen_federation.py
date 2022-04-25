@@ -10,17 +10,21 @@ N_PER_ROW = 4
 
 # Code to generate the HTML grid
 template_binderhub = """
----
-```{{link-button}} {URL_BINDERHUB}
-:classes: stretched-link
-:text: {BINDERHUB_SUBDOMAIN}
-```
+```{{grid-item-card}}
+:link: {URL_BINDERHUB}
+:text-align: center
+:class-header: bg-light
+:class-footer: bg-light
+
+{BINDERHUB_SUBDOMAIN}
 ^^^
 ![{RUN_BY}]({LOGO})
 +++
 Run by [{RUN_BY}]({RUN_BY_LINK})
 
 Funded by [{FUNDED_BY}]({FUNDED_BY_LINK})
+```
+
 """
 
 # Run the function
@@ -46,8 +50,10 @@ for ix, binderhub in binderhubs.iterrows():
 entries = "\n".join(entries)
 
 directive = f"""
-````{{panels}}
-:card: +text-center federation-members
+````{{grid}} 1 1 2 2
+:class-container: federation-members
+:gutter: 4
+
 {entries}
 ````
 """

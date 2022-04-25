@@ -1,13 +1,13 @@
 myst_parser
-sphinx<4
-sphinx-panels
+sphinx
+sphinx-design
 sphinx_copybutton
 traitlets
 jupyterhub
 memory_profiler
 pytest
 PyGitHub
-git+https://github.com/pandas-dev/pydata-sphinx-theme
+pydata-sphinx-theme
 sphinxext-rediraffe
 sphinx-autobuild
 tqdm

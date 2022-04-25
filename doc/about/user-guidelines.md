@@ -1,4 +1,4 @@
-# `mybinder.org` Usage Guidelines
+# Fair use guidelines
 
 This page details some guidelines and policies that we follow at ``mybinder.org``.
 

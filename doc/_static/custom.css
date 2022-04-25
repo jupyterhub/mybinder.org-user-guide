@@ -1,3 +1,8 @@
+:root {
+    --sd-color-primary: #579aca;
+    --sd-color-secondary: #f5a252;    
+}
+
 div.body p.caption {
     font-size: 1.2em;
 }
