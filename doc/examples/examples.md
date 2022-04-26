@@ -8,9 +8,10 @@ discuss adding it!
 ## Textbooks and teaching
 
 
-`````{panels}
-:container: + example-repos
+`````{grid}
+:class-container: example-repos
 
+````{grid-item-card}
 
 **Kalman and Bayesian filters in Python**
 
@@ -19,7 +20,10 @@ discuss adding it!
 ```{image} https://mybinder.org/badge_logo.svg
 :target: https://mybinder.org/v2/gh/rlabbe/Kalman-and-Bayesian-Filters-in-Python/master
 ```
----
+
+````
+
+````{grid-item-card}
 
 **Interactive Binders for a workshop on Deep Learning**
 
@@ -28,7 +32,10 @@ discuss adding it!
 ```{image} https://mybinder.org/badge_logo.svg
 :target: https://mybinder.org/v2/gh/pacm/dl-workshop/master
 ```
----
+
+````
+
+````{grid-item-card}
 
 **Elegant Scipy**
 
@@ -37,7 +44,10 @@ discuss adding it!
 ```{image} https://mybinder.org/badge_logo.svg
 :target: https://mybinder.org/v2/gh/elegant-scipy/elegant-scipy/master
 ```
----
+
+````
+
+````{grid-item-card}
 
 **Allen Downey's "Think DSP" book on signal processing**
 
@@ -46,7 +56,9 @@ discuss adding it!
 ```{image} https://mybinder.org/badge_logo.svg
 :target: https://mybinder.org/v2/gh/AllenDowney/ThinkDSP/master
 ```
----
+````
+
+````{grid-item-card}
 
 **Numerical Computing is Fun - an interactive textbook for kids**
 
@@ -55,7 +67,10 @@ discuss adding it!
 ```{image} https://mybinder.org/badge_logo.svg
 :target: https://mybinder.org/v2/gh/mikkokotila/jupyter4kids/master
 ```
----
+
+````
+
+````{grid-item-card}
 
 **Resonance: Learning Mechanical Vibration Engineering Through Computation**
 
@@ -64,7 +79,10 @@ discuss adding it!
 ```{image} https://mybinder.org/badge_logo.svg
 :target: https://mybinder.org/v2/gh/moorepants/resonance/master
 ```
----
+
+````
+
+````{grid-item-card}
 
 **Learn You a Haskell for Great Good!**
 
@@ -73,14 +91,17 @@ discuss adding it!
 ```{image} https://mybinder.org/badge_logo.svg
 :target: https://mybinder.org/v2/gh/jamesdbrock/learn-you-a-haskell-notebook/master?urlpath=lab/tree/learn_you_a_haskell/00-preface.ipynb
 ```
+
+````
 `````
 
 
 ## Open source software
 
-`````{panels}
-:container: + example-repos
----
+`````{grid}
+:class-container: example-repos
+
+````{grid-item-card}
 
 **ipyvolume** - 3d interactive plotting in Jupyter environments
 
@@ -90,7 +111,9 @@ discuss adding it!
 :target: https://mybinder.org/v2/gh/maartenbreddels/ipyvolume/master
 ```
 
----
+````
+
+````{grid-item-card}
 
 **Geospatial analytics in Python with Geopandas**
 
@@ -99,13 +122,18 @@ discuss adding it!
 ```{image} https://mybinder.org/badge_logo.svg
 :target: https://mybinder.org/v2/gh/jorisvandenbossche/geopandas-tutorial/master
 ```
+
+````
 `````
 
 
 ## Scientific research and reproducibility
 
-`````{panels}
-:container: + example-repos
+`````{grid}
+:class-container: example-repos
+
+````{grid-item-card}
+
 Using the `nix` package manager for reproducible environments.
 ^^^
 
@@ -114,11 +142,15 @@ Using the `nix` package manager for reproducible environments.
 :target: https://mybinder.org/v2/gh/costrouc/nix-binder-example/master
 ``` 
 
----
+````
+
+````{grid-item-card}
+
 An R Shiny app
 ^^^
 [![](https://img.shields.io/github/stars/pablobernabeu/Modality-switch-effects-emerge-early-and-increase-throughout-conceptual-processing?label=github%20repo&style=social)](https://github.com/pablobernabeu/Modality-switch-effects-emerge-ear-and-increase-throughout-conceptual-processing/tree/master/Shiny-app)
 ```{image} https://mybinder.org/badge_logo.svg
 :target: https://mybinder.org/v2/gh/pablobernabeu/Modality-switch-effects-emerge-early-and-increase-throughout-conceptual-processing/cd4ea149820fd48c9247191a4d5670c5fa34961d?urlpath=shiny/Shiny-app/
 ```
+````
 `````

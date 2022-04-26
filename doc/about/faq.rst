@@ -1,8 +1,6 @@
-.. _about:
-
-======================
-About ``mybinder.org``
-======================
+================================
+Frequently Asked Questions (FAQ)
+================================
 
 mybinder.org is a deployment of the BinderHub technology. It is run as a public
 service for those who'd like to share their interactive repositories publicly.
@@ -11,6 +9,7 @@ It is used by the Binder project to demonstrate the "cutting edge" of its techno
 This page explains some of the teams and organizations behind mybinder.org, as
 well as common questions about using mybinder.org
 
+.. _about:
 
 About ``mybinder.org``
 ======================
@@ -40,7 +39,7 @@ If you publish work that uses Binder, please consider citing the
 
 Here is a citation that you can use:
 
-.. code-block:: raw
+.. code-block::
 
    Jupyter et al., "Binder 2.0 - Reproducible, Interactive, Sharable
    Environments for Science at Scale." Proceedings of the 17th Python
@@ -59,21 +58,10 @@ the `Binder team <https://jupyterhub-team-compass.readthedocs.io/en/latest/team.
 For more information about the BinderHubs behind ``mybinder.org``, see
 :doc:`The BinderHub Federation <federation>`.
 
-Who pays for mybinder.org?
+Who supports mybinder.org?
 --------------------------
 
-The service at mybinder.org is provided by a federation of BinderHub deployments
-that are maintained by several members and organizations in the Binder community.
-For information about who runs and pays for these deployments, see :doc:`The BinderHub Federation <federation>`.
-
-Is there dedicated funding for the Binder Project?
---------------------------------------------------
-
-The Binder Project currently has no dedicated funding (beyond the time and hardware costs
-provided by :doc:`The BinderHub Federation members <federation>`).
-
-In 2017 the Binder Project received a 1-year grant from the
-`Moore Foundation <https://figshare.com/s/e9d0ad7bdc4e405cccfa>`_.
+See :doc:`support`.
 
 What technology runs mybinder.org?
 ----------------------------------
@@ -298,8 +286,8 @@ documentation for how to customize the user environment.
 Other tools in the Binder ecosystem
 -----------------------------------
 
-.. panels::
-   :card: text-center
+.. card::
+   :text-align: center
 
    Google Chrome extension:
    `Open in Binder <https://carreau.github.io/posts/32-open-with-binder-chrome.html>`_.

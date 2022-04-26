@@ -16,7 +16,7 @@ A Binder service is powered by [BinderHub](https://github.com/jupyterhub/binderh
 an open-source tool that runs on Kubernetes.
 One such deployment lives at [mybinder.org](https://mybinder.org), and is free to use.
 For more information about the mybinder.org deployment and the team that runs it, see
-[](about/about.md).
+[](about/faq.md).
 
 :::{admonition} Other documentation in the Binder ecosystem
 :class: tip
@@ -77,16 +77,6 @@ about/index
 
 See the [Binder Examples](https://github.com/binder-examples) GitHub
 organization for more Binder repositories demonstrating its functionality.
-
-## Contribute to Binder
-
-For information about contributing to Binder, see the following page:
-
-```{toctree}
-:maxdepth: 2
-
-contribute
-```
 
 ## Cite Binder
 
