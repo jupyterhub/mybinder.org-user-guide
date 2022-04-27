@@ -96,6 +96,12 @@ html_theme_options = {
             "name": "Support",
             "url": "https://mybinder.readthedocs.io/en/latest/about/support.html",
             "icon": "fa fa-heart",
+        },
+        {
+            "name": "Go to mybinder.org",
+            "url": "https://mybinder.org",
+            "icon": "_static/favicon.png",
+            "type": "local",
         }
    ]
 }
