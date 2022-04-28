@@ -1,7 +1,7 @@
 (introduction)=
 # Get started with Binder
 
-This page will help you get started building your own repositories and sharing them with Binder. For more information about the Binder Project in general, see [](../about/about).
+This page will help you get started building your own repositories and sharing them with Binder. For more information about the Binder Project in general, see [](../about/index).
 
 :::{admonition} Another useful resource
 :class: tip

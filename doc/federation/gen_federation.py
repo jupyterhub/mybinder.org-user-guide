@@ -11,12 +11,12 @@ N_PER_ROW = 4
 # Code to generate the HTML grid
 template_binderhub = """
 ```{{grid-item-card}}
-:link: {URL_BINDERHUB}
 :text-align: center
 :class-header: bg-light
+:class-body: p-4 d-flex align-items-center
 :class-footer: bg-light
 
-{BINDERHUB_SUBDOMAIN}
+[{BINDERHUB_SUBDOMAIN}]({URL_BINDERHUB})
 ^^^
 ![{RUN_BY}]({LOGO})
 +++
