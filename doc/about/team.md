@@ -11,13 +11,14 @@ This group builds and maintains our open source projects, operates the cloud inf
 The service at `mybinder.org` is powered by a collection of BinderHub
 deployments called {doc}`The BinderHub Federation <federation>` and run by a subset of the [Binder Team](team:members).
 
+The Binder Project is a sub-project of [Project Jupyter](https://jupyter.org), which is a fiscally-sponsored project of [NumFocus](https://numfocus.org), a 501c3 non-profit.
+
 :::{button-ref} contribute
 :ref-type: doc
 :color: primary
 
 Join our team
 :::
-
 
 ## Our open source projects
 

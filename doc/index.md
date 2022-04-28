@@ -49,8 +49,6 @@ Learn more {fas}`arrow-right`
 A Binder service is powered by [BinderHub](https://github.com/jupyterhub/binderhub),
 an open-source tool that runs on Kubernetes.
 One such deployment lives at [mybinder.org](https://mybinder.org), and is free to use.
-For more information about the mybinder.org deployment and the team that runs it, see
-[](about/faq.md).
 
 :::{admonition} Other documentation in the Binder ecosystem
 :class: tip
@@ -114,4 +112,4 @@ organization for more Binder repositories demonstrating its functionality.
 
 ## Cite Binder
 
-For information on how to cite Binder, see [](citing).
+For information on how to cite Binder, see [](about:citing).
