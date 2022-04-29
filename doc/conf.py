@@ -93,17 +93,13 @@ html_theme_options = {
     "twitter_url": "https://twitter.com/mybinderteam",
     "icon_links": [
         {
-            "name": "Support",
-            "url": "https://mybinder.readthedocs.io/en/latest/about/support.html",
-            "icon": "fa fa-heart",
-        },
-        {
             "name": "Go to mybinder.org",
             "url": "https://mybinder.org",
             "icon": "_static/favicon.png",
             "type": "local",
         }
-   ]
+   ],
+   "navbar_end": ["navbar-icon-links", "support-button"],
 }
 
 html_context = {
