@@ -44,12 +44,4 @@ A tool for quickly creating Binder-ready repositories in R.
 Learn more {fas}`arrow-right`.
 :::
 
-:::{grid-item-card} "Open in Binder"
-:link: https://carreau.github.io/posts/32-open-with-binder-chrome/
-
-A chrome extension to open a git repository in Binder.
-From [Matthias Bussonier](https://carreau.github.io).
-+++
-Learn more {fas}`arrow-right`.
-:::
 ::::

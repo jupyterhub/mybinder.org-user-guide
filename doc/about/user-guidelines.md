@@ -137,6 +137,8 @@ repository. In addition, you can explore these costs with the binder link below!
 ```
 
 ### How can `mybinder.org` be free to use?
+[`mybinder.org`](https://mybinder.org) relies on the generosity of donors and volunteers.
+If you would like to make a donation see [](support.md).
 
 See {ref}`about` for more information on the mybinder.org team and who provides
 the resources to pay for the service. Generally, mybinder.org is run with modest resources
