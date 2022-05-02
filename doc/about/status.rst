@@ -1,5 +1,5 @@
-Status page
-===========
+mybinder.org status
+===================
 
 This page displays several graphics that give an idea for the current
 status of the `mybinder.org <https://mybinder.org>`_ service. You can find

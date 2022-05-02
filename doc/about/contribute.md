@@ -1,4 +1,4 @@
-# Contribute
+# Join and contribute
 
 There are many ways that you can contribute to the Binder project, and the Binder community welcomes any and all contributions that others are willing to give.
 

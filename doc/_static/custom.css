@@ -4,8 +4,17 @@
 }
 
 /* Header */
-i.fa.fa-heart {
-    color: #e66783;
+
+.support-button {
+    background-color: #e66783;
+}
+
+.support-button:hover {
+    background-color: #b9556b;
+}
+
+.support-button i {
+    padding-right: .5em;
 }
 
 /* Text elements */
