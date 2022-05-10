@@ -13,6 +13,7 @@ This is a collection of pages about the Binder service running at [mybinder.org]
 user-guidelines
 status
 support
+thanks
 team
 contribute
 federation

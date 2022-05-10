@@ -1,3 +1,4 @@
+# Data that is used to generate our federation page.
 - url_binderhub: https://gke.mybinder.org
   logo: https://binderhub.readthedocs.io/en/latest/_static/logo.png
   funded_by: Google Cloud

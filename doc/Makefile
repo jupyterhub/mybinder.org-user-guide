@@ -20,4 +20,11 @@ help:
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
 live:
-	sphinx-autobuild --ignore */.github/* --ignore */federation/data-federation.txt --ignore */howto/languages.rst --ignore */howto/user_interface.rst --ignore */howto/lab_workspaces.rst --ignore */using/config_files.rst . _build/html/
+	sphinx-autobuild \
+		--ignore */.github/* \
+		--ignore */_data/* \
+		--ignore */howto/languages.rst \
+		--ignore */howto/user_interface.rst \
+		--ignore */howto/lab_workspaces.rst \
+		--ignore */using/config_files.rst \
+		. _build/html/
