@@ -40,10 +40,25 @@ Open an issue {fas}`arrow-right`
 
 ::::
 
-## Thanks to our supporters
-
 The Binder Project is supported by an open community of collaborators, as well as by many organizations.
-See [our Supporting Organizations page](thanks.md) for a list of organizations that support the Binder Project in many ways.
+See below for a list of our supporting team members and institutions.
+
+:::::{grid} auto
+
+::::{grid-item}
+:::{button-ref} supporters
+:color: primary
+Supporting organizations
+:::
+::::
+
+::::{grid-item}
+:::{button-ref} team
+:color: primary
+Our team
+:::
+::::
+:::::
 
 ## Our major costs
 
@@ -53,3 +68,22 @@ In addition to developing and maintaining the many open source tools built by th
   We pay for this infrastructure via donations of credits and money from the community.
 - **Personnel to operate mybinder.org**: Running a heavily-used and complex cloud service requires expertise in cloud infrastructure development and operation.
   We receive in-kind contributions from several individuals and organizations to help us sustain these operations.
+
+## Join our team
+
+There are many ways that you can contribute to the Binder project, and the Binder community welcomes any and all contributions that others are willing to give.
+
+To get started contributing, check out [the JupyterHub Team Compass guide to contributing](https://jupyterhub-team-compass.readthedocs.io/en/latest/team/skills.html).
+
+Here are a few ways that you can begin contributing to the Binder project as an individual.
+
+### Contribute to the Binder documentation
+
+This repository is a "meta-repository" for the Binder user documentation. If you notice anything missing, or feel that it could be improved, please [open an issue to discuss](https://github.com/jupyterhub/binder/issues/new/choose).
+
+Check out [the documentation contribution guide](https://github.com/jupyterhub/binder/blob/master/CONTRIBUTING.rst) for more
+information.
+
+### Contribute to the codebase of the Binder Project
+
+Most of the code used by the Binder Project is not hosted in this repository. If you'd like to contribute to the code, check out [the JupyterHub Team Compass guide to contributing](https://jupyterhub-team-compass.readthedocs.io/en/latest/team/skills.html).

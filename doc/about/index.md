@@ -9,13 +9,18 @@ This is a collection of pages about the Binder service running at [mybinder.org]
 
 ```{toctree}
 :maxdepth: 2
+:caption: Service information
 
 user-guidelines
 status
+```
+
+```{toctree}
+:maxdepth: 2
+:caption: Project information
 support
-thanks
+supporters
 team
-contribute
 federation
 cite
 ```

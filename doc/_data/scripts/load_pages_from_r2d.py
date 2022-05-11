@@ -8,7 +8,7 @@ from pathlib import Path
 
 # Grab the latest version of the configuration file examples and howtos
 # Files will be placed relative to documentation root
-dest_root = Path(__file__).parent.parent.parent.parent
+dest_root = Path(__file__).parent.parent.parent
 source_root = "https://raw.githubusercontent.com/jupyter/repo2docker/master/docs/source/"
 file_mappings = {
     "config_files.rst": "using/config_files.rst",

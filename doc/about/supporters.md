@@ -1,17 +1,8 @@
 # Supporting organizations
 
-Below are a few key contribution areas, and a list of organizations that currently support the project in each way.
-Individuals on the Binder team can be found at {external+tc:doc}`team`.
-
-(support:partner-institutions)=
-## Partner institutions
-
-Institutions that employ individuals that operate any of the hubs in [the mybinder.org federation](federation.md).
-
-Below are the current partner institutions of mybinder.org.
-
-```{include} ../_data/snippets/supporters_partners_md.txt
-```
+Binder relies on the generosity of volunteers and organizations to support our open source tools and our open service at mybinder.org.
+This page lists organizations that provide financial or cloud credit support for the project.
+For a list of individual team members and their organizations, see [](team.md).
 
 (support:major-supporters)=
 ## Financial supporters

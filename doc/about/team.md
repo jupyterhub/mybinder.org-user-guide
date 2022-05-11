@@ -20,6 +20,17 @@ The Binder Project is a sub-project of [Project Jupyter](https://jupyter.org), w
 Join our team
 :::
 
+(support:partner-institutions)=
+## Partner institutions
+
+We appreciate the generosity of institutions that allow their team members to support the mybinder.org federation in an official capacity.
+Below are institutions that employ individuals that operate any of the hubs in [the mybinder.org federation](federation.md).
+
+Below are the current partner institutions of mybinder.org.
+
+```{include} ../_data/snippets/supporters_partners_md.txt
+```
+
 ## Our open source projects
 
 The Binder Project stewards many open source projects that are particularly relevant to running BinderHub services like mybinder.org.
