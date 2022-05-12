@@ -1,7 +1,7 @@
 doc/_build
 doc/using/config_files.rst
 doc/howto/user_interface.rst
-doc/howto/lab-workspaces.rst
+doc/howto/lab_workspaces.rst
 doc/howto/languages.rst
 doc/_data/snippets
 doc/_data/pages
