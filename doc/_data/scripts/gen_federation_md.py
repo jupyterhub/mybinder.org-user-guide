@@ -1,7 +1,6 @@
 """Generate snippets of markdown for various types of supporters.
 These are meant to be inserted into our docs.
 """
-import pandas as pd
 from pathlib import Path
 from yaml import safe_load
 
@@ -27,11 +26,11 @@ template_binderhub = """
 # Read from our YAML data file 
 path_root = Path(__file__).parent.parent
 path_data = path_root / "support" / "federation.yml"
-binderhubs = pd.DataFrame(safe_load(path_data.read_text()))
+binderhubs = safe_load(path_data.read_text())
 
 # Generate markdown entries for each federation member
 entries = []
-for ix, binderhub in binderhubs.iterrows():
+for binderhub in binderhubs:
     entries.append(template_binderhub.format(URL_BINDERHUB=binderhub["url_binderhub"],
         BINDERHUB_SUBDOMAIN=binderhub["url_binderhub"].split("//")[-1],
         LOGO=binderhub["logo"],

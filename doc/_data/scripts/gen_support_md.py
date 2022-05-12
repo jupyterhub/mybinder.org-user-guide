@@ -1,7 +1,6 @@
 """Generate snippets of markdown for various types of supporters.
 These are meant to be inserted into our docs.
 """
-import pandas as pd
 from pathlib import Path
 from yaml import safe_load
 from textwrap import dedent
@@ -21,21 +20,20 @@ for kind, supporters in supporters_yaml.items():
     continue
 
   # Generate markdown entries for each member
-  supporters = pd.DataFrame(supporters)
   output = ""
-  for ix, item in supporters.iterrows():
+  for supporter in supporters:
       output += dedent(f"""
       ```{{grid-item-card}}
       :text-align: center
       :class-header: bg-light
       :class-body: sd-p-4 d-flex sd-m-auto
-      :link: {item["url"]}
+      :link: {supporter["url"]}
       :text-align: center
 
-      **{item["name"]}**
+      **{supporter["name"]}**
       ^^^
 
-      <img src="{item['logo']}" style="max-height:5em;min-height:2em;" />
+      <img src="{supporter['logo']}" style="max-height:5em;min-height:2em;" />
       
       ```
 
