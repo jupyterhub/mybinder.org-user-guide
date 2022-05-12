@@ -122,7 +122,7 @@ html_css_files = ["custom.css"]
 
 rediraffe_redirects = {
     "about.rst": "about/index.md",
-    "contribute.md": "about/contribute.md",
+    "contribute.md": "about/support.md",
     "examples.rst": "examples/examples.md",
     "index-repo-reference.rst": "examples/index.rst",
     "sample_repos.md": "examples/sample_repos.md",
