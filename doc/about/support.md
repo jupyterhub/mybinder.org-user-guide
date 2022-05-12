@@ -69,6 +69,7 @@ In addition to developing and maintaining the many open source tools built by th
 - **Personnel to operate mybinder.org**: Running a heavily-used and complex cloud service requires expertise in cloud infrastructure development and operation.
   We receive in-kind contributions from several individuals and organizations to help us sustain these operations.
 
+(support:join)=
 ## Join our team
 
 There are many ways that you can contribute to the Binder project, and the Binder community welcomes any and all contributions that others are willing to give.

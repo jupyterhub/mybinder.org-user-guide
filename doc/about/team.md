@@ -13,8 +13,7 @@ deployments called {doc}`The BinderHub Federation <federation>` and run by a sub
 
 The Binder Project is a sub-project of [Project Jupyter](https://jupyter.org), which is a fiscally-sponsored project of [NumFocus](https://numfocus.org), a 501c3 non-profit.
 
-:::{button-ref} contribute
-:ref-type: doc
+:::{button-ref} support:join
 :color: primary
 
 Join our team

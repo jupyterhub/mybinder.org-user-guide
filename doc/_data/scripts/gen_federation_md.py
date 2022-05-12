@@ -51,5 +51,6 @@ directive = f"""
 """
 
 # Write a txt file that we can insert into docs
-path_root.parent.mkdir(parents=True, exist_ok=True)
-path_root.joinpath("snippets", "federation_md.txt").write_text(directive)
+path_md = path_root.joinpath("snippets", "federation_md.txt")
+path_md.parent.mkdir(parents=True, exist_ok=True)
+path_md.write_text(directive)
