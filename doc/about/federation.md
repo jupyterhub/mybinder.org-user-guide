@@ -17,9 +17,9 @@ federation, check out [](federation/joining).
 (federation/federation-list)=
 ## Members of the BinderHub Federation
 
-Here is a list of the current members of the BinderHub federation:
+Below is a list of the current member hubs in the BinderHub Federation:
 
-```{include} ../federation/data-federation.txt
+```{include} /_data/snippets/federation_md.txt
 ```
 
 

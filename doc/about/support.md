@@ -40,10 +40,25 @@ Open an issue {fas}`arrow-right`
 
 ::::
 
-## Who supports mybinder.org?
+The Binder Project is supported by an open community of collaborators, as well as by many organizations.
+See below for a list of our supporting team members and institutions.
 
-- [The mybinder.org landing page](https://mybinder.org) has list of organizations that financially support mybinder.org.
-- {external+tc:doc}`team` has a list of personnel that support the project.
+:::::{grid} auto
+
+::::{grid-item}
+:::{button-ref} supporters
+:color: primary
+Supporting organizations
+:::
+::::
+
+::::{grid-item}
+:::{button-ref} team
+:color: primary
+Our team
+:::
+::::
+:::::
 
 ## Our major costs
 
@@ -54,23 +69,22 @@ In addition to developing and maintaining the many open source tools built by th
 - **Personnel to operate mybinder.org**: Running a heavily-used and complex cloud service requires expertise in cloud infrastructure development and operation.
   We receive in-kind contributions from several individuals and organizations to help us sustain these operations.
 
-## Help with our open source efforts
+(support:join)=
+## Join our team
 
-Finally, all of the techology behind mybinder.org is built by an open community.
-We welcome any kind of contributions and support.
-You can find many ways to contribute to the Binder community, codebase, and services at [](./contribute.md).
+There are many ways that you can contribute to the Binder project, and the Binder community welcomes any and all contributions that others are willing to give.
 
-## Attribution for team members
+To get started contributing, check out [the JupyterHub Team Compass guide to contributing](https://jupyterhub-team-compass.readthedocs.io/en/latest/team/skills.html).
 
-We wish to recognize the contributions that individuals and organizations make on behalf of Binder.
-For this reason, we define a few key contribution areas below, and explicitly recognize these contributions in our mybinder.org pages.
+Here are a few ways that you can begin contributing to the Binder project as an individual.
 
-- *mybinder.org federation members* - Institutions that deploy, fund, and staff their own BinderHub in the federation.
-- *mybinder.org partner institutions* - Institutions that employ individuals that operate any hubs in the mybinder.org federation (if not full federation members).
-- *mybinder.org major supporters* - Institutions that provide significant financial resources or credits for any hubs in the mybinder.org federation ("significant" is defined as anything greater than $10,000 annually).
+### Contribute to the Binder documentation
 
-## Previous grants and major support
+This repository is a "meta-repository" for the Binder user documentation. If you notice anything missing, or feel that it could be improved, please [open an issue to discuss](https://github.com/jupyterhub/binder/issues/new/choose).
 
-- From 2019 through 2021, `gke.mybinder.org` was supported by cloud credits from [Google Cloud](https://cloud.google.com/).
-- In 2017 the Binder Project received a 1-year grant from the
-`Moore Foundation <https://figshare.com/s/e9d0ad7bdc4e405cccfa>`_.
+Check out [the documentation contribution guide](https://github.com/jupyterhub/binder/blob/master/CONTRIBUTING.rst) for more
+information.
+
+### Contribute to the codebase of the Binder Project
+
+Most of the code used by the Binder Project is not hosted in this repository. If you'd like to contribute to the code, check out [](team:os-projects).

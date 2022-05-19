@@ -12,7 +12,8 @@
 **Binder** allows you to create custom computing environments that can be shared
 and used by many remote users.
 
-::::{grid}
+::::{grid} 1 1 3 3
+:gutter: 3
 
 :::{grid-item-card} {fas}`bolt;sd-text-warning` Get started
 :link: introduction
@@ -42,7 +43,18 @@ Click here for some ideas on how to support the project.
 Learn more {fas}`arrow-right`
 :::
 
+:::{grid-item-card}
+:columns: 12 
+:link: about/supporters
+:link-type: doc
+:text-align: center
+
+{octicon}`heart-fill;2em;sd-text-danger` **Thanks to our supporters** {octicon}`heart-fill;2em;sd-text-danger`
+:::
+
 ::::
+
+
 
 ## What is Binder?
 
