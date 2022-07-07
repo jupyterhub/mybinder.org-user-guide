@@ -206,6 +206,7 @@ call from a Jupyter Notebook).
 If you require private information within your
 Binder instance, consider [deploying a BinderHub for your group](https://binderhub.readthedocs.io/en/latest/).
 
+(security:report)=
 ### Report a security issue
 
 If you find a security vulnerability in with `mybinder.org`, please report
