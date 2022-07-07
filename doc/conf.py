@@ -57,11 +57,11 @@ html_theme_options = {
             "type": "local",
         }
     ],
+    "navbar_align": "left",
     "navbar_end": ["theme-switcher", "navbar-icon-links", "support-button"],
     "logo": {
         "image_light": "images/logo.png",
         "image_dark": "images/logo-dark.png",
-        "text": "User Guide",
     }
 }
 
