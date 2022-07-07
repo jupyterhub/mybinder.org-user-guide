@@ -41,10 +41,14 @@ div.sphinxsidebarwrapper ul {
 /* Badges on front page */
 div.badges img {
     float: left;
-    padding-right: .5em;
+    margin-right: .5em;
 }
 
 /* Logo */
-img.logo{
-    padding: 0.2em;
+img.logo__image {
+    padding: 0.25rem;
+}
+
+p.logo__title {
+    font-size: 1.25em;
 }
