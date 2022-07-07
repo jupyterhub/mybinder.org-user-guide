@@ -27,8 +27,8 @@ The JupyterHub team also maintains analysis of binder data including [billing da
 ## Build the documentation
 
 This documentation is built with [the Sphinx Documentation engine]().
-The easiest way to build the documentation is with `nox`.
-`nox` is a way to automatically install environments and run commands locally.
+The easiest way to build the documentation is with [the tool `nox`](https://nox.thea.codes/en/stable/).
+`nox` is kind-of like a Makefile, it is a way to automatically install environments and run commands locally.
 To build this documentation with `nox`, run:
 
 ```bash

@@ -1,3 +1,7 @@
+"""A nox configuration file so that we can build the documentation easily with nox.
+- see the README.md for information about nox.
+- ref: https://nox.thea.codes/en/stable/
+"""
 import nox
 from pathlib import Path
 
