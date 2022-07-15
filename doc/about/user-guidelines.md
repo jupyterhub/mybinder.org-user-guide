@@ -148,7 +148,32 @@ resources for interactive cloud computing.
 
 ## Security and privacy
 
-### How does mybinder.org ensure user privacy?
+[mybinder.org](https://mybinder.org) allows users to execute arbitrary code, including some outgoing network traffic.
+Users can upload additional files from their computer, fetch files from remote machines and upload files to remote machines.
+
+Providing a massively open public service like this also opens the opportunity for others to abuse our platform.
+We've taken care to avoid being used as [a link in an attack chain](https://en.wikipedia.org/wiki/Kill_chain#Cyber), or otherwise being abused, and haveput several safeguards in place.
+This section describes several aspects of using mybinder.org in a secure fashion.
+
+:::{admonition} If you've found a security problem
+Please see [](security:report).
+:::
+
+### An overview of Binder's security
+
+Below is a short overview of major security efforts.
+
+1. We limit outgoing bandwidth per-session (`~1mbit`) to protect against being used as a DDoS vector.
+2. We limit launches originating from most cloud providers to prevent being used automatically in various attacks.
+3. We have anti-cryptomining safeguards that automatically detect and kill processes associated with mining.
+4. We ban malicious repositories from being launched when they are brought to our attention.
+5. We impose general resource limits (inactivity culling timeouts, memory / CPU limits, max concurrent launches, etc) to make us a less tempting target for these attacks.
+6. We do not offer persistent storage of any sort, to protect us from becoming a host for malware.
+
+We're a volunteer run open infrastructure project, and welcome more engagement on how we can be better good citizens of the internet.
+If you've discovered a security problem on [mybinder.org](https://mybinder.org), please see [](security:report).
+
+### How we ensure user privacy
 
 We take user privacy very seriously! Because Binder runs as a public,
 free service, we don't require any kind of log-in that would let us
@@ -157,12 +182,12 @@ reproduced, classes taught - in short, everything that happens in a
 Binder session - is destroyed when the user logs off or becomes inactive
 for more than a few minutes.
 
-Here are the pieces of information we do keep: We run google analytics
-with anonymized IPs and no cookies, which gives us just enough information
-to know how Binder is being used, and but won't be able to identify users.
-We also retain logs of IP addresses for 30 days, which is used solely in
-the case of detecting abuse of the service. If you have suggestions for
-how we can ensure the privacy of our data and users, we'd love to hear it!
+Here are the pieces of information we do keep:
+
+- We run google analytics with anonymized IPs and no cookies, which gives us just enough information to know how Binder is being used, and but won't be able to identify users.
+- We retain logs of IP addresses for 30 days, which is used solely in the case of detecting abuse of the service.
+
+If you have suggestions for how we can ensure the privacy of our data and users, we'd love to hear it!
 
 ### How secure is mybinder.org?
 
@@ -181,7 +206,8 @@ call from a Jupyter Notebook).
 If you require private information within your
 Binder instance, consider [deploying a BinderHub for your group](https://binderhub.readthedocs.io/en/latest/).
 
-### Where can I report a security issue?
+(security:report)=
+### Report a security issue
 
 If you find a security vulnerability in with `mybinder.org`, please report
 it to [security@ipython.org](mailto:security@ipython.org).
