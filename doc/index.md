@@ -1,3 +1,6 @@
+---
+theme_html_remove_secondary_sidebar:
+---
 (binder-docs)=
 # Binder Documentation
 

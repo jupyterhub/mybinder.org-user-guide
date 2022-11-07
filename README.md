@@ -23,3 +23,28 @@ Binder is maintained by the [Binder team](https://github.com/jupyterhub/team-com
 
 
 The JupyterHub team also maintains analysis of binder data including [billing data](https://github.com/jupyterhub/binder-billing) and [activity data](https://github.com/jupyterhub/binder-data).
+
+## Build the documentation
+
+This documentation is built with [the Sphinx Documentation engine]().
+The easiest way to build the documentation is with [the tool `nox`](https://nox.thea.codes/en/stable/).
+`nox` is kind-of like a Makefile, it is a way to automatically install environments and run commands locally.
+To build this documentation with `nox`, run:
+
+```bash
+pip install nox
+nox -s docs
+```
+
+or to launch a live server that re-builds and re-loads pages as you save files:
+
+```bash
+nox -s docs-live
+```
+
+Alternatively, you may build the documentation directly with Sphinx:
+
+```bash
+pip install -r doc/doc-requirements.txt
+sphinx-build -b html doc doc/_build
+```
