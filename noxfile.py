@@ -18,7 +18,6 @@ def docs(session):
 def docs_live(session):
     session.install("-r", "doc/doc-requirements.txt")
     session.install("sphinx-autobuild")
-    session.install("git+https://github.com/pydata/pydata-sphinx-theme@main")
     session.run(
         "sphinx-autobuild",
         "--re-ignore",
