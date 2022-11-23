@@ -5,7 +5,7 @@ This page contains basic information about the people and tools behind the Binde
 (team:members)=
 ## The Binder Team
 
-The Binder Team is a subset of the {external+tc:doc}`JupyterHub Core Team <team>`.
+The Binder Team is a subset of the {external:tc:ref}`JupyterHub Core Team <jupyterhub-team>`.
 This group builds and maintains our open source projects, operates the cloud infrastructure at mybinder.org, and broadly supports the mission of the Binder project for the communities we serve.
 
 The service at `mybinder.org` is powered by a collection of BinderHub

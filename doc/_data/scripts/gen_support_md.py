@@ -25,7 +25,7 @@ for kind, supporters in supporters_yaml.items():
       output += dedent(f"""
       ```{{grid-item-card}}
       :text-align: center
-      :class-header: bg-light
+      :class-card: bg-light
       :class-body: sd-p-4 d-flex sd-m-auto
       :link: {supporter["url"]}
       :text-align: center
@@ -33,7 +33,7 @@ for kind, supporters in supporters_yaml.items():
       **{supporter["name"]}**
       ^^^
 
-      <img src="{supporter['logo']}" style="max-height:5em;min-height:2em;" />
+      <img src="{supporter['logo']}" class="dark-light" style="max-height:5em;min-height:2em;" />
       
       ```
 
