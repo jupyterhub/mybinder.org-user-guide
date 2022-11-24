@@ -1,4 +1,4 @@
-# binder
+# `mybinder.org` user documentation
 
 [![Documentation Status](https://readthedocs.org/projects/mybinder/badge/?version=latest)](https://mybinder.readthedocs.io/en/latest/?badge=latest)
 [![Join the chat at https://gitter.im/jupyterhub/binder](https://badges.gitter.im/jupyterhub/binder.svg)](https://gitter.im/jupyterhub/binder?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
@@ -39,7 +39,7 @@ nox -s docs
 or to launch a live server that re-builds and re-loads pages as you save files:
 
 ```bash
-nox -s docs-live
+nox -s docs -- live
 ```
 
 Alternatively, you may build the documentation directly with Sphinx:

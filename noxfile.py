@@ -3,26 +3,27 @@
 - ref: https://nox.thea.codes/en/stable/
 """
 import nox
-from pathlib import Path
 
 nox.options.reuse_existing_virtualenvs = True
 
+build_command = ["-b", "html", "doc", "doc/_build/html"]
 
-@nox.session
+@nox.session(python="3.9")
 def docs(session):
     session.install("-r", "doc/doc-requirements.txt")
-    session.run("sphinx-build", "-b=html", "doc/", "doc/_build/html")
-
-
-@nox.session(name="docs-live")
-def docs_live(session):
-    session.install("-r", "doc/doc-requirements.txt")
-    session.install("sphinx-autobuild")
-    session.run(
-        "sphinx-autobuild",
-        "--re-ignore",
-        "doc/_data*",
-        "-b=html",
-        "doc/",
-        "doc/_build/html",
-    )
+    if "live" in session.posargs:
+        AUTOBUILD_IGNORE = [
+            "*/.github/*",
+            "*/_data/*",
+            "*/howto/languages.rst",
+            "*/howto/user_interface.rst",
+            "*/howto/lab_workspaces.rst",
+            "*/using/config_files.rst",
+        ]
+        cmd = ["sphinx-autobuild"]
+        for folder in AUTOBUILD_IGNORE:
+            cmd.extend(["--ignore", f"*/{folder}/*"])
+        cmd.extend(build_command)
+        session.run(*cmd)
+    else:
+        session.run("sphinx-build", *build_command)

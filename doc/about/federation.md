@@ -19,6 +19,7 @@ federation, check out [](federation/joining).
 
 Below is a list of the current member hubs in the BinderHub Federation:
 
+% generate with doc/_data/scripts/gen_federation_md.py
 ```{include} /_data/snippets/federation_md.txt
 ```
 

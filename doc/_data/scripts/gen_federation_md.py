@@ -8,9 +8,9 @@ from yaml import safe_load
 template_binderhub = """
 ```{{grid-item-card}}
 :text-align: center
-:class-header: bg-light
+:class-header: sd-text-dark
 :class-body: sd-p-4 sd-m-auto
-:class-footer: bg-light
+:class-card: bg-light
 :text-align: center
 :link: {URL_BINDERHUB}
 
@@ -18,7 +18,7 @@ template_binderhub = """
 
 ^^^
 
-<img src="{LOGO}" style="max-height: 5em; min-height: 2em;" />
+<img src="{LOGO}" class="dark-light" style="max-height: 5em; min-height: 2em;" />
 ```
 
 """

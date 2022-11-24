@@ -46,23 +46,38 @@ html_favicon = "_static/images/favicon.png"
 #
 html_theme_options = {
     "use_edit_page_button": True,
-    "google_analytics_id": "UA-101904940-3",
-    "github_url": "https://github.com/jupyterhub/binder",
-    "twitter_url": "https://twitter.com/mybinderteam",
+    "analytics": {
+        "google_analytics_id": "UA-101904940-3",
+    },
     "icon_links": [
         {
             "name": "Go to mybinder.org",
             "url": "https://mybinder.org",
             "icon": "_static/favicon.png",
             "type": "local",
-        }
+        },
+        {
+            "name": "GitHub repository",
+            "url": "https://github.com/jupyterhub/binder",
+            "icon": "fa-brands fa-github",
+        },
+        {
+            "name": "Twitter account",
+            "url": "https://twitter.com/mybinderteam",
+            "icon": "fa-brands fa-twitter",
+        },
+        {
+            "name": "Community Forum",
+            "url": "https://discourse.jupyter.org/c/binder/12",
+            "icon": "fa-brands fa-discourse",
+        },
     ],
     "navbar_align": "left",
     "navbar_end": ["theme-switcher", "navbar-icon-links", "support-button"],
     "logo": {
         "image_light": "images/logo.png",
         "image_dark": "images/logo-dark.png",
-    }
+    },
 }
 
 html_context = {
