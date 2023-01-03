@@ -4,12 +4,11 @@ on:
   pull_request_target:
     types: [opened]
 
-permissions:
-  pull-requests: write
-
 jobs:
   binder:
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
     steps:
     - name: comment on PR with Binder link
       uses: actions/github-script@v6

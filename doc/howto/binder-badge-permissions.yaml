@@ -16,12 +16,12 @@ jobs:
       pull-requests: write
     steps: 
     - name: comment on PR with Binder link
-      uses: actions/github-script@v3
+      uses: actions/github-script@v6
       with:
         github-token: ${{secrets.GITHUB_TOKEN}}
         script: |
           var BRANCH_NAME = process.env.BRANCH_NAME;
-          github.issues.createComment({
+          github.rest.issues.createComment({
             issue_number: context.issue.number,
             owner: context.repo.owner,
             repo: context.repo.repo,
