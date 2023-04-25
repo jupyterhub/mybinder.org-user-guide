@@ -75,8 +75,8 @@ html_theme_options = {
     "navbar_align": "left",
     "navbar_end": ["theme-switcher", "navbar-icon-links", "support-button"],
     "logo": {
-        "image_light": "images/logo.png",
-        "image_dark": "images/logo-dark.png",
+        "image_light": "_static/images/logo.png",
+        "image_dark": "_static/images/logo-dark.png",
     },
 }
 
