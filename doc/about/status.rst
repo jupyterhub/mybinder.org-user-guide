@@ -32,7 +32,8 @@ notebooks.gesis.org/binder
 
 .. raw:: html
 
-   <script src="../_static/status.js" type="text/javascript"/>
+   <script src="../_static/status.js" type="text/javascript">
+   </script>
 
 
 Running Binder sessions
