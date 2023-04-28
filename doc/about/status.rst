@@ -25,7 +25,6 @@ the BinderHub federation, who is in it, how to join it, etc, see
 ==========================  ========  ===============  ==============  =============== =====
   URL                       Response  Docker registry  JupyterHub API  User/Build Pods Quota
 ==========================  ========  ===============  ==============  =============== =====
-gke.mybinder.org
 ovh.mybinder.org
 notebooks.gesis.org/binder
 ==========================  ========  ===============  ==============  =============== =====
@@ -43,7 +42,7 @@ The total number of user sessions running on Binder.
 
 .. raw:: html
 
-   <iframe src="https://grafana.mybinder.org/d-solo/fLoQvRHmk/status?panelId=6&orgId=1&tab=general&theme=light" width="500" height="200" frameborder="0"></iframe>
+   <iframe src="https://grafana.mybinder.org/d-solo/fLoQvRHmk/status?panelId=6&orgId=1&theme=light" width="500" height="240" frameborder="0"></iframe>
 
 Binder launch success
 ---------------------
@@ -54,7 +53,7 @@ a dip that sustains itself over time, please alert the Binder team at the
 
 .. raw:: html
 
-   <iframe src="https://grafana.mybinder.org/d-solo/fLoQvRHmk/status?panelId=2&orgId=1&tab=general&theme=light" width="500" height="200" frameborder="0"></iframe>
+   <iframe src="https://grafana.mybinder.org/d-solo/fLoQvRHmk/status?panelId=2&orgId=1&var-cluster=OVH&theme=light" width="500" height="200" frameborder="0"></iframe>
 
 Launch time percentiles
 -----------------------
@@ -65,7 +64,7 @@ time takes much longer.
 
 .. raw:: html
 
-   <iframe src="https://grafana.mybinder.org/d-solo/fLoQvRHmk/status?panelId=4&orgId=1&tab=general&theme=light" width="500" height="200" frameborder="0"></iframe>
+   <iframe src="https://grafana.mybinder.org/d-solo/fLoQvRHmk/status?panelId=4&orgId=1&var-cluster=OVH&theme=light" width="500" height="200" frameborder="0"></iframe>
 
 
 Site Reliability Goals

@@ -1,7 +1,6 @@
 // in sync with list in status.rst
 // fixme: can this come from one source?
 var fedUrls = [
-  "https://gke.mybinder.org",
   "https://ovh.mybinder.org",
   "https://notebooks.gesis.org/binder",
 ];
