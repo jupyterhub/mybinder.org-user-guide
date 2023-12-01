@@ -13,3 +13,10 @@
   funded_by_link: https://www.gesis.org/en/home
   run_by: GESIS Notebooks
   run_by_link: https://notebooks.gesis.org/about/
+
+- url_binderhub: https://binder.curvenote.dev
+  logo: https://raw.githubusercontent.com/curvenote/brand/mybinder/logos/logo-text-blue.svg
+  funded_by: Curvenote
+  funded_by_link: https://curvenote.com
+  run_by: Curvenote
+  run_by_link: https://curvenote.com

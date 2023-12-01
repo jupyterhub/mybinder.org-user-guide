@@ -3,7 +3,7 @@
 # in an "official" capacity to Binder, not only if they do this off-hours.
 
 partners:
-  - name: 2i2c 
+  - name: 2i2c
     logo: https://github.com/2i2c-org/2i2c-org.github.io/blob/main/static/media/logo.png?raw=true
     url: https://2i2c.org
 
@@ -22,18 +22,22 @@ partners:
   - name: UC Berkeley
     logo: https://upload.wikimedia.org/wikipedia/commons/8/82/University_of_California%2C_Berkeley_logo.svg
     url: https://www.berkeley.edu/
- 
+
 # Have made substantial contributions to Binder in the last year (>$10,000)
-financial: ""
+financial: ''
 
 # Have provided cloud credits that power Binder infrastructure
 credits:
+  - name: Curvenote
+    logo: https://raw.githubusercontent.com/curvenote/brand/mybinder/logos/logo-text-blue.svg
+    url: https://curvenote.com/
+
   - name: GESIS
     logo: https://www.gesis.org/typo3conf/ext/gesis_web_ext/Resources/Public/webpack/dist/img/gs_home_logo_de.svg
     url: https://www.gesis.org
 
   - name: Google Open Source
-    logo: https://www.gstatic.com/devrel-devsite/prod/v6cd15f45ec209c8961e07ea7e57ed9a0e9da4333bc915e67d1fcd2b2a9ec62d1/opensource/images/lockup.svg
+    logo: https://www.gstatic.com/devrel-devsite/prod/va65162e8ce9aacc75e4d3c0cd6d166fc6ceaaf184fea0ff0eac1d9b62c0480be/opensource/images/lockup.svg
     url: https://opensource.google/
 
   - name: OVHCloud
