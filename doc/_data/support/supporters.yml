@@ -28,13 +28,17 @@ financial: ''
 
 # Have provided cloud credits that power Binder infrastructure
 credits:
+  - name: Curvenote
+    logo: https://raw.githubusercontent.com/curvenote/brand/mybinder/logos/logo-text-blue.svg
+    url: https://curvenote.com/
+
   - name: GESIS
     logo: https://www.gesis.org/typo3conf/ext/gesis_web_ext/Resources/Public/webpack/dist/img/gs_home_logo_de.svg
     url: https://www.gesis.org
 
-  - name: Curvenote
-    logo: https://raw.githubusercontent.com/curvenote/brand/mybinder/logos/logo-text-blue.svg
-    url: https://curvenote.com/
+  - name: Google Open Source
+    logo: https://www.gstatic.com/devrel-devsite/prod/v6cd15f45ec209c8961e07ea7e57ed9a0e9da4333bc915e67d1fcd2b2a9ec62d1/opensource/images/lockup.svg
+    url: https://opensource.google/
 
   - name: OVHCloud
     logo: https://upload.wikimedia.org/wikipedia/commons/2/26/Logo-OVH.svg
