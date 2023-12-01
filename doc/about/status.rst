@@ -20,13 +20,14 @@ federation, along with the status of each. For more information about
 the BinderHub federation, who is in it, how to join it, etc, see
 `the mybinder federation page <https://mybinder.readthedocs.io/en/latest/about/federation.html>`_.
 
-.. update fedUrls in _status/status.js
+.. update fedUrls in _static/status.js
 
 ==========================  ========  ===============  ==============  =============== =====
   URL                       Response  Docker registry  JupyterHub API  User/Build Pods Quota
 ==========================  ========  ===============  ==============  =============== =====
 ovh.mybinder.org
 notebooks.gesis.org/binder
+binder.curvenote.dev
 ==========================  ========  ===============  ==============  =============== =====
 
 .. raw:: html
