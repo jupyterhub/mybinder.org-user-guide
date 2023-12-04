@@ -56,6 +56,10 @@ a dip that sustains itself over time, please alert the Binder team at the
 
    <iframe src="https://grafana.mybinder.org/d-solo/fLoQvRHmk/status?panelId=2&orgId=1&var-cluster=OVH&theme=light" width="500" height="200" frameborder="0"></iframe>
 
+.. raw:: html
+
+   <iframe src="https://grafana.mybinder.org/d-solo/fLoQvRHmk/status?panelId=2&orgId=1&var-cluster=GESIS&theme=light" width="500" height="200" frameborder="0"></iframe>
+
 Launch time percentiles
 -----------------------
 
@@ -67,6 +71,9 @@ time takes much longer.
 
    <iframe src="https://grafana.mybinder.org/d-solo/fLoQvRHmk/status?panelId=4&orgId=1&var-cluster=OVH&theme=light" width="500" height="200" frameborder="0"></iframe>
 
+.. raw:: html
+
+   <iframe src="https://grafana.mybinder.org/d-solo/fLoQvRHmk/status?panelId=4&orgId=1&var-cluster=GESIS&theme=light" width="500" height="200" frameborder="0"></iframe>
 
 Site Reliability Goals
 ----------------------
