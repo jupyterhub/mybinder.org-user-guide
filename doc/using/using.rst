@@ -10,7 +10,7 @@ for an introduction to Binder, repository structure, and how to build your
 own repository.
 
 For a more complete list of sample repositories for use with Binder, see the
-`Sample Binder Repositories <sample_repos.html>`_ page.
+`Sample Binder Repositories <../examples/sample_repos.html>`_ page.
 
 
 Creating live demonstrations
