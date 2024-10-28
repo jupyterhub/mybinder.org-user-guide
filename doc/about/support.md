@@ -11,8 +11,8 @@ This page describes the kinds of support that Binder receives, as well as how yo
 :link: https://numfocus.org/donate-to-jupyter
 :class-footer: bg-light
 
-Provide a financial contribution to our cloud operations and development fund.
-This is administered by [NumFocus](https://numfocus.org) and is used to pay for the cost of developing, operating, and paying the cloud bill for Binder.
+Provide a financial contribution to our cloud operations and development fund
+by donating to [Project Jupyter](https://jupyter.org/about#donate).
 
 +++
 Make a donation {fas}`arrow-right`
