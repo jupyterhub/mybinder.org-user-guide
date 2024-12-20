@@ -122,7 +122,7 @@ In this case, we have two important files:
 * **A content file**: `index.ipynb` is a short Jupyter Notebook that
   generates a plot.
 * **An environment configuration file**: `environment.yml` is a standard
-  file that specifies an Anaconda environment.
+  file that specifies a conda environment.
 
 
 :::{important}
