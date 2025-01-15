@@ -9,8 +9,8 @@
 #   run_by_link: https://www.ovhcloud.com
 
 - url_binderhub: https://notebooks.gesis.org/binder
-  logo: https://notebooks.gesis.org/static/images/logo/logo_text_2.png
-  funded_by: GESIS
+  logo: https://www.gesis.org/typo3conf/ext/gesis_web_ext/Resources/Public/webpack/dist/img/logo_gesis.svg
+  funded_by: GESIS Leibniz Institute for the Social Sciences 
   funded_by_link: https://www.gesis.org/en/home
-  run_by: GESIS Notebooks
-  run_by_link: https://notebooks.gesis.org/about/
+  run_by: GESIS Leibniz Institute for the Social Sciences 
+  run_by_link: https://www.gesis.org/en/home
