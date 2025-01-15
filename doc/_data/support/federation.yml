@@ -1,11 +1,12 @@
 # Data that is used to generate our federation page.
 
-- url_binderhub: https://ovh.mybinder.org
-  logo: https://www.ovh.com/fr/images/logos/logo-ovh-twitter.jpg
-  funded_by: OVHCloud
-  funded_by_link: https://www.ovhcloud.com
-  run_by: OVH
-  run_by_link: https://www.ovhcloud.com
+# Down, investigating. Unclear if it will return...
+# - url_binderhub: https://ovh.mybinder.org
+#   logo: https://www.ovh.com/fr/images/logos/logo-ovh-twitter.jpg
+#   funded_by: OVHCloud
+#   funded_by_link: https://www.ovhcloud.com
+#   run_by: OVH
+#   run_by_link: https://www.ovhcloud.com
 
 - url_binderhub: https://notebooks.gesis.org/binder
   logo: https://notebooks.gesis.org/static/images/logo/logo_text_2.png
@@ -13,10 +14,3 @@
   funded_by_link: https://www.gesis.org/en/home
   run_by: GESIS Notebooks
   run_by_link: https://notebooks.gesis.org/about/
-
-- url_binderhub: https://binder.curvenote.dev
-  logo: https://raw.githubusercontent.com/curvenote/brand/mybinder/logos/logo-text-blue.svg
-  funded_by: Curvenote
-  funded_by_link: https://curvenote.com
-  run_by: Curvenote
-  run_by_link: https://curvenote.com
