@@ -33,7 +33,7 @@ credits:
     url: https://curvenote.com/
 
   - name: GESIS
-    logo: https://www.gesis.org/typo3conf/ext/gesis_web_ext/Resources/Public/webpack/dist/img/gs_home_logo_de.svg
+    logo: https://www.gesis.org/typo3conf/ext/gesis_web_ext/Resources/Public/webpack/dist/img/logo_gesis.svg
     url: https://www.gesis.org
 
   - name: Google Open Source
