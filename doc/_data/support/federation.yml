@@ -1,12 +1,12 @@
 # Data that is used to generate our federation page.
 
-# Down, investigating. Unclear if it will return...
-# - url_binderhub: https://ovh.mybinder.org
-#   logo: https://www.ovh.com/fr/images/logos/logo-ovh-twitter.jpg
-#   funded_by: OVHCloud
-#   funded_by_link: https://www.ovhcloud.com
-#   run_by: OVH
-#   run_by_link: https://www.ovhcloud.com
+# Down, investigating. Discussing return now...
+- url_binderhub: https://ovh.mybinder.org
+  logo: https://www.ovh.com/fr/images/logos/logo-ovh-twitter.jpg
+  funded_by: OVHCloud
+  funded_by_link: https://www.ovhcloud.com
+  run_by: OVH
+  run_by_link: https://www.ovhcloud.com
 
 - url_binderhub: https://notebooks.gesis.org/binder
   logo: https://www.gesis.org/typo3conf/ext/gesis_web_ext/Resources/Public/webpack/dist/img/logo_gesis.svg
