@@ -2,7 +2,7 @@
 # Cite Binder
 
 If you publish work that uses Binder, please consider citing the
-[Binder paper from the 2018 SciPy proceedings](http://conference.scipy.org/proceedings/scipy2018/project_jupyter.html).
+[Binder paper from the 2018 SciPy proceedings](https://doi.org/10.25080/Majora-4af1f417-011).
 
 Here is a citation that you can use:
 
