@@ -8,7 +8,7 @@ This page describes the kinds of support that Binder receives, as well as how yo
 :gutter: 2
 
 :::{grid-item-card} {fas}`dollar-sign;sd-text-success` Donate funds
-:link: https://numfocus.org/donate-to-jupyter
+:link: https://jupyter.org/about#donate
 :class-footer: bg-light
 
 Provide a financial contribution to our cloud operations and development fund
