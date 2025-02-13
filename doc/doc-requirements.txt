@@ -1,10 +1,9 @@
+jupyter-repo2docker
 myst_parser
 sphinx
 sphinx-design
 sphinx_copybutton
 traitlets
-jupyterhub
-memory_profiler
 pytest
 PyGitHub
 pydata-sphinx-theme

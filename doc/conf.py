@@ -36,6 +36,16 @@ intersphinx_mapping = {
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 pygments_style = "sphinx"
 
+# load default_python values from imported r2d pages
+from repo2docker.buildpacks.conda import CondaBuildPack
+
+default_python = CondaBuildPack.major_pythons["3"]
+
+rst_prolog = f"""
+.. |default_python| replace:: **Python {default_python}**
+.. |default_python_version| replace:: {default_python}
+"""
+
 # -- Options for HTML output ----------------------------------------------
 html_theme = "pydata_sphinx_theme"
 html_favicon = "_static/images/favicon.png"
