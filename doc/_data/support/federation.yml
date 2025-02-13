@@ -1,5 +1,12 @@
 # Data that is used to generate our federation page.
 
+- url_binderhub: https://2i2c.mybinder.org
+  logo: https://2i2c.org/media/logo.svg
+  funded_by: 2i2c
+  funded_by_link: https://2i2c.org
+  run_by: 2i2c
+  run_by_link: https://2i2c.org
+
 # Down, investigating. Discussing return now...
 - url_binderhub: https://ovh.mybinder.org
   logo: https://www.ovh.com/fr/images/logos/logo-ovh-twitter.jpg
