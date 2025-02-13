@@ -8,7 +8,7 @@ nox.options.reuse_existing_virtualenvs = True
 
 build_command = ["-b", "html", "doc", "doc/_build/html"]
 
-@nox.session(python="3.9")
+@nox.session(python="3.12")
 def docs(session):
     session.install("-r", "doc/doc-requirements.txt")
     if "live" in session.posargs:
