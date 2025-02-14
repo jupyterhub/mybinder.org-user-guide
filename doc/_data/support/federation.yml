@@ -1,23 +1,44 @@
 # Data that is used to generate our federation page.
+# Alphabetical order
+# Instead of removing members, mark them as inactive with 'active: false'
 
 - url_binderhub: https://2i2c.mybinder.org
   logo: https://2i2c.org/media/logo.svg
   funded_by: 2i2c
   funded_by_link: https://2i2c.org
-  run_by: 2i2c
-  run_by_link: https://2i2c.org
+
+- url_binderhub: https://binder.curvenote.dev
+  logo: https://raw.githubusercontent.com/curvenote/brand/mybinder/logos/logo-text-blue.svg
+  funded_by: Curvenote
+  funded_by_link: https://curvenote.com
+  active: false
+
+- url_binderhub: https://notebooks.gesis.org/binder
+  logo: https://www.gesis.org/typo3conf/ext/gesis_web_ext/Resources/Public/webpack/dist/img/logo_gesis.svg
+  funded_by: GESIS Leibniz Institute for the Social Sciences
+  funded_by_link: https://www.gesis.org/en/home
+
+- url_binderhub: https://gke.mybinder.org
+  logo: https://www.gstatic.com/devrel-devsite/prod/vec94db9b1329e6c4d1d9b6b24ba16ad6c02043dcd66ba9c6a8f3d8fa0af3eec7/opensource/images/lockup.svg
+  funded_by: Google Cloud
+  funded_by_link: https://opensource.google
+  run_by: Binder Team
+  run_by_link: https://jupyterhub-team-compass.readthedocs.io/en/latest/team.html#binder-team
+  active: false
 
 # Down, investigating. Discussing return now...
 - url_binderhub: https://ovh.mybinder.org
   logo: https://www.ovh.com/fr/images/logos/logo-ovh-twitter.jpg
   funded_by: OVHCloud
   funded_by_link: https://www.ovhcloud.com
-  run_by: OVH
-  run_by_link: https://www.ovhcloud.com
+  run_by: Binder Team
+  run_by_link: https://jupyterhub-team-compass.readthedocs.io/en/latest/team.html#binder-team
+  active: false
 
-- url_binderhub: https://notebooks.gesis.org/binder
-  logo: https://www.gesis.org/typo3conf/ext/gesis_web_ext/Resources/Public/webpack/dist/img/logo_gesis.svg
-  funded_by: GESIS Leibniz Institute for the Social Sciences 
-  funded_by_link: https://www.gesis.org/en/home
-  run_by: GESIS Leibniz Institute for the Social Sciences 
-  run_by_link: https://www.gesis.org/en/home
+- url_binderhub: https://turing.mybinder.org
+  logo: https://www.turing.ac.uk/sites/default/files/inline-images/Turing%20logo_0.png
+  funded_by: Alan Turing Institute
+  funded_by_link: https://turing.ac.uk
+  run_by: Turing Way team
+  run_by_link: https://www.turing.ac.uk/research/research-projects/turing-way-handbook-reproducible-data-science#organisers
+  active: false

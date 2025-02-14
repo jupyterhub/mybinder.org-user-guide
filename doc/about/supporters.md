@@ -22,5 +22,9 @@ Organizations that provide cloud credits that power the infrastructure behind my
 
 ## Previous grants and major support
 
+- [Curvenote](https://curvenote.com) sponsored a mybinder.org federation member in 2024
+- [OVHCloud](https://ovhcloud.com) sponsored a mybinder.org federation member in from 2019-2024
+- The [Alan Turing Institute](https://www.turing.ac.uk) operated a mybinder.org federation member from 2019 to 2023, and provided personnel support
+- [Google Open Source](https://opensource.google) supported Binder via cloud credits from 2017-2022
 - In 2017 the Binder Project received [a 1-year grant from the
 Moore Foundation](https://figshare.com/s/e9d0ad7bdc4e405cccfa).
