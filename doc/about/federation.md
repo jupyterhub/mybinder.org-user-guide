@@ -23,6 +23,13 @@ Below is a list of the current member hubs in the BinderHub Federation:
 ```{include} /_data/snippets/federation_md.txt
 ```
 
+### Past members of the BinderHub Federation
+
+Thanks to past members of the BinderHub Federation, which are no longer active:
+
+```{include} /_data/snippets/federation_past_md.txt
+```
+
 
 (federation/joining)=
 ## Joining the BinderHub Federation
