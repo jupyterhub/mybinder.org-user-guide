@@ -21,8 +21,8 @@ def docs(session):
             "*/using/config_files.rst",
         ]
         cmd = ["sphinx-autobuild"]
-        for folder in AUTOBUILD_IGNORE:
-            cmd.extend(["--ignore", f"*/{folder}/*"])
+        for ignore in AUTOBUILD_IGNORE:
+            cmd.extend(["--ignore", ignore])
         cmd.extend(build_command)
         session.run(*cmd)
     else:
