@@ -10,7 +10,7 @@ at `grafana.mybinder.org <https://grafana.mybinder.org>`_.
 
    **If you notice an outage** or strong degradation of service at
    `mybinder.org <https://mybinder.org>`_, please reach out to
-   the Binder team at the `Binder gitter channel <https://gitter.im/jupyterhub/binder>`_!
+   the Binder team at the `Binder Zulip JupyterHub chat <https://jupyter.zulipchat.com/#narrow/channel/469744-jupyterhub>`_!
 
 Federation status
 -----------------
