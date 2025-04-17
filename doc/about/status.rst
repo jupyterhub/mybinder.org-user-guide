@@ -43,7 +43,7 @@ The total number of user sessions running on Binder.
 
 .. raw:: html
 
-   <iframe src="https://grafana.mybinder.org/d-solo/fLoQvRHmk/status?panelId=6&orgId=1&theme=light" width="500" height="240" frameborder="0"></iframe>
+   <iframe src="http://grafana.mybinder.org/d-solo/3SpLQinmk/1-overview?orgId=1&from=1744897214952&to=1744908014952&timezone=browser&var-cluster=000000001&panelId=31&__feature.dashboardSceneSolo" width="500" height="240" frameborder="0"></iframe>
 
 Binder launch success
 ---------------------
