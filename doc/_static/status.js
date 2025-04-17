@@ -1,9 +1,8 @@
 // in sync with list in status.rst
 // fixme: can this come from one source?
 var fedUrls = [
-  'https://ovh.mybinder.org',
-  'https://notebooks.gesis.org/binder',
-  'https://binder.curvenote.dev',
+  'https://2i2c.mybinder.org',
+  'https://gesis.mybinder.org',
 ];
 
 // Use a dictionary to store the rows that should be updated

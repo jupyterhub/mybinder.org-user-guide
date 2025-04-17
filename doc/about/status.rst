@@ -25,9 +25,8 @@ the BinderHub federation, who is in it, how to join it, etc, see
 ==========================  ========  ===============  ==============  =============== =====
   URL                       Response  Docker registry  JupyterHub API  User/Build Pods Quota
 ==========================  ========  ===============  ==============  =============== =====
-ovh.mybinder.org
-notebooks.gesis.org/binder
-binder.curvenote.dev
+2i2c.mybinder.org
+gesis.mybinder.org
 ==========================  ========  ===============  ==============  =============== =====
 
 .. raw:: html
