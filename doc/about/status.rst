@@ -43,7 +43,7 @@ The total number of user sessions running on Binder.
 
 .. raw:: html
 
-   <iframe src="http://grafana.mybinder.org/d-solo/3SpLQinmk/1-overview?theme=light&orgId=1&from=now-6h&to=now&timezone=browser&var-cluster=000000001&panelId=31&__feature.dashboardSceneSolo" width="500" height="240" frameborder="0"></iframe>
+   <iframe src="http://grafana.mybinder.org/d-solo/3SpLQinmk/1-overview?theme=light&orgId=1&from=now-6h&to=now&timezone=browser&var-cluster=GESIS&panelId=31&__feature.dashboardSceneSolo" width="500" height="240" frameborder="0"></iframe>
 
 Binder launch success
 ---------------------
@@ -54,11 +54,11 @@ a dip that sustains itself over time, please alert the Binder team at the
 
 .. raw:: html
 
-   <iframe src="https://grafana.mybinder.org/d-solo/fLoQvRHmk/status?panelId=2&orgId=1&var-cluster=OVH&theme=light" width="500" height="200" frameborder="0"></iframe>
+   <iframe src="http://grafana.mybinder.org/d-solo/fZWsQmnmz/pod-activity?orgId=1&var-cluster=2i2c&from=now-6h&to=now&timezone=browser&theme=light&panelId=9&__feature.dashboardSceneSolo" width="500" height="200" frameborder="0"></iframe>
 
 .. raw:: html
 
-   <iframe src="https://grafana.mybinder.org/d-solo/fLoQvRHmk/status?panelId=2&orgId=1&var-cluster=GESIS&theme=light" width="500" height="200" frameborder="0"></iframe>
+   <iframe src="http://grafana.mybinder.org/d-solo/fZWsQmnmz/pod-activity?orgId=1&var-cluster=GESIS&from=now-6h&to=now&timezone=browser&theme=light&panelId=9&__feature.dashboardSceneSolo" width="500" height="200" frameborder="0"></iframe>
 
 Launch time percentiles
 -----------------------
@@ -69,11 +69,11 @@ time takes much longer.
 
 .. raw:: html
 
-   <iframe src="https://grafana.mybinder.org/d-solo/fLoQvRHmk/status?panelId=4&orgId=1&var-cluster=OVH&theme=light" width="500" height="200" frameborder="0"></iframe>
+   <iframe src="http://grafana.mybinder.org/d-solo/3SpLQinmk/1-overview?orgId=1&var-cluster=2i2c&from=now-6h&to=now&timezone=browser&theme=light&panelId=28&__feature.dashboardSceneSolo" width="500" height="200" frameborder="0"></iframe>
 
 .. raw:: html
 
-   <iframe src="https://grafana.mybinder.org/d-solo/fLoQvRHmk/status?panelId=4&orgId=1&var-cluster=GESIS&theme=light" width="500" height="200" frameborder="0"></iframe>
+   <iframe src="http://grafana.mybinder.org/d-solo/3SpLQinmk/1-overview?orgId=1&var-cluster=GESIS&from=now-6h&to=now&timezone=browser&theme=light&panelId=28&__feature.dashboardSceneSolo" width="500" height="200" frameborder="0"></iframe>
 
 Site Reliability Goals
 ----------------------
