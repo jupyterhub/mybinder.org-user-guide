@@ -5,7 +5,7 @@ This page details some guidelines and policies that we follow at ``mybinder.org`
 :::{admonition} When in doubt, open an issue
 :class: warning
 If you're not sure whether your use-case is reasonable for `mybinder.org`, don't
-hesitate to [open an issue](https://github.com/jupyterhub/mybinder.org-deploy/issues/new?labels=question&template=ban_check.md)
+hesitate to [open an issue](https://github.com/jupyterhub/mybinder.org-deploy/issues/new?labels=question&template=repo_check.md)
 to ask if your planned usage is OK.
 :::
 
@@ -38,13 +38,13 @@ We don't want a single repository to dominate all of the traffic to Binder, so
 we've set a maximum limit of concurrent user sessions that point to the same
 Binder link. **The maximum number of simultaneous users for a given repo is 100**.
 If you think you have a *really* good reason for why this number should be
-higher, please [Open an Issue](https://github.com/jupyterhub/mybinder.org-deploy/issues/new?labels=impact&template=request_resources.md).
+higher, please [Open an Issue](https://github.com/jupyterhub/mybinder.org-deploy/issues/new?labels=impact&template=request_resources.yml).
 to discuss with the community!
 
 ### Events and workshops
 
 If you'd like to run an event with `mybinder.org` and expect more than 100 users
-to join at once, please [request an increase in quota for your repository](https://github.com/jupyterhub/mybinder.org-deploy/issues/new?labels=impact&template=request_resources.md).
+to join at once, please [request an increase in quota for your repository](https://github.com/jupyterhub/mybinder.org-deploy/issues/new?labels=impact&template=request_resources.yml).
 
 The Binder Team occasionally increases the number of sessions that can run for a single repository if it is being used for purposes that align with the mission of the Binder Project. However, there is no guarantee that this will be done for your event.
 
