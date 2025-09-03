@@ -135,3 +135,9 @@ run(shlex.split(f"python _data/scripts/load_pages_from_r2d.py"))
 # Generate snippets for federation/support
 run(shlex.split(f"python _data/scripts/gen_federation_md.py"))
 run(shlex.split(f"python _data/scripts/gen_support_md.py"))
+
+# -- Sphinx customization -----------------------------------------
+def setup(app):
+    # Plausible.io tracking
+    app.add_js_file("https://plausible.io/js/script.file-downloads.hash.outbound-links.js", **{"data-comain": "mybinder.readthedocs.io", "defer": ""})
+    app.add_js_file(filename=None, body="window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }")
