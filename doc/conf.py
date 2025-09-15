@@ -139,5 +139,5 @@ run(shlex.split(f"python _data/scripts/gen_support_md.py"))
 # -- Sphinx customization -----------------------------------------
 def setup(app):
     # Plausible.io tracking
-    app.add_js_file("https://plausible.io/js/script.file-downloads.hash.outbound-links.js", **{"data-comain": "mybinder.readthedocs.io", "defer": ""})
+    app.add_js_file("https://plausible.io/js/script.file-downloads.hash.outbound-links.js", **{"data-domain": "mybinder.readthedocs.io", "defer": ""})
     app.add_js_file(filename=None, body="window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }")
