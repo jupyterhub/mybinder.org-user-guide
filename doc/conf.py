@@ -142,4 +142,5 @@ def setup(app):
     # Plausible.io tracking
     app.add_js_file("https://plausible.io/js/script.file-downloads.hash.outbound-links.js", **{"data-domain": "mybinder.readthedocs.io", "defer": ""})
     app.add_js_file(filename=None, body="window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }")
+    # Inherit some Jupyter branding CSS rules from the Jupyter Documentation
     app.add_css_file("https://docs.jupyter.org/en/latest/_static/jupyter.css")
