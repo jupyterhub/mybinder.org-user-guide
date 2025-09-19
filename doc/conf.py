@@ -55,6 +55,7 @@ html_favicon = "_static/images/favicon.png"
 # documentation.
 #
 html_theme_options = {
+    "announcement": "🚀 Join us in San Diego · JupyterCon 2025 · Nov 4-5 · <a href=\"https://events.linuxfoundation.org/jupytercon/program/schedule/?ajs_aid=53afb00d-be65-4a99-9112-28cdaac99463\">SCHEDULE</a> · <a href=\"https://events.linuxfoundation.org/jupytercon/register/?ajs_aid=53afb00d-be65-4a99-9112-28cdaac99463\">REGISTER NOW</a>",
     "use_edit_page_button": True,
     "analytics": {
         "google_analytics_id": "UA-101904940-3",
@@ -141,3 +142,4 @@ def setup(app):
     # Plausible.io tracking
     app.add_js_file("https://plausible.io/js/script.file-downloads.hash.outbound-links.js", **{"data-domain": "mybinder.readthedocs.io", "defer": ""})
     app.add_js_file(filename=None, body="window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }")
+    app.add_css_file("https://docs.jupyter.org/en/latest/_static/jupyter.css")
