@@ -6,11 +6,11 @@
 /* Header */
 
 .support-button {
-    background-color: #e66783;
+    background-color: var(--sd-color-secondary);
 }
 
 .support-button:hover {
-    background-color: #b9556b;
+    background-color: #bc7a3c;
 }
 
 .support-button i {
