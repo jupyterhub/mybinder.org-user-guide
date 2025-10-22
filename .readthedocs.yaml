@@ -10,10 +10,10 @@ build:
     python: "3.12"
 
 sphinx:
-  configuration: doc/conf.py
+  configuration: docs/conf.py
 
 formats: []
 
 python:
   install:
-    - requirements: doc/doc-requirements.txt
+    - requirements: docs/requirements.txt
