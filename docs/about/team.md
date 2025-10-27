@@ -25,8 +25,6 @@ Join our team
 We appreciate the generosity of institutions that allow their team members to support the mybinder.org federation in an official capacity.
 Below are institutions that employ individuals that operate any of the hubs in [the mybinder.org federation](federation.md).
 
-Below are the current partner institutions of mybinder.org.
-
 ```{include} ../_data/snippets/supporters_partners_md.txt
 ```
 
