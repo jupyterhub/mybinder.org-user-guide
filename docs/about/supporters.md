@@ -23,9 +23,8 @@ Organizations that provide cloud credits that power the infrastructure behind my
 ## Previous grants and major support
 
 - [Curvenote](https://curvenote.com) sponsored a `mybinder.org` federation member in 2024
-- [GESIS Leibniz Institute for the Social Sciences](https://www.gesis.org) operated a `mybinder.org` federation member and provided personnel support from 2023 with supported by the German Research Foundation (DFG) under the project grant Base4NFDI (no. [521453681](https://gepris.dfg.de/gepris/projekt/521453681)).
-- [OVHCloud](https://ovhcloud.com) sponsored a `mybinder.org` federation member in from 2019-2024
-- [GESIS Leibniz Institute for the Social Sciences](https://www.gesis.org) operated a `mybinder.org` federation member and provided personnel support from 2021 with supported by the German Research Foundation (DFG) under the project grant NFDI4DS (no. [460234259](https://gepris.dfg.de/gepris/projekt/460234259)).
+- [OVHCloud](https://ovhcloud.com) sponsored a `mybinder.org` federation member from 2019-2024
+- [GESIS Leibniz Institute for the Social Sciences](https://www.gesis.org) operates a `mybinder.org` federation member and provides personnel support from 2021 with support from the German Research Foundation (DFG) under the project grants NFDI4DS (no. [460234259](https://gepris.dfg.de/gepris/projekt/460234259)) and Base4NFDI (no. [521453681](https://gepris.dfg.de/gepris/projekt/521453681)).
 - The [Alan Turing Institute](https://www.turing.ac.uk) operated a `mybinder.org` federation member from 2019 to 2023, and provided personnel support
 - [Google Open Source](https://opensource.google) supported Binder via cloud credits from 2017-2022
 - In 2017 the Binder Project received [a 1-year grant from the
