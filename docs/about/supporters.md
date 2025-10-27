@@ -22,7 +22,7 @@ Organizations that provide cloud credits that power the infrastructure behind my
 
 ## Previous grants and major support
 
-- [Simula Research Laboratory](https://www.simula.no) provided personal support from 2015-2025.
+- [Simula Research Laboratory](https://www.simula.no) provided personnel support from 2015-2025.
 - [Curvenote](https://curvenote.com) sponsored a `mybinder.org` federation member in 2024
 - [OVHCloud](https://ovhcloud.com) sponsored a `mybinder.org` federation member from 2019-2024
 - [GESIS Leibniz Institute for the Social Sciences](https://www.gesis.org) operates a `mybinder.org` federation member and provides personnel support from 2021 with support from the German Research Foundation (DFG) under the project grants NFDI4DS (no. [460234259](https://gepris.dfg.de/gepris/projekt/460234259)) and Base4NFDI (no. [521453681](https://gepris.dfg.de/gepris/projekt/521453681)).
