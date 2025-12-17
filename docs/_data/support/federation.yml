@@ -7,6 +7,11 @@
   funded_by: 2i2c
   funded_by_link: https://2i2c.org
 
+- url_binderhub: https://bids.mybinder.org
+  logo: https://upload.wikimedia.org/wikipedia/commons/4/4c/Berkeley_Institute_for_Data_Science_-_Logo.png
+  funded_by: BIDS
+  funded_by_link: https://bids.berkeley.edu
+
 - url_binderhub: https://binder.curvenote.dev
   logo: https://raw.githubusercontent.com/curvenote/brand/mybinder/logos/logo-text-blue.svg
   funded_by: Curvenote

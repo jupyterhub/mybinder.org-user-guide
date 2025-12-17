@@ -7,3 +7,8 @@ docs/_data/snippets
 docs/_data/pages
 .ipynb_checkpoints
 .vscode
+
+__pycache__
+*.pyc
+.venv
+.nox

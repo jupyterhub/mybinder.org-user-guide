@@ -3,6 +3,7 @@
 var fedUrls = [
   'https://2i2c.mybinder.org',
   'https://gesis.mybinder.org',
+  'https://bids.mybinder.org',
 ];
 
 // Use a dictionary to store the rows that should be updated

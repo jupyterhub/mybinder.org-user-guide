@@ -18,7 +18,7 @@ Federation status
 The following table lists BinderHub deployments in the mybinder.org
 federation, along with the status of each. For more information about
 the BinderHub federation, who is in it, how to join it, etc, see
-`the mybinder federation page <https://mybinder.readthedocs.io/en/latest/about/federation.html>`_.
+:ref:`the mybinder federation page <federation/federation>`.
 
 .. update fedUrls in _static/status.js
 
@@ -27,11 +27,12 @@ the BinderHub federation, who is in it, how to join it, etc, see
 ==========================  ========  ===============  ==============  =============== =====
 2i2c.mybinder.org
 gesis.mybinder.org
+bids.mybinder.org
 ==========================  ========  ===============  ==============  =============== =====
 
 .. raw:: html
 
-   <script src="../_static/status.js" type="text/javascript">
+   <script src="../../_static/status.js" type="text/javascript">
    </script>
 
 
@@ -49,7 +50,7 @@ Binder launch success
 
 The percentage of new user sessions that successfully launched. If you see
 a dip that sustains itself over time, please alert the Binder team at the
-`Binder gitter channel <https://gitter.im/jupyterhub/binder>`_.
+`Binder Zulip JupyterHub chat <https://jupyter.zulipchat.com/#narrow/channel/469744-jupyterhub>`_.
 
 .. raw:: html
 
