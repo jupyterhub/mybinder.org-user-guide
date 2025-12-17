@@ -32,7 +32,7 @@ bids.mybinder.org
 
 .. raw:: html
 
-   <script src="../../_static/status.js" type="text/javascript">
+   <script src="../_static/status.js" type="text/javascript">
    </script>
 
 
