@@ -209,10 +209,9 @@ Binder instance, consider [deploying a BinderHub for your group](https://binderh
 (security:report)=
 ### Report a security issue
 
-If you find a security vulnerability in with `mybinder.org`, please report
-it to [security@ipython.org](mailto:security@ipython.org).
+If you find a security vulnerability in `mybinder.org`, please report
+it [on GitHub](https://github.com/jupyterhub/mybinder.org-deploy/security/advisories).
 
-If you prefer to encrypt your security reports, you can use [this PGP public key](https://jupyter-notebook.readthedocs.io/en/stable/_downloads/ipython_security.asc).
 
 ### Can I push data from my Binder session back to my repository?
 
