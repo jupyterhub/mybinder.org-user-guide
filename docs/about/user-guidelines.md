@@ -184,8 +184,13 @@ for more than a few minutes.
 
 Here are the pieces of information we do keep:
 
-- We run google analytics with anonymized IPs and no cookies, which gives us just enough information to know how Binder is being used, and but won't be able to identify users.
+- We run [Plausible analytics](plausible.io/mybinder.org), which gives us just enough information to know how Binder is being used, and but won't be able to identify users.
 - We retain logs of IP addresses for 30 days, which is used solely in the case of detecting abuse of the service.
+- We maintain a [public events archive](howto/repo_data) of every launch on mybinder.org,
+  including the repo, version, time, and hosting mybinder Federation member,
+  but no information about the _user_ (ip address, etc.).
+  This is **public information**, available to everyone,
+  so there is **no such thing as a private launch on mybinder.org**.
 
 If you have suggestions for how we can ensure the privacy of our data and users, we'd love to hear it!
 
