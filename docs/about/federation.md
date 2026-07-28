@@ -89,14 +89,14 @@ if you are donating compute power which the `mybinder.org` team
 
 - Introduce yourself in the
   [discourse forum](https://discourse.jupyter.org/t/introduce-yourself/17) or
-  [gitter chat](https://gitter.im/jupyterhub/mybinder.org-deploy)! The team love
+  [Zulip chat](https://jupyter.zulipchat.com/#narrow/channel/469744-jupyterhub)! The team love
   to get to know the people we collaborate with :-)
 - Watch the [team-compass](https://github.com/jupyterhub/team-compass) for any
   relevant updates or opportunities for participation.
 - Attend the [monthly team meetings](https://jupyterhub-team-compass.readthedocs.io/en/latest/meetings.html)
   when able. This does **not** have to be every month since the provided link
   also contains a monthly report archive for missed meetings.
-- Be available in the [mybinder.org-deploy gitter chat](https://gitter.im/jupyterhub/mybinder.org-deploy)
+- Be available in the [Zulip chat](https://jupyter.zulipchat.com/#narrow/channel/469744-jupyterhub)
   to liaise with the `mybinder.org` team should the cluster experience any
   technical difficulties.
 - Be willing to co-work/pair programme with the `mybinder.org` team to debug any
