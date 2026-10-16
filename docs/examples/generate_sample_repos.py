@@ -38,10 +38,10 @@ lines = ['% !!!! PROGRAMMATICALLY GENERATED                       !!!!',
          '% !!!! Run generate_sample_repos.py to update this page !!!!',
          '# Sample Binder Repositories',
          ''
-         'Below we list several sample Binder repositories that'
-         'demonstrate how to compose build files in order to create'
-         'Binders with varying environments. You can find all of the'
-         'repositories listed on this page at the'
+         'Below we list several sample Binder repositories that '
+         'demonstrate how to compose build files in order to create '
+         'Binders with varying environments. You can find all of the '
+         'repositories listed on this page at the '
          '[binder-examples GitHub organization](https://github.com/binder-examples).\n']
 
 for category, repo_list in repos.items():
